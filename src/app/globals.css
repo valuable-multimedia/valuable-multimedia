@@ -7,3 +7,24 @@
     text-wrap: balance;
   }
 }
+
+/* custom CSS  */
+.hero-bg-gradient {
+  background: linear-gradient(to bottom, #ffffff, #ececec);
+}
+
+/* CSS for text selections  */
+::selection {
+  background-color: #000;
+  color: #ffffff;
+}
+
+::-webkit-selection {
+  background-color: #000;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #000;
+  color: #ffffff;
+}

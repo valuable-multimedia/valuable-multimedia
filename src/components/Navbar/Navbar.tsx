@@ -21,12 +21,12 @@ function Navbar() {
   return (
     <div className="">
       {/* for large screens  */}
-      <div className="font-saira hidden lg:flex px-24 py-4 bg-themeBlue text-black justify-between items-center">
-        <div className="left border">
-          <Link href={"/"} className="border-2 border-black">
+      <div className="font-saira hidden lg:flex px-24 py-4 bg-themeBlue text-black justify-between items-center bg-[#fcfcfc]">
+        <div className="left">
+          <Link href={"/"} className="">
             <Image
               src={
-                "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719644600/dtec1hksi2cp3rzrvrqv.png"
+                "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719668005/ohioqrk8p2j27ck1wqb3.png"
               }
               alt="logo"
               height="200"
@@ -38,24 +38,28 @@ function Navbar() {
         <div className="right flex items-center">
           {/* nav links  */}
           <div className="nav-links flex items-center gap-x-20">
-            <ul className="flex gap-x-10 items-center">
-              <Link href={"/"} className="capitalize">
+            <ul className="flex gap-x-10 items-center text-lg">
+              <Link
+                href={"/"}
+                className="capitalize hover:text-themeOrange font-medium"
+              >
                 <li>Home</li>
               </Link>
 
-              <Link href={"/about-us"} className="capitalize">
-                <li>about elito</li>
+              <Link
+                href={"/about-us"}
+                className="capitalize hover:text-themeOrange font-medium"
+              >
+                <li>about us</li>
               </Link>
 
               <li className="">
                 <div className="flex w-full border-3 border-white items-center justify-center">
                   <div className="group relative cursor-pointer">
                     <div className="flex items-center justify-between">
-                      <Link href={"/products"}>
-                        <div className="menu-hover my-2 text-base font-medium text-black mx-2">
-                          Our Products
-                        </div>
-                      </Link>
+                      <div className="menu-hover my-2 capitalize mx-2 hover:text-themeOrange font-medium text-lg">
+                        our services
+                      </div>
                       <span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -74,34 +78,60 @@ function Navbar() {
                       </span>
                     </div>
 
-                    <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 min-w-[220px] shadow-xl group-hover:visible">
+                    <div className="invisible absolute z-50 flex w-full flex-col bg-white py-1 px-4 text-gray-800 min-w-[470px] shadow-xl group-hover:visible">
                       <Link
-                        className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2 capitalize"
-                        href={"/products/car-suv-battery"}
+                        className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
+                        href={"/services/meta-ads"}
                       >
-                        car/suv Battery
+                        meta ads (facebook and instagram ads)
                       </Link>
                       <Link
-                        className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2 capitalize"
-                        href={"/products/truck-tractor-battery"}
+                        className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
+                        href={"/services/google-ads"}
                       >
-                        truck/tractor battery
+                        PPC (google ads)
+                      </Link>
+                      <Link
+                        className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
+                        href={"/services/social-media-marketing"}
+                      >
+                        social media marketing
+                      </Link>
+                      <Link
+                        className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
+                        href={"/services/ui-ux-designing"}
+                      >
+                        UI &amp; UX designing
+                      </Link>
+                      <Link
+                        className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
+                        href={"/services/website-development"}
+                      >
+                        website development
+                      </Link>
+                      <Link
+                        className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
+                        href={"/services/digital-strategy"}
+                      >
+                        digital strategy
                       </Link>
                     </div>
                   </div>
                 </div>
               </li>
 
-              <Link href={"/resources"} className="capitalize">
-                <li>resources</li>
+              <Link
+                href={"/contact-us"}
+                className="capitalize hover:text-themeOrange font-medium"
+              >
+                <li>contact us</li>
               </Link>
 
-              <Link href={"/blogs"} className="capitalize">
+              <Link
+                href={"/blogs"}
+                className="capitalize hover:text-themeOrange font-medium"
+              >
                 <li>blogs</li>
-              </Link>
-
-              <Link href={"/become-a-distributor"} className="capitalize">
-                <li>become a distributor</li>
               </Link>
             </ul>
           </div>
@@ -159,7 +189,7 @@ function Navbar() {
                     <nav className="grid gap-y-4">
                       <Link
                         href={"/"}
-                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-semibold`}
+                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-medium`}
                         onClick={toggleMenu}
                       >
                         <span className="ml-0 text-base font-medium text-white">
@@ -169,7 +199,7 @@ function Navbar() {
 
                       <Link
                         href={"/about-us"}
-                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-semibold`}
+                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-medium`}
                         onClick={toggleMenu}
                       >
                         <span className="ml-0 text-base font-medium text-white">
@@ -179,7 +209,7 @@ function Navbar() {
 
                       <Link
                         href={"/products"}
-                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-semibold`}
+                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-medium`}
                         onClick={toggleMenu}
                       >
                         <span className="ml-0 text-base flex gap-x-2 items-center font-medium text-white">
@@ -193,7 +223,7 @@ function Navbar() {
 
                       <Link
                         href={"/products/truck-tractor-battery"}
-                        className={`-m-3 bg-[#03528D] mx-1 rounded-md p-3 text-sm font-semibold w-full`}
+                        className={`-m-3 bg-[#03528D] mx-1 rounded-md p-3 text-sm font-medium w-full`}
                         onClick={toggleMenu}
                       >
                         <span className="bg-[#03528D] mx-1 ml-0 text-base font-medium text-white">
@@ -203,7 +233,7 @@ function Navbar() {
 
                       <Link
                         href={"/products/car-suv-battery"}
-                        className={`-m-3 bg-[#03528D] mx-1 mt-1 rounded-md p-3 text-sm font-semibold w-full`}
+                        className={`-m-3 bg-[#03528D] mx-1 mt-1 rounded-md p-3 text-sm font-medium w-full`}
                         onClick={toggleMenu}
                       >
                         <span className="bg-[#03528D] mx-1 ml-0 text-base font-medium text-white">
@@ -213,7 +243,7 @@ function Navbar() {
 
                       <Link
                         href={"/resources"}
-                        className={`-m-3 mt-2 flex items-center rounded-md p-3 text-sm font-semibold`}
+                        className={`-m-3 mt-2 flex items-center rounded-md p-3 text-sm font-medium`}
                         onClick={toggleMenu}
                       >
                         <span className="ml-0 text-base font-medium text-white">
@@ -223,7 +253,7 @@ function Navbar() {
 
                       <Link
                         href={"/blogs"}
-                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-semibold`}
+                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-medium`}
                         onClick={toggleMenu}
                       >
                         <span className="ml-0 text-base font-medium text-white">
@@ -233,7 +263,7 @@ function Navbar() {
 
                       <Link
                         href={"/become-a-distributor"}
-                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-semibold`}
+                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-medium`}
                         onClick={toggleMenu}
                       >
                         <span className="ml-0 text-base font-medium text-white">

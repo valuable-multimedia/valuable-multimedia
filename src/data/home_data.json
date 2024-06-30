@@ -1,0 +1,34 @@
+{
+  "homeServices": [
+    {
+      "name": "PPC",
+      "name2": "(google ads)",
+      "slug": "/services/google-ads"
+    },
+    {
+      "name": "meta ads",
+      "name2": "facebook ads",
+      "slug": "/services/meta-ads"
+    },
+    {
+      "name": "social media",
+      "name2": "marketing",
+      "slug": "/services/social-media-marketing"
+    },
+    {
+      "name": "UI UX",
+      "name2": "designing",
+      "slug": "/services/ui-ux-designing"
+    },
+    {
+      "name": "website",
+      "name2": "development",
+      "slug": "/services/website-development"
+    },
+    {
+      "name": "digital",
+      "name2": "strategy",
+      "slug": "/services/digital-strategy"
+    }
+  ]
+}
