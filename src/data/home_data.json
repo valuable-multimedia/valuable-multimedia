@@ -30,5 +30,99 @@
       "name2": "strategy",
       "slug": "/services/digital-strategy"
     }
+  ],
+  "toolsOne": [
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719815056/f2gywvdvz1hfftkxcenq.webp",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719815058/exlbo3zti4ivoifnikod.webp",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719815060/nb4nl8uooa0udlmkf7op.webp",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719815063/un4uactbred6oucb8hva.webp",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719815067/mmmkb7nywfvp2boagfj1.webp",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719815070/shfj4pc5vlavtxvt69p6.webp"
+  ],
+  "toolsTwo": [
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719815072/i1t0qbhe38yxaxiayqmm.webp",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719815075/mwwfhmcdgqt7hhadayqk.webp",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719815077/yx2yxkok16o4vunt36ab.webp",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719815082/xjptcbeaboqyrrefakct.webp",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719815085/nchelnsgeaxxi4qpw8do.webp",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719815086/sanqiosqnfi2uacnymjh.webp"
+  ],
+  "industries": [
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719818954/home/gae8norebrhishofwhwk.webp",
+      "title": "manufacuring"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719818958/home/m3dajvbv0hfuncr22rmr.webp",
+      "title": "education"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719818960/home/u4hdgzrjf9fp98yrqnkk.webp",
+      "title": "food"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719818966/home/cnwzjj5nlhlranfwkir1.webp",
+      "title": "fashion"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719818970/home/x8rdqtwbqe3fariy9roo.webp",
+      "title": "accounting"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719818973/home/xocfvsdita4m8fjqyudg.webp",
+      "title": "technical"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719818976/home/irshtbr1tnwxrwrgylev.webp",
+      "title": "finance"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719818979/home/tp6djrs0x9yygopc2lnp.webp",
+      "title": "real estate"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719818983/home/jzvy1ls3oism44m7fmnr.webp",
+      "title": "health"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719818986/home/xnsu0ntho86npvh2dpfv.webp",
+      "title": "fitness"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719818989/home/vl6izph8rojqwmiqd7al.webp",
+      "title": "entertainment"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719818991/home/im8tee53hcstj9y7cun0.webp",
+      "title": "creators"
+    }
+  ],
+  "clients": [
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719833542/home/sdns1qqvrkiqw4cfox8w.svg",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719833542/home/scmn33n3k7q5xl0rd3u3.svg",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719833542/home/e4prfbcngflirq5daiag.svg",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719833542/home/it77cwqcoqprdvpjsbjw.svg",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719833542/home/u3su1ldjxohjaim9mwaj.svg",
+    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719833542/home/zwoj1lt0wodk9zzj0l4t.svg"
+  ],
+  "blogs": [
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719838933/home/o9cvcmsrlisjrfb6vosg.png",
+      "date": "26 march,2024",
+      "title": "What Is a Broken Link? How to Fix It on Your Website?",
+      "slug": "/"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719838936/home/nhvdvhvuuqgfv5bhtwad.png",
+      "date": "28 dec,2023",
+      "title": "What Are HTTP Status Codes? How do HTTP Status Codes Impact SEO?",
+      "slug": "/"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719838939/home/ci12bqj1tzlapnzwcps1.png",
+      "date": "21 nov,2023",
+      "title": "What is Website Indexing? How to Do Indexation Analysis of a Website?",
+      "slug": "/"
+    }
   ]
 }
