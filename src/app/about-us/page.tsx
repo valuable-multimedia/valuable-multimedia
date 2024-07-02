@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
-import { PiGreaterThan } from "react-icons/pi";
 import Image from "next/image";
+import { PiGreaterThan } from "react-icons/pi";
+import aInformations from "@/data/aboutInformation";
 
 function AboutUsPage() {
   return (
@@ -77,6 +78,35 @@ function AboutUsPage() {
               transformational results.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* teams section  */}
+      <div className="teams-section-about px-[12rem] py-16">
+        teams section pending beacuse of images...
+      </div>
+
+      {/* show section */}
+      <div className="show-section-about px-[10rem] py-16 flex flex-col gap-y-14">
+        <div className="heading flex flex-col gap-y-4">
+          <h3 className="text-themeOrange text-xl font-semibold">
+            This characteristic sets us apart as
+          </h3>
+          <h1 className="text-5xl">
+            an exceptional partner in driving growth.
+          </h1>
+        </div>
+
+        <div className="dowm flex gap-x-4">
+          {aInformations.map((item, index) => (
+            <div
+              className="show-box w-[20%] flex flex-col gap-y-6"
+              key={`show-box-${index + 1}`}
+            >
+              <div className="text-5xl text-themeOrange">{item.icon}</div>
+              <p className="text-gray-500 text-lg">{item.para}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
