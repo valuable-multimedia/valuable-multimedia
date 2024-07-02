@@ -1,0 +1,50 @@
+{
+  "navLinks": [
+    {
+      "title": "Facebook Ads",
+      "slug": "/services/facebook-ads"
+    },
+    {
+      "title": "Instagram Ads",
+      "slug": "/services/instagram-ads"
+    },
+    {
+      "title": "PPC (Google Ads)",
+      "slug": "/services/ppc-google-ads"
+    },
+    {
+      "title": "Social Media Marketing",
+      "slug": "/services/social-media-marketing"
+    },
+    {
+      "title": "UI & UX Designing",
+      "slug": "/services/ui-ux-designing"
+    },
+    {
+      "title": "Website Development",
+      "slug": "/services/website-development"
+    },
+    {
+      "title": "Digital Strategy",
+      "slug": "/services/digital-strategy"
+    }
+  ],
+  "mainNavLinks": [
+    {
+      "title": "Home",
+      "slug": "/"
+    },
+    {
+      "title": "about us",
+      "slug": "/about-us"
+    },
+    {
+      "title": "contact us",
+      "slug": "/contact-us"
+    },
+    {
+      "title": "blogs",
+      "slug": "/blogs"
+    }
+  ]
+}

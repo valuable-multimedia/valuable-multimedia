@@ -81,9 +81,15 @@ function Navbar() {
                     <div className="invisible absolute z-50 flex w-full flex-col bg-white py-1 px-4 text-gray-800 min-w-[470px] shadow-xl group-hover:visible">
                       <Link
                         className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
-                        href={"/services/meta-ads"}
+                        href={"/services/facebook-ads"}
                       >
-                        meta ads (facebook and instagram ads)
+                       Facebook Ads
+                      </Link>
+                      <Link
+                        className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
+                        href={"/services/instagram-ads"}
+                      >
+                       Instagram Ads
                       </Link>
                       <Link
                         className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"

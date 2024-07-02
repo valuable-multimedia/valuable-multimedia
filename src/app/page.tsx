@@ -6,8 +6,32 @@ import Link from "next/link";
 import data from "@/data/home_data.json";
 import informations from "@/data/homeInformation";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export default function Home() {
-  const { homeServices, toolsOne, toolsTwo, industries, clients, blogs } = data;
+  const {
+    homeServices,
+    toolsOne,
+    toolsTwo,
+    industries,
+    clients,
+    blogs,
+    testimonials,
+  } = data;
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: false,
+  };
 
   return (
     <main className="flex flex-col bg-[#fcfcfc]">
@@ -246,8 +270,57 @@ export default function Home() {
       </div>
 
       {/* testimonials section  */}
-      <div className="testimonials-section-home bg-[#ececec] px-[10rem] py-16">
-        testimonials
+      <div className="testimonials-section-home flex bg-[#ececec] mx-10 rounded-xl px-[8rem] pt-16 pb-12">
+        <div className="left w-[20%]">
+          <Image
+            src={
+              "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719837575/home/uetf6qm9tnh5j3mosphg.webp"
+            }
+            alt="test-hand-image"
+            width={200}
+            height={200}
+          />
+        </div>
+
+        <div className="middle w-[60%] flex flex-col gap-y-16">
+          <h2 className="text-4xl text-gray-400 text-center">
+            That&apos;s what our Clients said!
+          </h2>
+
+          <div className=" w-[80%] mx-auto">
+            <Slider {...settings}>
+              {testimonials.map((testimonial, index) => (
+                <div key={`testimonial ${index + 1}`} className="testimonial">
+                  <p className="text-center text-lg">
+                    <span className="border-b border-themeOrange leading-[2rem] pb-1">
+                      {testimonial.feedback}
+                    </span>
+                  </p>
+
+                  <div className="mt-16 text-center capitalize">
+                    <h2 className="text-xl text-themeOrange font-medium">
+                      hirem patel
+                    </h2>
+                    <div className="text-gray-400 text-xl">
+                      {testimonial.client}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+
+        <div className="right w-[20%]">
+          <Image
+            src={
+              "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719837577/home/fjgc1awtgm9v4eum5txy.webp"
+            }
+            alt="test-hand-image"
+            width={200}
+            height={200}
+          />
+        </div>
       </div>
 
       {/* blogs section  */}
@@ -285,7 +358,18 @@ export default function Home() {
       {/* contact section  */}
       <div className="contact-section-home px-[9rem] py-16">
         <div className="flex">
-          <div className="left w-[45%] border">left</div>
+          <div className="left w-[45%] flex justify-center items-center">
+            <div className="p-4 bg-black text-white flex flex-col gap-y-4 shadow-lg  shadow-white">
+              <h2 className="w-[90%] text-4xl font-medium">
+                Are you planning for growth?
+              </h2>
+              <p className="text-themeOrange">We bring you the right leads.</p>
+              <div className="capitalize flex gap-x-3 border-t pt-6 mb-8">
+                <span>contact us @</span>
+                <span className="text-themeOrange">+91 85113 93399</span>
+              </div>
+            </div>
+          </div>
 
           <div className="right w-[55%] border bg-white shadow-lg p-6 flex flex-col gap-y-6">
             <div className="up">
@@ -324,6 +408,43 @@ export default function Home() {
                     autoComplete="off"
                   />
                 </div>
+
+                <div className="flex gap-x-8">
+                  <input
+                    type="text"
+                    name="mobile"
+                    id="mobile"
+                    placeholder="mobile no"
+                    className="border-b-2 border-gray-500 px-3 py-2 focus:outline-none focus:border-themeOrange capitalize w-1/2"
+                    autoComplete="off"
+                  />
+
+                  <input
+                    type="email"
+                    name="text"
+                    id="text"
+                    placeholder="website URL"
+                    className="border-b-2 border-gray-500 px-3 py-2 focus:outline-none focus:border-themeOrange capitalize w-1/2"
+                    autoComplete="off"
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  id="message"
+                  cols={10}
+                  rows={5}
+                  className="border-b-2 border-gray-500 px-3 py-2 focus:outline-none focus:border-themeOrange capitalize w-full text-gray-500"
+                >
+                  your message
+                </textarea>
+
+                <button
+                  type="submit"
+                  className="capitalize bg-themeOrange text-white px-4 py-2 w-[20%] hover:bg-white hover:text-black hover:border-themeOrange hover:border mb-4"
+                >
+                  submit
+                </button>
               </form>
             </div>
           </div>
