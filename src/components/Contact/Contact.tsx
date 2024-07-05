@@ -75,7 +75,7 @@ function Contact() {
                   className="border-b-2 border-gray-500 px-3 py-2 focus:outline-none focus:border-themeOrange capitalize w-1/2"
                   autoComplete="off"
                 />
-              </div>''
+              </div>
 
               <textarea
                 name="message"
