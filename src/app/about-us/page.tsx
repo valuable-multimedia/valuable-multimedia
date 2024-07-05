@@ -179,7 +179,7 @@ function AboutUsPage() {
                         <CountUp
                           start={inView ? 0 : 0} // Start counting only when in view
                           end={item.number}
-                          duration={7}
+                          duration={4}
                           className="font-medium text-themeOrange text-7xl"
                         />
                         {item.sign}

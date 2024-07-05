@@ -4,6 +4,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import data from "@/data/nav_links_data.json";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoIosCall } from "react-icons/io";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io5";
 
 function Footer() {
   const { navLinks, mainNavLinks } = data;
@@ -25,8 +30,9 @@ function Footer() {
             </Link>
 
             <p>
-              Wolfable is a digital marketing agency that combines innovative
-              creativity with data-driven performance to help brands standout.
+              Valuable Multimedia is a digital marketing agency that combines
+              innovative creativity with data-driven performance to help brands
+              standout.
             </p>
           </div>
         </div>
@@ -62,7 +68,7 @@ function Footer() {
           </div>
 
           <div className="down">
-            <ul className="flex flex-col gap-y-2">
+            <ul className="flex flex-col gap-y-2 capitalize">
               {mainNavLinks.map((item, index) => (
                 <li key={`nav-main-item-${index + 1}`}>
                   <Link
@@ -77,11 +83,58 @@ function Footer() {
           </div>
         </div>
 
-        <div className="right w-[35%] border flex flex-col gap-y-4">
+        <div className="right w-[35%] flex flex-col gap-y-4">
           <div className="up">
             <h2 className="capitalize text-2xl font-medium border-b border-white pb-4">
               contact us
             </h2>
+          </div>
+
+          <div className="down flex flex-col gap-y-6">
+            <div className="address flex gap-x-4">
+              <span className="text-xl">
+                <FaLocationDot />
+              </span>
+              <div className="">
+                408,Nalanda Enclave,Opp-Sudama
+                Resort,Pritamnagar,Paldi,Ahmedabad,Gujarat,India
+              </div>
+            </div>
+
+            <div className="address flex gap-x-4">
+              <span className="text-xl">
+                <IoIosCall />
+              </span>
+              <div className="">+91 90168 50552</div>
+            </div>
+
+            <div className="address flex flex-col gap-x-4">
+              <span className="text-xl capitalize border-b-[2px] pb-4">
+                social media links
+              </span>
+              <div className="mt-4 text-3xl flex gap-x-4">
+                <Link
+                  href={"https://www.instagram.com/valuablemultimedia"}
+                  className="hover:text-themeOrange transition-all"
+                >
+                  <FaInstagram />
+                </Link>
+
+                <Link
+                  href={"https://www.facebook.com/valuablemultimedia"}
+                  className="hover:text-themeOrange transition-all"
+                >
+                  <FaFacebook />
+                </Link>
+
+                <Link
+                  href={"https://www.facebook.com/valuablemultimedia"}
+                  className="hover:text-themeOrange transition-all"
+                >
+                  <IoLogoLinkedin />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

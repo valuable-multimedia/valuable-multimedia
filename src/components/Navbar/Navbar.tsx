@@ -83,13 +83,13 @@ function Navbar() {
                         className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
                         href={"/services/facebook-ads"}
                       >
-                       Facebook Ads
+                        Facebook Ads
                       </Link>
                       <Link
                         className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
                         href={"/services/instagram-ads"}
                       >
-                       Instagram Ads
+                        Instagram Ads
                       </Link>
                       <Link
                         className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
@@ -127,17 +127,17 @@ function Navbar() {
               </li>
 
               <Link
-                href={"/contact-us"}
-                className="capitalize hover:text-themeOrange font-medium"
-              >
-                <li>contact us</li>
-              </Link>
-
-              <Link
                 href={"/blogs"}
                 className="capitalize hover:text-themeOrange font-medium"
               >
                 <li>blogs</li>
+              </Link>
+
+              <Link
+                href={"/contact-us"}
+                className="capitalize hover:text-themeOrange font-medium"
+              >
+                <li>contact us</li>
               </Link>
             </ul>
           </div>

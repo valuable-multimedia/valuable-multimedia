@@ -75,7 +75,7 @@ function Contact() {
                   className="border-b-2 border-gray-500 px-3 py-2 focus:outline-none focus:border-themeOrange capitalize w-1/2"
                   autoComplete="off"
                 />
-              </div>
+              </div>''
 
               <textarea
                 name="message"
@@ -89,7 +89,7 @@ function Contact() {
 
               <button
                 type="submit"
-                className="capitalize bg-themeOrange text-white px-4 py-2 w-[20%] hover:bg-white hover:text-black hover:border-themeOrange hover:border mb-4"
+                className="capitalize bg-themeOrange text-white px-4 py-2 w-[20%] hover:bg-white hover:text-black hover:border-themeOrange border border-themeOrange hover:border mb-4"
               >
                 submit
               </button>
