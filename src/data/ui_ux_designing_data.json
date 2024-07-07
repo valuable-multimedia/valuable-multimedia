@@ -34,20 +34,24 @@
   ],
   "information": [
     {
-      "title": "Local Market Insights",
+      "title": "Local Market",
+      "title2": "Insights",
       "content": "Drafting custom strategies backed by detailed market research and valuable insights allows your business to connect with local customers on a personal level. This also helps us provide you with a much-needed edge in this competitive business environment."
     },
 
     {
-      "title": "Enhanced Brand Image",
+      "title": "Enhanced Brand ",
+      "title2": "Image",
       "content": "Designing interfaces that reflect your brand identity at every point. We ensure that the communication/content is as effective as the designs, allowing customers to pursue the brand positively and leaving an impactful impression."
     },
     {
-      "title": "Increased Conversions",
+      "title": "Increased ",
+      "title2": "Conversions",
       "content": "We create interfaces only after analyzing the UX research outcome and implementing tailored (but best suitable) SEO and design strategies to enhance online presence and brand identity, ultimately increasing customer base and conversions."
     },
     {
-      "title": "Improved User Engagement",
+      "title": "Improved User ",
+      "title2": "Engagement",
       "content": "As a leading UI UX design agency, we create intuitive interfaces that are user-friendly and easy to navigate. Our primary concern while designing and developing is to keep user experience at the center, helping us deliver projects that engage and satisfy users."
     }
   ],

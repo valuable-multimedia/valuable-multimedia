@@ -144,7 +144,7 @@ function UIUXDesigningPage() {
               key={`information no ${index + 1}`}
             >
               <h3 className="text-3xl capitalize">
-                {item.title} <br /> {item.title2}{" "}
+                {item.title} <br /> {item?.title2 || ""}{" "}
               </h3>
               <p className="text-justify">{item.content}</p>
             </div>
