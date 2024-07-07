@@ -117,9 +117,9 @@ function Navbar() {
                       </Link>
                       <Link
                         className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
-                        href={"/services/digital-strategy"}
+                        href={"/services/seo"}
                       >
-                        digital strategy
+                        SEO
                       </Link>
                     </div>
                   </div>

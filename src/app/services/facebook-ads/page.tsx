@@ -8,7 +8,7 @@ import { FaStarOfLife } from "react-icons/fa6";
 import data from "@/data/social_media_marketing_data.json";
 import Contact from "@/components/Contact/Contact";
 
-function SocialMediaMarketingPage() {
+function FacebookAdsPage() {
   const { keywords, information, faqs } = data;
 
   return (
@@ -23,7 +23,7 @@ function SocialMediaMarketingPage() {
         <span>
           <PiGreaterThan />
         </span>
-        <span>social media marketing</span>
+        <span>facebook ads</span>
       </div>
 
       {/* hero section  */}
@@ -229,4 +229,4 @@ function SocialMediaMarketingPage() {
   );
 }
 
-export default SocialMediaMarketingPage;
+export default FacebookAdsPage;
