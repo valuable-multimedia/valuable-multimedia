@@ -9,6 +9,7 @@ import { IoIosCall } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
+import { FaTwitter } from "react-icons/fa";
 
 function Footer() {
   const { navLinks, mainNavLinks } = data;
@@ -101,11 +102,13 @@ function Footer() {
               </div>
             </div>
 
-            <div className="address flex gap-x-4">
-              <span className="text-xl">
-                <IoIosCall />
-              </span>
-              <div className="">+91 90168 50552</div>
+            <div className="address">
+              <Link href={"tel:+91016850552"} className="flex gap-x-4">
+                <span className="text-xl">
+                  <IoIosCall />
+                </span>
+                <div className="">+91 90168 50552</div>
+              </Link>
             </div>
 
             <div className="address flex flex-col gap-x-4">
@@ -128,10 +131,17 @@ function Footer() {
                 </Link>
 
                 <Link
-                  href={"https://www.facebook.com/valuablemultimedia"}
+                  href={"https://www.linkedin.com/company/valuablemultimedia"}
                   className="hover:text-themeOrange transition-all"
                 >
                   <IoLogoLinkedin />
+                </Link>
+
+                <Link
+                  href={"https://x.com/valuablemulti"}
+                  className="hover:text-themeOrange transition-all"
+                >
+                  <FaTwitter />
                 </Link>
               </div>
             </div>

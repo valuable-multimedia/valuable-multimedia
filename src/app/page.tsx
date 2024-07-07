@@ -180,7 +180,7 @@ export default function Home() {
               of searches when someone looks for the &quot;top SEO company in
               Ahmedabad&quot;. Having said that, we thrive to give the same
               taste of success to our clientele. If heights give you an
-              adrenaline rush then AONE SEO is the place for you.
+              adrenaline rush then VALUABLE MULTIMEDIA is the place for you.
             </p>
           </div>
 

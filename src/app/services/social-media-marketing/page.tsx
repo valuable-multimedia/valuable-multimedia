@@ -100,7 +100,7 @@ function SocialMediaMarketingPage() {
               Facebook have algorithms to support every type of campaign. It
               facilitates brands to increase their brand awareness, generates
               traffic to their landing pages, expands their social media
-              community, retargets their audience, and much more. At AONE, we
+              community, retargets their audience, and much more. At VALUABLE MULTIMEDIA, we
               create strategic, instigating, and high-performing campaigns under
               the experienced surveillance of paid ads specialists.
             </p>

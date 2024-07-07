@@ -8,6 +8,7 @@ import { IoIosCall } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
+import { FaTwitter } from "react-icons/fa";
 
 function ContactUsPage() {
   return (
@@ -40,7 +41,7 @@ function ContactUsPage() {
               <p className="text-gray-400 pr-28">
                 Give us a call at{" "}
                 <span className="text-themeOrange">
-                  <Link href={"tel:+919016850552"}>+91 85113 93399</Link>
+                  <Link href={"tel:+919016850552"}>+91 90168 50552</Link>
                 </span>{" "}
                 or send us an email at
                 <span className="mx-1 text-themeOrange">
@@ -132,11 +133,16 @@ function ContactUsPage() {
               </div>
             </div>
 
-            <div className="flex items-center gap-x-4">
-              <span className="text-xl text-themeOrange">
-                <IoIosCall />
-              </span>
-              <div className="text-[18px]">+91 90168 50552</div>
+            <div className="">
+              <Link
+                href={"tel:+919016850552"}
+                className="flex items-center gap-x-4"
+              >
+                <span className="text-xl text-themeOrange">
+                  <IoIosCall />
+                </span>
+                <div className="text-[18px]">+91 90168 50552</div>
+              </Link>
             </div>
           </div>
 
@@ -167,7 +173,7 @@ function ContactUsPage() {
                   href={"https://www.facebook.com/valuablemultimedia"}
                   className="capitalize"
                 >
-                  valuable multimedia
+                  @ valuable multimedia
                 </Link>
               </div>
             </div>
@@ -181,7 +187,21 @@ function ContactUsPage() {
                   href={"https://www.facebook.com/valuablemultimedia"}
                   className="capitalize"
                 >
-                  valuable multimedia
+                  @ valuable multimedia
+                </Link>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-x-4">
+              <span className="text-xl text-themeOrange">
+                <FaTwitter />
+              </span>
+              <div className="text-[18px]">
+                <Link
+                  href={"https://www.facebook.com/valuablemultimedia"}
+                  className="capitalize"
+                >
+                  @ valuablemulti
                 </Link>
               </div>
             </div>

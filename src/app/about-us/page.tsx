@@ -92,7 +92,7 @@ function AboutUsPage() {
               Development.
             </p>
             <p>
-              Individual departments at AONE endure the best talents to produce
+              Individual departments at VALUABLE MULTIMEDIA endure the best talents to produce
               well-thought and qualitative work.
             </p>
             <p>
@@ -110,7 +110,7 @@ function AboutUsPage() {
           <h2 className="text-4xl font-medium">meet our team</h2>
         </div>
 
-        <div className="down flex flex-wrap justify-between gap-y-8">
+        <div className="down flex flex-wrap justify-center gap-x-10 gap-y-8">
           {team.map((item, index) => (
             <div className="w-[30%]" key={`team member ${index + 1}`}>
               <Image

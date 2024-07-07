@@ -6,8 +6,13 @@
       "slug": "/services/google-ads"
     },
     {
-      "name": "meta ads",
-      "name2": "facebook ads",
+      "name": "Instagram",
+      "name2": "ads",
+      "slug": "/services/instagram-ads"
+    },
+    {
+      "name": "Facebook",
+      "name2": "ads",
       "slug": "/services/facebook-ads"
     },
     {
@@ -26,9 +31,9 @@
       "slug": "/services/website-development"
     },
     {
-      "name": "digital",
-      "name2": "strategy",
-      "slug": "/services/digital-strategy"
+      "name": "seacrh engine",
+      "name2": "optimization",
+      "slug": "/services/seo"
     }
   ],
   "toolsOne": [
