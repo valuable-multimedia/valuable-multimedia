@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaStarOfLife } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
-import data from "@/data/web_development_data.json";
+import data from "@/data/social_media_marketing_data.json";
 import Contact from "@/components/Contact/Contact";
 
 function SocialMediaMarketingPage() {
