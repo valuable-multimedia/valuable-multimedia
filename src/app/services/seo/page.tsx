@@ -7,10 +7,9 @@ import Image from "next/image";
 import { FaStarOfLife } from "react-icons/fa6";
 import data from "@/data/seo_data.json";
 import Contact from "@/components/Contact/Contact";
-import Testimonials from "@/components/Testimonials/Testimonials";
 
 function SEOPage() {
-  const { keywords, information, faqs } = data;
+  const { keywords, information, faqs, content } = data;
 
   return (
     <div className="bg-[#fcfcfc] text-black">
@@ -43,13 +42,15 @@ function SEOPage() {
 
             <div className="text-lg">
               <p className="pr-20">
-                At VALUABLE MULTIMEDIA Service, your paid campaigns are
-                carefully managed and monitored by PPC experts with years of
-                experience. PPC does not work in isolation. Hence, as a holistic
-                PPC company in India, we integrate diverse brilliant minds of
-                writers, data scientists, designers, and digital marketing
-                strategists who work in synergy to bring the best results. Our
-                team makes sure you get the maximum return on your ad spends.
+                Google registers 63000 searches/second. Now, count how many in
+                24 hours? <br /> The consumers you want are already out there
+                finding solutions to their problems in those plethoras of
+                searches. At VALUABLE MULTIMEDIA Service, we put you where your
+                prospects are so that you can enjoy higher rankings, large
+                volumes of traffic and better ROls. We are the dedicated,
+                professional, and proficient best SEO agency in India, located
+                in the heritage city Ahmedabad. We take pride in being the #1
+                and thrive to deliver the same results for you.
               </p>
             </div>
 
@@ -88,25 +89,33 @@ function SEOPage() {
         ))}
       </div>
 
-      {/* process section  */}
-      <div className="process-section px-[10rem] py-20 flex flex-col gap-y-16">
-        <div className="heading">
-          <h1 className="text-5xl font-medium capitalize">
-            <span>how we do </span>
-            <span className="text-themeOrange"> PPC</span>?
+      {/* services section  */}
+      <div className="services-section px-[10rem] py-16 flex flex-col gap-y-10">
+        <div className="heading flex flex-col gap-y-6">
+          <h1 className="text-4xl font-medium capitalize flex gap-x-3">
+            <span>our</span>
+            <span className="text-themeOrange">SEO</span>
+            <span>services</span>
           </h1>
+
+          <p>
+            Since our establishment, we have maintained a foremost position on
+            the first page of Google. Valuable Multimedia Service - top SEO company in
+            India is wholeheartedly committed to SEO and so we provide
+            unconventional best SEO services in India. With the right tools and
+            intelligent heads in our squad, we cultivate unique strategies for
+            the assured and sustainable business growth of our clientele.
+          </p>
         </div>
 
-        <div className="down flex flex-wrap justify-center gap-x-14 gap-y-8">
-          {information.map((item, index) => (
+        <div className="down flex justify-center flex-wrap gap-x-10 gap-y-6">
+          {content.map((item, index) => (
             <div
-              className="info-box w-[30%] flex flex-col gap-y-5"
-              key={`information no ${index + 1}`}
+              className="content-box w-[30%] flex flex-col gap-y-4 bg-[#ececec] px-4 py-6 rounded-lg"
+              key={`content box ${index + 1}`}
             >
-              <h3 className="text-3xl capitalize">
-                {item.title} <br /> {item.title2}{" "}
-              </h3>
-              <p className="text-justify">{item.content}</p>
+              <h3 className="text-xl capitalize font-medium">{item.title}</h3>
+              <p className="text-gray-500 text-lg">{item.content}</p>
             </div>
           ))}
         </div>
@@ -127,38 +136,67 @@ function SEOPage() {
         </div>
       </div>
 
+      {/* process section  */}
+      <div className="process-section px-[10rem] py-20 flex flex-col gap-y-16">
+        <div className="heading">
+          <h1 className="text-5xl font-medium">
+            <span>How do we do</span>
+            <span className="text-themeOrange"> SEO</span>?
+          </h1>
+        </div>
+
+        <div className="down flex flex-wrap justify-center gap-x-14 gap-y-8">
+          {information.map((item, index) => (
+            <div
+              className="info-box w-[30%] flex flex-col gap-y-5"
+              key={`information no ${index + 1}`}
+            >
+              <h3 className="text-3xl capitalize">
+                {item.title} <br /> {item.title2}{" "}
+              </h3>
+              <p className="text-justify">{item.content}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* why section  */}
       <div className="keypoints-section bg-[#fff] px-[10rem] py-16">
         <div className="border-l-4 border-themeOrange border-r-4 bg-[#ececec] p-6 flex flex-col gap-y-6">
           <h1 className="text-4xl capitalize leading-[3.3rem] font-medium">
-            why PPC ?
+            why SEO ?
           </h1>
 
           <div className="flex flex-col gap-y-4">
-            <p>Achieving results faster is only possible with PPC.</p>
             <p>
-              Organic methods such as SEO give sustainable growth after
-              consistent efforts over a span of time. But when the purpose is
-              brand awareness, new product launch, boost sales, etc.
-            </p>
-            <p>PPC can help you reach your end goal faster than organic.</p>
-            <p>
-              With PPC, you get the facility to reach your intended audience at
-              the predefined time, location, device, and more. PPC allows you to
-              target your audience based on their geo-location, interest,
-              behaviors, and other demographics. You can even retarget your
-              website visitors with the help of PPC campaigns.
+              Often asked by many, &quot;Will SEO benefit my business?&quot;
+              Yes! Let us tell you how?
             </p>
             <p>
-              As a trusted top PPC management company in India, we conduct
-              comprehensive PPC practices in a sequential manner.
+              When a person puts a query in Google, the smart engine looks for
+              websites in its index to give the searcher the best results first.
+              Hence, the rankings.
+            </p>
+            <p>
+              For indexing websites, search engines like Google have advanced
+              programs called bots or web crawlers that literally crawl the web
+              in search of good websites.
+            </p>
+            <p>
+              To get your website indexed, there are various parameters that are
+              addressed with technical SEO. These are merits that help you
+              secure leading positions in Search Engine Result Pages (SERPs).
+            </p>
+            <p>Why all these hassles?</p>
+            <p>
+              61% of the average web traffic is sliced by the top 3 websites in
+              SERPs. If you are one of them, imagine the swarm of organic
+              traffic your websites can receive. More traffic means more
+              business opportunities!
             </p>
           </div>
         </div>
       </div>
-
-      {/* testimonials section */}
-      <Testimonials />
 
       {/* faqs section  */}
       <div className="faqs-section px-[10rem] py-10">
