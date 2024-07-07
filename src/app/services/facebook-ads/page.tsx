@@ -5,8 +5,9 @@ import { PiGreaterThan } from "react-icons/pi";
 import Link from "next/link";
 import Image from "next/image";
 import { FaStarOfLife } from "react-icons/fa6";
-import data from "@/data/social_media_marketing_data.json";
+import data from "@/data/facebook_ads_data.json";
 import Contact from "@/components/Contact/Contact";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 function FacebookAdsPage() {
   const { keywords, information, faqs } = data;
@@ -32,7 +33,7 @@ function FacebookAdsPage() {
           <div className="left w-[70%] flex flex-col gap-y-8">
             <div className="flex flex-col gap-y-2">
               <h1 className="text-5xl capitalize w-[80%] leading-[3.5rem] font-medium">
-                Social Media <br /> Marketing Services
+                facebook ads <br /> services
               </h1>
               <h3 className="text-themeOrange font-bold text-lg">
                 Adapt & innovate because what worked yesterday may work again.
@@ -41,13 +42,13 @@ function FacebookAdsPage() {
 
             <div className="text-lg">
               <p className="pr-20">
-                Brands can captivate audiences in the most creative manner and
-                tell stories about themselves that people reminisce about. As
-                social networking sites are constantly upgrading to make
-                themselves more and more lucrative, we as the best social media
-                marketing company in India, derive new ways, avenues, and
-                strategies to exploit the power of social media marketing for
-                our diverse clientele.
+                Unlock the potential of Facebook Ads to reach your target
+                audience with precision and creativity. As one of the leading
+                Facebook Ads specialists in India, we craft compelling campaigns
+                that resonate with users, drive engagement, and boost
+                conversions. Our innovative strategies and data-driven approach
+                ensure your brand stands out in the crowded social media
+                landscape, delivering measurable results and maximizing your ROI
               </p>
             </div>
 
@@ -61,7 +62,7 @@ function FacebookAdsPage() {
           <div className="right flex justify-center items-center w-[30%]">
             <Image
               src={
-                "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720280997/website-development/akkg875docq7tfvgpap6.webp"
+                "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720342221/website-development/tm7p5wuvh4kzfp58loig.webp"
               }
               alt="hero-section-image"
               height={500}
@@ -86,36 +87,26 @@ function FacebookAdsPage() {
         ))}
       </div>
 
-      {/* services section  */}
-      <div className="services-section px-[10rem] mb-5 py-16 flex flex-col gap-y-10">
-        <div className="flex">
-          <div className="left w-[60%] flex flex-col gap-y-6">
-            <h1 className="text-5xl font-medium capitalize">
-              paid for reach and attainment of goals
-            </h1>
-            <p className="pr-20">
-              Social media feeds are busier than ever. To stand out, paid ads
-              are inevitable. There is humongous scope in the social media
-              pay-to-play game. Whatever is your objective, social giants like
-              Facebook have algorithms to support every type of campaign. It
-              facilitates brands to increase their brand awareness, generates
-              traffic to their landing pages, expands their social media
-              community, retargets their audience, and much more. At AONE, we
-              create strategic, instigating, and high-performing campaigns under
-              the experienced surveillance of paid ads specialists.
-            </p>
-          </div>
+      {/* process section  */}
+      <div className="process-section px-[10rem] py-20 flex flex-col gap-y-16">
+        <div className="heading flex">
+          <h1 className="text-5xl font-medium capitalize">
+            Strategic campaign management
+          </h1>
+        </div>
 
-          <div className="right w-[40%]">
-            <Image
-              src={
-                "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720287045/website-development/qccgnxs8vkw3nc5fbk7f.webp"
-              }
-              alt="social-media-icons"
-              height={300}
-              width={500}
-            />
-          </div>
+        <div className="down flex flex-wrap justify-center gap-x-14 gap-y-8">
+          {information.map((item, index) => (
+            <div
+              className="info-box w-[30%] flex flex-col gap-y-5"
+              key={`information no ${index + 1}`}
+            >
+              <h3 className="text-3xl capitalize">
+                {item.title} <br /> {item.title2}{" "}
+              </h3>
+              <p className="text-justify">{item.content}</p>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -134,47 +125,38 @@ function FacebookAdsPage() {
         </div>
       </div>
 
-      {/* process section  */}
-      <div className="process-section px-[10rem] py-20 flex flex-col gap-y-16">
-        <div className="heading flex">
-          <div className="left w-[20%]">
-            <Image
-              src={
-                "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720287482/website-development/yr07s9nnqdquka36ppmb.webp"
-              }
-              alt="social-img"
-              height={100}
-              width={210}
-            />
-          </div>
+      {/* why section  */}
+      <div className="keypoints-section bg-[#fff] px-[10rem] py-16">
+        <div className="border-l-4 border-themeOrange border-r-4 bg-[#ececec] p-6 flex flex-col gap-y-6">
+          <h1 className="text-4xl capitalize leading-[3.3rem] font-medium">
+            why facebook ads ?
+          </h1>
 
-          <div className="right w-[80%] flex flex-col gap-y-3">
-            <h3 className="text-lg">Our Social Media Marketing Services</h3>
-            <h1 className="text-4xl font-medium">
-              <span>At Valuable Multimedia, </span>
-              <span className="text-themeOrange"> social media marketing</span>
-              <span> is our forte, and marketing is our passion.</span>
-            </h1>
-          </div>
-        </div>
+          <div className="flex flex-col gap-y-4">
+            <p>
+              Choosing Facebook Ads allows you to tap into a vast and engaged
+              audience on the world's largest social media platform. With
+              advanced targeting options, you can reach specific demographics,
+              interests, and behaviors, ensuring your ads are seen by the most
+              relevant users.
+            </p>
 
-        <div className="down flex flex-wrap justify-center gap-x-14 gap-y-8">
-          {information.map((item, index) => (
-            <div
-              className="info-box w-[30%] flex flex-col gap-y-5"
-              key={`information no ${index + 1}`}
-            >
-              <h3 className="text-3xl capitalize">
-                {item.title} <br /> {item.title2}{" "}
-              </h3>
-              <p className="text-justify">{item.content}</p>
-            </div>
-          ))}
+            <p>
+              Facebook Ads offer robust analytics and insights, enabling you to
+              track performance and optimize campaigns for better results.
+              Additionally, the cost-effective nature of Facebook Ads allows
+              businesses of all sizes to achieve a high ROI, making it an
+              essential tool for any digital marketing strategy
+            </p>
+          </div>
         </div>
       </div>
 
+      {/* testimonials section  */}
+      <Testimonials />
+
       {/* faqs section  */}
-      <div className="faqs-section px-[10rem] py-16">
+      <div className="faqs-section px-[10rem] py-10">
         <div className="faqs">
           <div className="lg:px-5 lg:w-[80%] mx-auto">
             <div className="mx-auto mt-8 grid gap-y-4">
