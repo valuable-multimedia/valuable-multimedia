@@ -91,7 +91,7 @@ function UIUXDesigningPage() {
 
           <p>
             At Valuable Multimedia Service, we take pride in designing
-            interfaces that are in line with the user's preferences, behaviors,
+            interfaces that are in line with the user&apos;s preferences, behaviors,
             and needs. At the core of the designing approach are the end
             customers of a business; understanding who is extremely crucial to
             delivering a user-friendly interface that is visually captivating
