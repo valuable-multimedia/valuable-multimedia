@@ -135,7 +135,7 @@ function FacebookAdsPage() {
           <div className="flex flex-col gap-y-4">
             <p>
               Choosing Facebook Ads allows you to tap into a vast and engaged
-              audience on the world's largest social media platform. With
+              audience on the world&apos;s largest social media platform. With
               advanced targeting options, you can reach specific demographics,
               interests, and behaviors, ensuring your ads are seen by the most
               relevant users.
