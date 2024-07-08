@@ -178,7 +178,7 @@ function ContactUsPage() {
                   href={"https://www.facebook.com/valuablemultimedia"}
                   className="capitalize"
                 >
-                  @ valuable multimedia
+                  @ valuableMultimedia
                 </Link>
               </div>
             </div>
@@ -192,7 +192,7 @@ function ContactUsPage() {
                   href={"https://www.linkedin.com/company/valuablemultimedia"}
                   className="capitalize"
                 >
-                  @ valuable multimedia
+                  @ valuableMultimedia
                 </Link>
               </div>
             </div>
