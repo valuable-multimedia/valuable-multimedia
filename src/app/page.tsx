@@ -251,17 +251,17 @@ export default function Home() {
       <Testimonials />
 
       {/* blogs section  */}
-      <div className="blogs-section-home px-[10rem] py-16 flex flex-col gap-y-10">
+      <div className="blogs-section-home px-[10rem] pt-16 pb-10 flex flex-col gap-y-10">
         <div className="up">
           <h2 className="capitalize text-3xl">recent blogs</h2>
         </div>
 
-        <div className="down flex justify-between w-full">
+        <div className="down flex flex-wrap justify-between w-full">
           {blogs.map((item, index) => (
             <Link
               href={item.slug}
               key={`blogs ${index + 1}`}
-              className="w-[30%]"
+              className="w-[30%] bg-white shadow-lg rounded-lg"
             >
               <div className="blog-card flex flex-col gap-y-6 w-full">
                 <div className="up">
@@ -272,13 +272,15 @@ export default function Home() {
                     width={400}
                   />
                 </div>
-                <div className="down flex flex-col gap-y-3">
+                <div className="down flex flex-col gap-y-3 px-4 py-2">
                   <div className="date text-sm capitalize">{item.date}</div>
-                  <div className="text-xl font-semibold">{item.title}</div>
+                  <div className="text-xl font-semibold text-gray-500">{item.title}</div>
                 </div>
               </div>
             </Link>
           ))}
+
+          
         </div>
       </div>
 
