@@ -32,7 +32,7 @@ function SEOPage() {
           <div className="left w-[70%] flex flex-col gap-y-8">
             <div className="flex flex-col gap-y-2">
               <h1 className="text-5xl capitalize w-[80%] leading-[3.5rem] font-medium">
-                search engine <br /> optimization services
+                search engine <br /> optimization (SEO) services
               </h1>
               <h3 className="text-themeOrange font-bold text-lg">
                 Improve ranking, increase site-traffic, gain customers, and

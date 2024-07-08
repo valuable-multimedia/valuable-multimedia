@@ -107,7 +107,7 @@ function AboutUsPage() {
       {/* teams section  */}
       <div className="teams-section-about px-[12rem] py-16 flex flex-col gap-y-10">
         <div className="up">
-          <h2 className="text-4xl font-medium">meet our team</h2>
+          <h2 className="text-4xl font-medium capitalize">meet our team</h2>
         </div>
 
         <div className="down flex flex-wrap justify-center gap-x-10 gap-y-8">

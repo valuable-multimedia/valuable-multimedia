@@ -105,6 +105,12 @@ function Navbar() {
                       </Link>
                       <Link
                         className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
+                        href={"/services/seo"}
+                      >
+                       search engine optimization (SEO)
+                      </Link>
+                      <Link
+                        className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
                         href={"/services/ui-ux-designing"}
                       >
                         UI &amp; UX designing
@@ -114,12 +120,6 @@ function Navbar() {
                         href={"/services/website-development"}
                       >
                         website development
-                      </Link>
-                      <Link
-                        className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
-                        href={"/services/seo"}
-                      >
-                        SEO
                       </Link>
                     </div>
                   </div>

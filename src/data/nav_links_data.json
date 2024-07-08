@@ -17,16 +17,16 @@
       "slug": "/services/social-media-marketing"
     },
     {
+      "title": "search engine optimization",
+      "slug": "/services/seo"
+    },
+    {
       "title": "UI & UX Designing",
       "slug": "/services/ui-ux-designing"
     },
     {
       "title": "Website Development",
       "slug": "/services/website-development"
-    },
-    {
-      "title": "SEO",
-      "slug": "/services/seo"
     }
   ],
   "mainNavLinks": [

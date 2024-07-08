@@ -8,7 +8,7 @@ import { IoIosCall } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function ContactUsPage() {
   return (
@@ -123,14 +123,19 @@ function ContactUsPage() {
             <h1 className="text-2xl font-medium text-themeOrange">
               Gujarat, India (HQ)
             </h1>
-            <div className="flex gap-x-4">
-              <span className="text-xl text-themeOrange">
-                <FaLocationDot />
-              </span>
-              <div className="text-[18px]">
-                408,Nalanda Enclave,Opp-Sudama
-                Resort,Pritamnagar,Paldi,Ahmedabad,Gujarat,India
-              </div>
+            <div className="">
+              <Link
+                href={"https://maps.app.goo.gl/cf7LSsm86BxyJ3t67"}
+                className="flex gap-x-4"
+              >
+                <span className="text-xl text-themeOrange">
+                  <FaLocationDot />
+                </span>
+                <div className="text-[18px]">
+                  408,Nalanda Enclave,Opp-Sudama
+                  Resort,Pritamnagar,Paldi,Ahmedabad,Gujarat,India
+                </div>
+              </Link>
             </div>
 
             <div className="">
@@ -184,7 +189,7 @@ function ContactUsPage() {
               </span>
               <div className="text-[18px]">
                 <Link
-                  href={"https://www.facebook.com/valuablemultimedia"}
+                  href={"https://www.linkedin.com/company/valuablemultimedia"}
                   className="capitalize"
                 >
                   @ valuable multimedia
@@ -194,11 +199,11 @@ function ContactUsPage() {
 
             <div className="flex items-center gap-x-4">
               <span className="text-xl text-themeOrange">
-                <FaTwitter />
+                <FaXTwitter />
               </span>
               <div className="text-[18px]">
                 <Link
-                  href={"https://www.facebook.com/valuablemultimedia"}
+                  href={"https://x.com/valuablemulti"}
                   className="capitalize"
                 >
                   @ valuablemulti

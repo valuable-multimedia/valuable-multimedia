@@ -9,7 +9,7 @@ import { IoIosCall } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   const { navLinks, mainNavLinks } = data;
@@ -97,13 +97,15 @@ function Footer() {
                 <FaLocationDot />
               </span>
               <div className="">
-                408,Nalanda Enclave,Opp-Sudama
-                Resort,Pritamnagar,Paldi,Ahmedabad,Gujarat,India
+                <Link href={"https://maps.app.goo.gl/cf7LSsm86BxyJ3t67"}>
+                  408,Nalanda Enclave,Opp-Sudama
+                  Resort,Pritamnagar,Paldi,Ahmedabad,Gujarat,India
+                </Link>
               </div>
             </div>
 
             <div className="address">
-              <Link href={"tel:+91016850552"} className="flex gap-x-4">
+              <Link href={"tel:+919016850552"} className="flex gap-x-4">
                 <span className="text-xl">
                   <IoIosCall />
                 </span>
@@ -141,7 +143,7 @@ function Footer() {
                   href={"https://x.com/valuablemulti"}
                   className="hover:text-themeOrange transition-all"
                 >
-                  <FaTwitter />
+                  <FaXTwitter />
                 </Link>
               </div>
             </div>

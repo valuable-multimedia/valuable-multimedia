@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 function Contact() {
   return (
@@ -14,7 +15,9 @@ function Contact() {
             <p className="text-themeOrange">We bring you the right leads.</p>
             <div className="capitalize flex gap-x-3 border-t pt-6 mb-8">
               <span>contact us @</span>
-              <span className="text-themeOrange">+91 85113 93399</span>
+              <Link href={"tel:+919016850552"}>
+              <span className="text-themeOrange">+91 90168 50552</span>
+              </Link>
             </div>
           </div>
         </div>
