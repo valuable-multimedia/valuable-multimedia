@@ -85,15 +85,7 @@ function ContactUsPage() {
                 type="text"
                 name="number"
                 id="number"
-                placeholder="phone number"
-                className="px-3 py-2 focus:outline-none border-b-[2px] focus:border-b-[2px] focus:border-themeOrange w-full capitalize"
-              />
-
-              <input
-                type="text"
-                name="need"
-                id="need"
-                placeholder="looking for"
+                placeholder="mobile number"
                 className="px-3 py-2 focus:outline-none border-b-[2px] focus:border-b-[2px] focus:border-themeOrange w-full capitalize"
               />
 
@@ -178,7 +170,7 @@ function ContactUsPage() {
                   href={"https://www.facebook.com/valuablemultimedia"}
                   className="capitalize"
                 >
-                  @ valuableMultimedia
+                  @ valuablemultimedia
                 </Link>
               </div>
             </div>
@@ -192,7 +184,7 @@ function ContactUsPage() {
                   href={"https://www.linkedin.com/company/valuablemultimedia"}
                   className="capitalize"
                 >
-                  @ valuableMultimedia
+                  @ valuablemultimedia
                 </Link>
               </div>
             </div>

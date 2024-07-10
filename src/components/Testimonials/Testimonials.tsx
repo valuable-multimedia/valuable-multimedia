@@ -51,7 +51,7 @@ function Testimonials() {
 
                 <div className="mt-16 text-center capitalize">
                   <h2 className="text-xl text-themeOrange font-medium">
-                    hirem patel
+                    {testimonial.name}
                   </h2>
                   <div className="text-gray-400 text-xl">
                     {testimonial.client}

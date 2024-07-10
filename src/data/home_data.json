@@ -121,22 +121,27 @@
   "testimonials": [
     {
       "client": "Archies - Gift Article Shop",
+      "name": "Jayesh Shah",
       "feedback": "We partnered with the digital marketing agency to revamp our online presence from scratch. Their efforts have significantly boosted our visibility, making us a trending name on Instagram and garnering numerous positive reviews on Google. We couldn't be happier with the results!"
     },
     {
       "client": "Armonia Home",
+      "name": "Mahendra Bansal",
       "feedback": "As a part of the large Armonia home décor chain, our Ahmedabad branch experienced a remarkable 80% increase in sales within just three months of working with the agency. Their digital marketing strategies have truly transformed our business."
     },
     {
       "client": "Jalaram Keri & Dryfruits",
+      "name": "Prashant Rupareliya",
       "feedback": "Known for our premium mangoes, we primarily relied on offline marketing. However, with the agency's expertise, we ventured into online marketing and saw tremendous growth. We gained new customers and orders from across the globe. Prashantbhai, our owner, is thrilled with the results!"
     },
     {
       "client": "Krishna Clinic",
+      "name": "Dr.Ravi Patel",
       "feedback": "Starting from scratch, the digital marketing agency has helped us significantly increase footfall at our skincare clinic in Vastral. We have seen a remarkable 120% growth in visitors, thanks to their strategic marketing efforts."
     },
     {
       "client": "Trishla Fashion",
+      "name": "Darshana Shah",
       "feedback": "Opening a new clothing shop in Dharnidhar was a challenge, but with the agency's support in Facebook and Google ads, we quickly rose to the top in Google searches. Our business has flourished, and we are grateful for their effective marketing solutions."
     }
   ]

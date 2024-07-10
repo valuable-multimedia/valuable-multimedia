@@ -51,7 +51,7 @@ function Footer() {
                 <li key={`nav-item-${index + 1}`}>
                   <Link
                     href={item.slug}
-                    className="hover:border-b hover:border-white"
+                    className="hover:border-b hover:border-white capitalize"
                   >
                     {item.title}
                   </Link>

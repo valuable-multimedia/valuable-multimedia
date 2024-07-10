@@ -7,16 +7,17 @@ import data from "@/data/home_data.json";
 import informations from "@/data/homeInformation";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import Contact from "@/components/Contact/Contact";
+import homeServices from "@/data/homeServices";
 
 export default function Home() {
-  const { homeServices, toolsOne, toolsTwo, industries, clients, blogs } = data;
+  const { toolsOne, toolsTwo, industries, clients, blogs } = data;
 
   return (
     <main className="flex flex-col bg-[#fcfcfc]">
       {/* hero section  */}
       <div className="flex justify-center items-center hero-section-home px-24 py-16 min-h-[80vh] bg-[#ececec] hero-bg-gradient">
         <div className="left flex flex-col gap-y-16 w-[55%]">
-          <h1 className="flex flex-col gap-y-2">
+          <h1 className="flex flex-col gap-y-2 capitalize">
             <span className="text-2xl text-themeOrange font-medium">
               Driving the next wave of
             </span>
@@ -27,8 +28,8 @@ export default function Home() {
           </h1>
 
           <Link href={"/"} className="mr-auto">
-            <button className="bg-black text-white hover:bg-white hover:border-b hover:border-themeOrange transition-all hover:text-black font-medium px-4 py-3 text-lg">
-              See what We do
+            <button className="bg-black text-white hover:bg-white hover:border-b hover:border-themeOrange transition-all hover:text-black font-medium px-4 py-3 text-lg ">
+              See What We do
             </button>
           </Link>
         </div>
@@ -79,20 +80,23 @@ export default function Home() {
       {/* services section  */}
       <div className="service-section-home px-[10rem] pb-24 py-20 bg-[#ececec] flex flex-col gap-y-8">
         <div className="up">
-          <h1 className="text-themeOrange text-xl font-semibold">
+          <h1 className="text-themeOrange text-xl font-semibold capitalize">
             what we are best at
           </h1>
         </div>
 
-        <div className="lower flex gap-y-10 justify-between border flex-wrap">
+        <div className="lower flex gap-y-10 justify-center gap-x-14 border flex-wrap">
           {homeServices.map((item, index) => (
             <Link
               href={item.slug}
               key={`service-item-[${index}]`}
-              className="link-item capitalize text-3xl font-light w-[30%] leading-[2.7rem] border-b border-themeOrange pb-4 hover:text-themeOrange transition-all ease-in-out"
+              className="link-item capitalize text-3xl font-light w-[30%] leading-[2.7rem] border-b border-themeOrange pb-4 hover:text-themeOrange transition-all ease-in-out flex gap-x-3"
             >
-              <div className="">{item.name}</div>
-              <div className="">{item.name2}</div>
+              <div className="mt-2 text-3xl">{item.icon}</div>
+              <div className="">
+                <div className="">{item.name}</div>
+                <div className="">{item.name2}</div>
+              </div>
             </Link>
           ))}
         </div>
@@ -174,13 +178,12 @@ export default function Home() {
             </div>
 
             <p>
-              Specialization doesn&apos;t happen without passion. We breathe SEO
-              and hence we are known for being the best SEO service in
-              Ahmedabad. We are elated every time we find ourselves on the top
-              of searches when someone looks for the &quot;top SEO company in
-              Ahmedabad&quot;. Having said that, we thrive to give the same
-              taste of success to our clientele. If heights give you an
-              adrenaline rush then VALUABLE MULTIMEDIA is the place for you.
+              At Valuable Multimedia, PPC is more than just a service; it&apos;s
+              our passion. We&apos;re proud to be recognized as the &quot;top
+              PPC company in Ahmedabad&quot; and are dedicated to delivering
+              exceptional results for our clients. We are committed to
+              channeling that same energy and expertise to help our clients
+              achieve their PPC goals.
             </p>
           </div>
 
@@ -274,13 +277,13 @@ export default function Home() {
                 </div>
                 <div className="down flex flex-col gap-y-3 px-4 py-2">
                   <div className="date text-sm capitalize">{item.date}</div>
-                  <div className="text-xl font-semibold text-gray-500">{item.title}</div>
+                  <div className="text-xl font-semibold text-gray-500">
+                    {item.title}
+                  </div>
                 </div>
               </div>
             </Link>
           ))}
-
-          
         </div>
       </div>
 

@@ -76,29 +76,31 @@ function AboutUsPage() {
 
           <div className="right w-[70%] flex flex-col gap-y-5">
             <p>
-              Keeping it simple, we are a full-service digital marketing agency
-              in Ahmedabad specializing in SEO (Search engine optimization).
+              Valuable Multimedia is dedicated to delivering exceptional ROI in
+              digital marketing by optimizing your budget for maximum
+              effectiveness. Our expertise lies in crafting campaigns that not
+              only meet but exceed your business goals while minimizing costs.
+              We strategically leverage platforms like Facebook and Google Ads
+              to ensure your investment yields significant returns.
             </p>
             <p>
-              A specialization is an outcome of years of learning, application,
-              and improvisation. Maturing with age, we earned the title of being
-              the best SEO company in Ahmedabad.
+              With our proven track record, we focus on driving results that
+              matter most to your bottom line. Whether it&apos;s through targeted
+              Facebook Ads that engage your ideal audience or Google Ads
+              campaigns that attract high-quality traffic, we prioritize
+              efficiency and impactful outcomes.
             </p>
             <p>
-              Though we breathe SEO, our services extend to every digital
-              vertical such as Social media, PPC, App Store Optimization SEO,
-              eCommerce SEO, Online reputation management, Content marketing,
-              Creative Branding, UI/UX Design, Web Development and eCommerce
-              Development.
+              At Valuable Multimedia, we understand the importance of money
+              spent, which is why we continuously refine our strategies based on
+              data-driven insights. This approach not only enhances campaign
+              performance but also ensures that your marketing efforts are
+              aligned with your specific objectives.
             </p>
             <p>
-              Individual departments at VALUABLE MULTIMEDIA endure the best talents to produce
-              well-thought and qualitative work.
-            </p>
-            <p>
-              Together, we promote your business objective with our range of
-              services. Tailoring impeccable strategies, we achieve
-              transformational results.
+              Choose Valuable Multimedia for digital marketing solutions that
+              promise superior ROI, empowering your business to thrive and
+              succeed in today's competitive landscape.
             </p>
           </div>
         </div>
@@ -153,7 +155,7 @@ function AboutUsPage() {
       <div className="stats-section-about px-[10rem] pb-16 bg-[#ececec]">
         <div className="flex gap-x-10">
           <div className="left w-[35%] bg-themeOrange text-white px-8 py-10">
-            <h1 className="text-4xl font-medium leading-[3rem]">
+            <h1 className="text-4xl font-medium capitalize leading-[3rem]">
               Experience what we bring to the table
             </h1>
           </div>
@@ -221,7 +223,7 @@ function AboutUsPage() {
 
       {/* contact section  */}
       <div className="py-4">
-      <Contact />
+        <Contact />
       </div>
     </div>
   );

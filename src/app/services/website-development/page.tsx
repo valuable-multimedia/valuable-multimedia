@@ -97,11 +97,10 @@ function WebDevelopmentPage() {
           </h1>
 
           <p>
-            At VALUABLE MULTIMEDIA SEO SERVICE - a reliable website development
-            company in Ahmedabad, we understand the crucial contribution of
-            websites in the digital presence of a business. Thus, we are
-            dedicated to providing comprehensive web solutions tailored to suit
-            business needs.
+            At VALUABLE MULTIMEDIA - a reliable website development company in
+            Ahmedabad, we understand the crucial contribution of websites in the
+            digital presence of a business. Thus, we are dedicated to providing
+            comprehensive web solutions tailored to suit business needs.
           </p>
         </div>
 

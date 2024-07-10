@@ -9,14 +9,16 @@ function Contact() {
       <div className="flex">
         <div className="left w-[45%] flex justify-center items-center">
           <div className="p-4 bg-black text-white flex flex-col gap-y-4 shadow-lg  shadow-white">
-            <h2 className="w-[90%] text-4xl font-medium">
+            <h2 className="w-[90%] text-4xl font-medium capitalize">
               Are you planning for growth?
             </h2>
-            <p className="text-themeOrange">We bring you the right leads.</p>
+            <p className="text-themeOrange capitalize">
+              We bring you the right leads.
+            </p>
             <div className="capitalize flex gap-x-3 border-t pt-6 mb-8">
               <span>contact us @</span>
               <Link href={"tel:+919016850552"}>
-              <span className="text-themeOrange">+91 90168 50552</span>
+                <span className="text-themeOrange">+91 90168 50552</span>
               </Link>
             </div>
           </div>
@@ -66,16 +68,7 @@ function Contact() {
                   name="mobile"
                   id="mobile"
                   placeholder="mobile no"
-                  className="border-b-2 border-gray-500 px-3 py-2 focus:outline-none focus:border-themeOrange capitalize w-1/2"
-                  autoComplete="off"
-                />
-
-                <input
-                  type="email"
-                  name="text"
-                  id="text"
-                  placeholder="website URL"
-                  className="border-b-2 border-gray-500 px-3 py-2 focus:outline-none focus:border-themeOrange capitalize w-1/2"
+                  className="border-b-2 border-gray-500 px-3 py-2 focus:outline-none focus:border-themeOrange capitalize w-full"
                   autoComplete="off"
                 />
               </div>
