@@ -100,7 +100,7 @@ function AboutUsPage() {
             <p>
               Choose Valuable Multimedia for digital marketing solutions that
               promise superior ROI, empowering your business to thrive and
-              succeed in today's competitive landscape.
+              succeed in today&apos;s competitive landscape.
             </p>
           </div>
         </div>
