@@ -47,7 +47,7 @@ function AboutUsPage() {
             we are valuable multimedia
           </h3>
           <h1 className="text-5xl font-medium w-[85%] mx-auto leading-[4rem]">
-            For your gut and For your digital growth,{" "}
+            For your brand and For your digital growth,{" "}
             <span className="text-themeOrange">
               Choose ORGANIC, Choose VALUABLE MULTIMEDIA!{" "}
             </span>

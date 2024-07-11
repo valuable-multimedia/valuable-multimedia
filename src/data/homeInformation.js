@@ -33,7 +33,7 @@ const informations = [
     title: "Work",
     title2: "Transparency",
     description:
-      "At our abode, we endure transparent and honest conduct. Updating clients with verified and clear reports on their progress as well as every dime spent is a part of our reporting practice. The smoke and mirrors exercise is not favored at the VALUABLE MULTIMEDIA service agency. We deliver extensive and precise SEO reports to each of our prestigious clients.",
+      "At our abode, we endure transparent and honest conduct. Updating clients with verified and clear reports on their progress as well as every dime spent is a part of our reporting practice. The smoke and mirrors exercise is not favored at the VALUABLE MULTIMEDIA. We deliver extensive and precise reports to each of our prestigious clients.",
   },
 
   {
@@ -41,7 +41,7 @@ const informations = [
     title: "ROl Obsessed",
     title2: "Campaigns",
     description:
-      "The success of the campaign is determined by the return on investment for any business. As a top SEO company in Ahmedabad, we understand its gravity. In the digital world, a return can be defined in the form of branding, ranking, traffic, conversion, and more. It is the understanding of the goals that assure the effectiveness of campaigns.",
+      "The success of the campaign is determined by the return on investment for any business. As a top PPC company in Ahmedabad, we understand its gravity. In the digital world, a return can be defined in the form of branding, ranking, traffic, conversion, and more. It is the understanding of the goals that assure the effectiveness of campaigns.",
   },
   {
     icon: <HiTrophy />,

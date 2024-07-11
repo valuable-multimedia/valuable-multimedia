@@ -100,9 +100,10 @@ function SocialMediaMarketingPage() {
               Facebook have algorithms to support every type of campaign. It
               facilitates brands to increase their brand awareness, generates
               traffic to their landing pages, expands their social media
-              community, retargets their audience, and much more. At VALUABLE MULTIMEDIA, we
-              create strategic, instigating, and high-performing campaigns under
-              the experienced surveillance of paid ads specialists.
+              community, retargets their audience, and much more. At VALUABLE
+              MULTIMEDIA, we create strategic, instigating, and high-performing
+              campaigns under the experienced surveillance of paid ads
+              specialists.
             </p>
           </div>
 
@@ -176,6 +177,9 @@ function SocialMediaMarketingPage() {
       {/* faqs section  */}
       <div className="faqs-section px-[10rem] py-16">
         <div className="faqs">
+          <h1 className="text-black mx-auto capitalize text-4xl font-semibold">
+            frequently asked questions
+          </h1>
           <div className="lg:px-5 lg:w-[80%] mx-auto">
             <div className="mx-auto mt-8 grid gap-y-4">
               {faqs?.map((item, index) => (

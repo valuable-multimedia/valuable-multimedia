@@ -4,10 +4,19 @@ import React, { useEffect, useState } from "react";
 import { PiGreaterThan } from "react-icons/pi";
 import Image from "next/image";
 import data from "@/data/blogs_data.json";
+import { FaCircle } from "react-icons/fa";
+import { IoIosLink } from "react-icons/io";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa6";
+import Link from "next/link";
 
 function BlogPage({ params }: any) {
   const id = params.id;
   const { blogs } = data;
+  const [currentUrl, setCurrentUrl] = useState("");
 
   const [blogData, setBlogData] = useState({
     id: "",
@@ -59,6 +68,12 @@ function BlogPage({ params }: any) {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCurrentUrl(window.location.href);
+    }
+  }, []);
+
   return (
     <div className="bg-[#fcfcfc] text-black">
       {/* direction banner  */}
@@ -104,6 +119,47 @@ function BlogPage({ params }: any) {
         </div>
       </div>
 
+      {/* publisher section  */}
+      <div className="publisher-details px-[10rem] flex justify-between items-center text-gray-500 gap-x-4">
+        <div className="flex items-center gap-x-4">
+          <h3 className="flex gap-x-1 capitalize">
+            <span>by</span>
+            <span className="font-semibold">gaurav khatri</span>
+          </h3>
+          <div className="text-gray-300 text-sm">
+            <FaCircle />
+          </div>
+          <h3>July 9, 2024</h3>
+        </div>
+
+        <div className="flex gap-x-2 text-2xl">
+          <IoIosLink />
+          <Link
+            href={`https://api.whatsapp.com/send?text=Check out this page: ${currentUrl}`}
+          >
+            <FaWhatsapp />
+          </Link>
+          <Link href="https://www.instagram.com/direct/inbox/">
+            <FaInstagram />
+          </Link>
+          <Link
+            href={`https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`}
+          >
+            <FaFacebook />
+          </Link>
+          <Link
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`}
+          >
+            <IoLogoLinkedin />
+          </Link>
+          <Link
+            href={`https://twitter.com/intent/tweet?text=Check out this page: ${currentUrl}`}
+          >
+            <FaXTwitter />
+          </Link>
+        </div>
+      </div>
+
       {/* introduction section  */}
       <div className="introduction px-[10rem] py-10 text-lg">
         {blogData.content[0].data}
@@ -127,7 +183,9 @@ function BlogPage({ params }: any) {
               className="flex flex-col gap-y-2"
               key={`mini-content-${index + 1}`}
             >
-              <h3 className="text-2xl font-medium">{`${index+1}.`} &nbsp; {item.title}</h3>
+              <h3 className="text-2xl font-medium">
+                {`${index + 1}.`} &nbsp; {item.title}
+              </h3>
               <p className="text-lg">{item.description}</p>
             </div>
           ))}

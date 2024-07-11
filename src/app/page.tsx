@@ -27,7 +27,7 @@ export default function Home() {
             </span>
           </h1>
 
-          <Link href={"/"} className="mr-auto">
+          <Link href={"/contact-us"} className="mr-auto">
             <button className="bg-black text-white hover:bg-white hover:border-b hover:border-themeOrange transition-all hover:text-black font-medium px-4 py-3 text-lg ">
               See What We do
             </button>
@@ -57,7 +57,7 @@ export default function Home() {
                 growth. Maintaining the intrinsic value of your brand digitally
                 and making sure that your customers can experience it at every
                 touchpoint is our motto. It is right to say that we are
-                result-oriented, as we wholeheartedly love and practice SEO.
+                result-oriented, as we wholeheartedly love and practice PPC.
               </p>
             </div>
             <div className="right w-[20%] flex justify-center items-center">

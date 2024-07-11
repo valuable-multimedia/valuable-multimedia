@@ -91,10 +91,10 @@ function UIUXDesigningPage() {
 
           <p>
             At Valuable Multimedia Service, we take pride in designing
-            interfaces that are in line with the user&apos;s preferences, behaviors,
-            and needs. At the core of the designing approach are the end
-            customers of a business; understanding who is extremely crucial to
-            delivering a user-friendly interface that is visually captivating
+            interfaces that are in line with the user&apos;s preferences,
+            behaviors, and needs. At the core of the designing approach are the
+            end customers of a business; understanding who is extremely crucial
+            to delivering a user-friendly interface that is visually captivating
             and functional.
           </p>
         </div>
@@ -178,8 +178,11 @@ function UIUXDesigningPage() {
       </div>
 
       {/* faqs section  */}
-      <div className="faqs-section px-[10rem] py-16">
+      <div className="faqs-section px-[10rem] py-14">
         <div className="faqs">
+          <h1 className="text-black mx-auto capitalize text-4xl font-semibold">
+            frequently asked questions
+          </h1>
           <div className="lg:px-5 lg:w-[80%] mx-auto">
             <div className="mx-auto mt-8 grid gap-y-4">
               {faqs?.map((item, index) => (

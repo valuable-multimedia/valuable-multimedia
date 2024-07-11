@@ -100,11 +100,12 @@ function SEOPage() {
 
           <p>
             Since our establishment, we have maintained a foremost position on
-            the first page of Google. Valuable Multimedia Service - top SEO company in
-            India is wholeheartedly committed to SEO and so we provide
-            unconventional best SEO services in India. With the right tools and
-            intelligent heads in our squad, we cultivate unique strategies for
-            the assured and sustainable business growth of our clientele.
+            the first page of Google. Valuable Multimedia Service - top SEO
+            company in India is wholeheartedly committed to SEO and so we
+            provide unconventional best SEO services in India. With the right
+            tools and intelligent heads in our squad, we cultivate unique
+            strategies for the assured and sustainable business growth of our
+            clientele.
           </p>
         </div>
 
@@ -201,6 +202,9 @@ function SEOPage() {
       {/* faqs section  */}
       <div className="faqs-section px-[10rem] py-10">
         <div className="faqs">
+          <h1 className="text-black mx-auto capitalize text-4xl font-semibold">
+            frequently asked questions
+          </h1>
           <div className="lg:px-5 lg:w-[80%] mx-auto">
             <div className="mx-auto mt-8 grid gap-y-4">
               {faqs?.map((item, index) => (

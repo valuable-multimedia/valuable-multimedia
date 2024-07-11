@@ -27,7 +27,7 @@ function ContactUsPage() {
         <div className="flex up">
           <div className="left w-1/2 flex flex-col gap-y-8">
             <h1 className="text-8xl font-medium leading-[6.3rem]">
-              Let&apos;s thrive together.
+              Let&apos;s prosper together.
             </h1>
 
             <p className="text-lg pr-28">
