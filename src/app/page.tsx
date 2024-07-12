@@ -27,7 +27,7 @@ export default function Home() {
             </span>
           </h1>
 
-          <Link href={"/contact-us"} className="mr-auto">
+          <Link href={"/about-us"} className="mr-auto">
             <button className="bg-black text-white hover:bg-white hover:border-b hover:border-themeOrange transition-all hover:text-black font-medium px-4 py-3 text-lg ">
               See What We do
             </button>
