@@ -24,7 +24,7 @@ export default function RootLayout({
         <Navbar />
         <div className="sticker fixed top-[50%] -right-[4.5rem] rounded-lg py-3 text-white bg-themeOrange rotate-90">
           <Link href={"/contact-us"} className="text-lg px-4">
-          FREE Digital Audit
+            FREE Digital Audit
           </Link>
         </div>
         {children}
