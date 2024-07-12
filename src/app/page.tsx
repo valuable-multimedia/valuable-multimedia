@@ -10,7 +10,7 @@ import Contact from "@/components/Contact/Contact";
 import homeServices from "@/data/homeServices";
 
 export default function Home() {
-  const { toolsOne, toolsTwo, industries, clients, blogs } = data;
+  const { toolsOne, toolsTwo, industries, clients, blogs, faqs } = data;
 
   return (
     <main className="flex flex-col bg-[#fcfcfc]">
@@ -34,8 +34,16 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="right flex justify-center items-center w-[45%] border border-red-500 font-bold min-h-full h-[50vh]">
-          Banner Image
+        <div className="right flex justify-center items-center w-[45%] font-bold">
+          <Image
+            src={
+              "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720759168/home/fgafzicb8wkzkzmwm3j7.jpg"
+            }
+            alt="home-page-banner"
+            height={527}
+            width={1000}
+            className="rounded-xl"
+          />
         </div>
       </div>
 
@@ -284,6 +292,57 @@ export default function Home() {
               </div>
             </Link>
           ))}
+        </div>
+      </div>
+
+      {/* faqs section  */}
+      <div className="faqs-section px-[10rem] py-16">
+        <div className="faqs">
+          <h1 className="text-black text-center mx-auto mt-4 capitalize text-4xl font-semibold">
+            frequently asked questions
+          </h1>
+          <div className="lg:px-5 lg:w-[80%] mx-auto">
+            <div className="mx-auto mt-8 grid gap-y-4">
+              {faqs?.map((item, index) => (
+                <div
+                  className="border-b-[2px] px-3 border-themeOrange bg-white"
+                  key={index}
+                >
+                  <details className="group">
+                    <summary className="flex cursor-pointer list-none items-center justify-between">
+                      <div className="flex items-center gap-x-6">
+                        <div className="h-full group-open:text-themeOrange font-bold">
+                          {index + 1}
+                        </div>
+                        <div className="group-open:text-themeOrange py-5">
+                          {" "}
+                          {item.question}
+                        </div>
+                      </div>
+                      <div className="transition group-open:rotate-180 group-open:text-themeOrange">
+                        <svg
+                          fill="none"
+                          height="24"
+                          shape-rendering="geometricPrecision"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          viewBox="0 0 24 24"
+                          width="24"
+                        >
+                          <path d="M6 9l6 6 6-6"></path>
+                        </svg>
+                      </div>
+                    </summary>
+                    <p className="group-open:animate-fadeIn mt-3 pb-5 text-neutral-600">
+                      {item.answer}
+                    </p>
+                  </details>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 

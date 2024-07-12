@@ -25,7 +25,7 @@ const informations = [
     title: "Digital",
     title2: "Detectives",
     description:
-      "Optimizing a website is not enough. We keep an eye on your competitors and analyze their online presence and strategies to keep you ahead of the curve. It gives us utmost happiness as you keep up the top position on Google.",
+      "Our Digital Detectives meticulously monitor your competitors and analyze their strategies. We ensure you stay ahead with the latest insights, optimizing your online presence and keeping you at the top of search results. Let us uncover the path to your digital success.",
   },
 
   {

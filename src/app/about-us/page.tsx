@@ -57,11 +57,11 @@ function AboutUsPage() {
         <div className="banner mt-14">
           <Image
             src={
-              "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719936698/home/nykhniqssbvm5guyi4ye.webp"
+              "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720759373/about-us/gpnvwcom6ro5gf3olibd.jpg"
             }
             alt="about-banner-img"
             height={700}
-            width={870}
+            width={1570}
             className="mx-auto"
           />
         </div>
@@ -85,9 +85,9 @@ function AboutUsPage() {
             </p>
             <p>
               With our proven track record, we focus on driving results that
-              matter most to your bottom line. Whether it&apos;s through targeted
-              Facebook Ads that engage your ideal audience or Google Ads
-              campaigns that attract high-quality traffic, we prioritize
+              matter most to your bottom line. Whether it&apos;s through
+              targeted Facebook Ads that engage your ideal audience or Google
+              Ads campaigns that attract high-quality traffic, we prioritize
               efficiency and impactful outcomes.
             </p>
             <p>

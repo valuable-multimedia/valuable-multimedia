@@ -158,7 +158,7 @@ function FacebookAdsPage() {
       {/* faqs section  */}
       <div className="faqs-section px-[10rem] py-10">
         <div className="faqs">
-        <h1 className="text-black mx-auto mt-4 capitalize text-4xl font-semibold">
+        <h1 className="text-black text-center mx-auto mt-4 capitalize text-4xl font-semibold">
           frequently asked questions
         </h1>
           <div className="lg:px-5 lg:w-[80%] mx-auto">
