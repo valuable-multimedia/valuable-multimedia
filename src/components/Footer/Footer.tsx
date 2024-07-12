@@ -158,10 +158,25 @@ function Footer() {
             {" "}
             &copy; VALUABLE MULTIMEDIA 2024 - all rights reserved{" "}
           </div>
+          <div className="capitalize flex items-center gap-x-4">
+            <Link
+              href={"/terms-and-conditions"}
+              className="hover:text-themeOrange transition-all"
+            >
+              Terms and Conditions
+            </Link>
+            <div className="">|</div>
+            <Link
+              href={"/privacy-policy"}
+              className="hover:text-themeOrange transition-all"
+            >
+              Privacy Policy
+            </Link>
+          </div>
           <div className="capitalize ">
             developed by{" "}
             <span className="hover:text-themeOrange">
-              <Link href={"https://www.jayraiweb.com"}>jay rai web</Link>
+              <Link href={"/"}>valuable multimedia</Link>
             </span>
           </div>
         </div>

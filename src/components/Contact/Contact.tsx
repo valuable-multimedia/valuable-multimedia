@@ -2,6 +2,10 @@
 
 import React from "react";
 import Link from "next/link";
+import { CgProfile } from "react-icons/cg";
+import { MdEmail } from "react-icons/md";
+import { IoCall } from "react-icons/io5";
+import { FaArrowRight } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -26,68 +30,87 @@ function Contact() {
 
         <div className="right w-[55%] border bg-white shadow-lg p-6 flex flex-col gap-y-6">
           <div className="up">
-            <h3 className="text-themeOrange capitalize text-xl font-semibold">
-              Drop us a line! We&apos;d love to hear from you.
+            <h3 className="text-themeOrange capitalize text-2xl font-semibold">
+              let&apos;s get in touch
             </h3>
           </div>
 
-          <div className="down w-[97%] mx-auto">
-            <form action="" className="flex flex-col gap-y-4">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                className="border-b-2 border-gray-500 w-full px-3 py-2 focus:outline-none focus:border-themeOrange capitalize"
-                autoComplete="off"
-              />
-
-              <div className="flex gap-x-8">
-                <input
-                  type="text"
-                  name="company"
-                  id="company"
-                  placeholder="company name"
-                  className="border-b-2 border-gray-500 px-3 py-2 focus:outline-none focus:border-themeOrange capitalize w-1/2"
-                  autoComplete="off"
-                />
-
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                  className="border-b-2 border-gray-500 px-3 py-2 focus:outline-none focus:border-themeOrange capitalize w-1/2"
-                  autoComplete="off"
-                />
+          <div className="down">
+            <form action="" className="flex flex-col gap-y-6">
+              <div className="flex flex-col gap-y-2">
+                <label htmlFor="fullName">Full Name</label>
+                <div className="border px-3 py-2 flex items-center gap-x-2 rounded-full border-slate-400">
+                  <div className="text-gray-500 text-xl">
+                    <CgProfile />
+                  </div>
+                  <input
+                    type="text"
+                    name="fullName"
+                    id="fullName"
+                    placeholder="Enter first name"
+                    className=" capitalize focus:outline-none w-full"
+                  />
+                </div>
               </div>
 
-              <div className="flex gap-x-8">
-                <input
-                  type="text"
-                  name="mobile"
-                  id="mobile"
-                  placeholder="mobile no"
-                  className="border-b-2 border-gray-500 px-3 py-2 focus:outline-none focus:border-themeOrange capitalize w-full"
-                  autoComplete="off"
-                />
+              <div className="flex flex-col gap-y-2">
+                <label htmlFor="email">Email</label>
+                <div className="border px-3 py-2 flex items-center gap-x-2 rounded-full border-slate-400">
+                  <div className="text-gray-500 text-xl">
+                    <MdEmail />
+                  </div>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Enter email ID"
+                    className=" capitalize focus:outline-none w-full"
+                  />
+                </div>
               </div>
 
-              <textarea
-                name="message"
-                id="message"
-                cols={10}
-                rows={5}
-                className="border-b-2 border-gray-500 px-3 py-2 focus:outline-none focus:border-themeOrange capitalize w-full text-gray-500"
-              >
-                your message
-              </textarea>
+              <div className="flex flex-col gap-y-2">
+                <label htmlFor="number">Phone Number</label>
+                <div className="border px-3 py-2 flex items-center gap-x-2 rounded-full border-slate-400">
+                  <div className="text-gray-500 text-xl">
+                    <IoCall />
+                  </div>
+                  <input
+                    type="text"
+                    name="number"
+                    id="number"
+                    placeholder="Enter phone number"
+                    className=" capitalize focus:outline-none w-full"
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-y-2">
+                <label htmlFor="lookingFor">Looking For</label>
+                <div className="border px-3 py-2 flex items-start gap-x-4 rounded-xl border-slate-400">
+                  {/* <div className="text-gray-500 text-xl">
+                    <IoCall />
+                  </div> */}
+                  <textarea
+                    name="lookingFor"
+                    id="lookingFor"
+                    cols={30}
+                    rows={10}
+                    className="w-full focus:outline-none"
+                  >
+                    Enter your main text here...
+                  </textarea>
+                </div>
+              </div>
 
               <button
                 type="submit"
-                className="capitalize bg-themeOrange text-white px-4 py-2 w-[20%] hover:bg-white hover:text-black hover:border-themeOrange border border-themeOrange hover:border mb-4"
+                className="capitalize flex gap-x-3 justify-center items-center bg-themeOrange text-white px-4 py-2 rounded-full hover:bg-white hover:text-black hover:border-themeOrange border border-themeOrange hover:border mb-4 mt-0"
               >
-                submit
+                <span>submit</span>
+                <span>
+                  <FaArrowRight />
+                </span>
               </button>
             </form>
           </div>

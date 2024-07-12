@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Link from "next/link";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { BsWhatsapp } from "react-icons/bs";
 
 const sora = Sora({ subsets: ["latin"] });
 
@@ -28,9 +28,9 @@ export default function RootLayout({
           </Link>
         </div>
         {children}
-        <div className="sticker fixed bottom-1 right-1 text-white rounded-full p-4 text-3xl z-[100] bg-[#00d25c] hover:scale-[1.05]">
+        <div className="sticker fixed bottom-4 right-4 text-white rounded-full p-4 text-3xl z-[100] bg-[#00d25c] hover:scale-[1.05] shadow-xl">
           <Link href={`https://wa.me/${"+919016850552"}?text=${"Hii"}`}>
-            <IoLogoWhatsapp />
+            <BsWhatsapp />
           </Link>
         </div>
         <Footer />

@@ -28,3 +28,8 @@
   background-color: #000;
   color: #ffffff;
 }
+
+/* bullet points  */
+ul.bullets li{
+  list-style-type: disc;
+}

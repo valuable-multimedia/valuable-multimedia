@@ -156,7 +156,7 @@ function ContactUsPage() {
                   href={"https://www.instagram.com/valuablemultimedia"}
                   className=""
                 >
-                  @ valuablemultimedia
+                  @valuablemultimedia
                 </Link>
               </div>
             </div>
@@ -170,7 +170,7 @@ function ContactUsPage() {
                   href={"https://www.facebook.com/valuablemultimedia"}
                   className="capitalize"
                 >
-                  @ valuablemultimedia
+                  @valuablemultimedia
                 </Link>
               </div>
             </div>
@@ -184,7 +184,7 @@ function ContactUsPage() {
                   href={"https://www.linkedin.com/company/valuablemultimedia"}
                   className="capitalize"
                 >
-                  @ valuablemultimedia
+                  @valuablemultimedia
                 </Link>
               </div>
             </div>
@@ -198,7 +198,7 @@ function ContactUsPage() {
                   href={"https://x.com/valuablemulti"}
                   className="capitalize"
                 >
-                  @ valuablemulti
+                  @valuablemulti
                 </Link>
               </div>
             </div>

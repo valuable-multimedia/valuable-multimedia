@@ -133,7 +133,7 @@ function AboutUsPage() {
           <h3 className="text-themeOrange text-xl font-semibold">
             This characteristic sets us apart as
           </h3>
-          <h1 className="text-5xl">
+          <h1 className="text-5xl capitalize">
             an exceptional partner in driving growth.
           </h1>
         </div>
