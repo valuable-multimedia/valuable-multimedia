@@ -97,9 +97,8 @@ function Footer() {
                 <FaLocationDot />
               </span>
               <div className="">
-                <Link href={"https://maps.app.goo.gl/cf7LSsm86BxyJ3t67"}>
-                  408,Nalanda Enclave,Opp-Sudama
-                  Resort,Pritamnagar,Paldi,Ahmedabad,Gujarat,India
+                <Link href={"https://maps.app.goo.gl/cf7LSsm86BxyJ3t67"} className="">
+                  408,Nalanda Enclave,Opp-Sudama Resort, Pritamnagar,Paldi,Ahmedabad,Gujarat,India
                 </Link>
               </div>
             </div>
@@ -172,12 +171,6 @@ function Footer() {
             >
               Privacy Policy
             </Link>
-          </div>
-          <div className="capitalize ">
-            developed by{" "}
-            <span className="hover:text-themeOrange">
-              <Link href={"/"}>valuable multimedia</Link>
-            </span>
           </div>
         </div>
       </div>
