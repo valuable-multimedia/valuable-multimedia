@@ -9,7 +9,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function Contact() {
   return (
-    <div className="contact-section-home px-[9rem] py-16">
+    <div className="contact-section-home px-5 lg:px-[9rem] py-16">
       <div className="flex">
         <div className="left w-[45%] flex justify-center items-center">
           <div className="p-4 bg-black text-white flex flex-col gap-y-4 shadow-lg  shadow-white">
@@ -95,7 +95,7 @@ function Contact() {
                     name="lookingFor"
                     id="lookingFor"
                     cols={30}
-                    rows={10}
+                    rows={4}
                     className="w-full focus:outline-none"
                   >
                     Enter your main text here...

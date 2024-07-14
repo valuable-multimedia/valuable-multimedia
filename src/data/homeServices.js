@@ -33,8 +33,8 @@ const homeServices = [
     icon: <GrAnnounce />,
   },
   {
-    name: "seacrh engine",
-    name2: "optimization (SEO)",
+    name: "seacrh engine optimization (SEO)",
+    name2: "",
     slug: "/services/seo",
     icon: <TbSeo />,
   },

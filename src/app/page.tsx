@@ -15,26 +15,26 @@ export default function Home() {
   return (
     <main className="flex flex-col bg-[#fcfcfc]">
       {/* hero section  */}
-      <div className="flex justify-center items-center hero-section-home px-24 py-16 min-h-[80vh] bg-[#ececec] hero-bg-gradient">
-        <div className="left flex flex-col gap-y-16 w-[55%]">
+      <div className="flex justify-center items-center hero-section-home px-5 lg:px-24 py-5 lg:py-16 lg:min-h-[80vh] flex-col gap-y-7 lg:flex-row bg-[#ececec] hero-bg-gradient">
+        <div className="left flex flex-col gap-y-6 lg:gap-y-16 text-center lg:text-left lg:w-[55%]">
           <h1 className="flex flex-col gap-y-2 capitalize">
-            <span className="text-2xl text-themeOrange font-medium">
+            <span className="text-md lg:text-2xl text-themeOrange font-medium">
               Driving the next wave of
             </span>
-            <span className="text-6xl leading-[4.5rem]">
+            <span className="lg:text-6xl text-4xl lg:leading-[4.5rem]">
               marketing with integrated strategy, design{" "}
               <span className="text-themeOrange">&amp;</span> technology.
             </span>
           </h1>
 
-          <Link href={"/about-us"} className="mr-auto">
-            <button className="bg-black text-white hover:bg-white hover:border-b hover:border-themeOrange transition-all hover:text-black font-medium px-4 py-3 text-lg ">
+          <Link href={"/about-us"} className="mx-auto lg:mx-0 lg:mr-auto">
+            <button className="bg-black text-white hover:bg-white hover:border-b hover:border-themeOrange transition-all hover:text-black font-medium px-4 py-3 lg:text-lg ">
               See What We do
             </button>
           </Link>
         </div>
 
-        <div className="right flex justify-center items-center w-[45%] font-bold">
+        <div className="right flex justify-center items-center lg:w-[45%] font-bold">
           <Image
             src={
               "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720759168/home/fgafzicb8wkzkzmwm3j7.jpg"
@@ -48,16 +48,18 @@ export default function Home() {
       </div>
 
       {/* content section */}
-      <div className="content-section-home px-[10rem] py-16">
+      <div className="content-section-home px-5 lg:px-[10rem] py-8 lg:py-16">
         <div className="flex gap-y-6 flex-col">
           <div className="up">
-            <h1 className="text-5xl capitalize">
+            <h1 className="lg:text-5xl text-3xl capitalize">
               We&apos;re Result Driven Digital Marketing Agency
             </h1>
           </div>
-          <div className="down flex">
-            <div className="left w-[80%] flex flex-col gap-y-3">
-              <h4 className="text-2xl">Why sweat online presence?</h4>
+          <div className="down flex flex-col gap-y-6 lg:flex-row">
+            <div className="left w-full lg:w-[80%] flex flex-col gap-y-3">
+              <h4 className="text-xl lg:text-2xl">
+                Why sweat online presence?
+              </h4>
               <p className="text-justify">
                 over years of rigor, consistency, sincerity, and dedication.
                 With our gamut of fully integrated digital marketing services,
@@ -68,8 +70,8 @@ export default function Home() {
                 result-oriented, as we wholeheartedly love and practice PPC.
               </p>
             </div>
-            <div className="right w-[20%] flex justify-center items-center">
-              <ul className="flex flex-col gap-y-2 text-lg text-themeOrange font-semibold capitalize">
+            <div className="right lg:w-[20%] flex justify-center lg:items-center">
+              <ul className="flex flex-row lg:flex-col gap-x-8 gap-y-2 text-lg text-themeOrange font-semibold capitalize">
                 <Link href={"/about-us"}>
                   <li>about</li>
                 </Link>
@@ -86,22 +88,27 @@ export default function Home() {
       </div>
 
       {/* services section  */}
-      <div className="service-section-home px-[10rem] pb-24 py-20 bg-[#ececec] flex flex-col gap-y-8">
+      <div className="service-section-home px-5 lg:px-[10rem] lg:pb-24 py-8 lg:py-20 bg-[#ececec] flex flex-col gap-y-8">
         <div className="up">
           <h1 className="text-themeOrange text-xl font-semibold capitalize">
             what we are best at
           </h1>
         </div>
 
-        <div className="lower flex gap-y-10 justify-center gap-x-14 border flex-wrap">
+        <div className="lower flex flex-col lg:flex-row gap-y-6 lg:gap-y-10 justify-center gap-x-14 border flex-wrap">
           {homeServices.map((item, index) => (
             <Link
               href={item.slug}
               key={`service-item-[${index}]`}
-              className="link-item capitalize text-3xl font-light w-[30%] leading-[2.7rem] border-b border-themeOrange pb-4 hover:text-themeOrange transition-all ease-in-out flex gap-x-3"
+              className="link-item capitalize text-2xl lg:text-3xl font-light lg:w-[30%] leading-[2.7rem] border-b border-themeOrange pb-4 hover:text-themeOrange transition-all ease-in-out flex gap-x-6 lg:gap-x-3"
             >
-              <div className="mt-2 text-3xl">{item.icon}</div>
-              <div className="">
+              <div className="mt-2 text-2xl lg:text-3xl">{item.icon}</div>
+              <div className="hidden lg:block">
+                <div className="">{item.name}</div>
+                <div className="">{item.name2}</div>
+              </div>
+
+              <div className="lg:hidden flex gap-x-1">
                 <div className="">{item.name}</div>
                 <div className="">{item.name2}</div>
               </div>
