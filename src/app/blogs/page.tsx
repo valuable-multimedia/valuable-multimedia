@@ -12,7 +12,7 @@ function BlogPage() {
   return (
     <div className="bg-[#fcfcfc] text-black">
       {/* direction banner  */}
-      <div className="bg-[#ffffff] gap-x-3 capitalize py-6 flex items-center px-24 text-gray-400">
+      <div className="bg-[#ffffff] gap-x-3 capitalize py-6 flex items-center px-5 lg:px-24 text-gray-400">
         <span>home</span>
         <span>
           <PiGreaterThan />
@@ -21,8 +21,8 @@ function BlogPage() {
       </div>
 
       {/* hero section  */}
-      <div className="hero-section-blog px-[10rem] py-16 flex flex-col gap-y-6">
-        <h1 className="capitalize text-5xl font-medium text-center">blogs</h1>
+      <div className="hero-section-blog px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col  gap-y-5 lg:gap-y-6">
+        <h1 className="capitalize text-4xl lg:text-5xl font-medium text-center">blogs</h1>
         <p className="text-gray-400 text-center text-[18px]">
           Stay informed and inspired with our blog, packed with industry
           insights and expert advice.
@@ -30,13 +30,13 @@ function BlogPage() {
       </div>
 
       {/* blogs section  */}
-      <div className="blogs-section-home px-[10rem] py-16 flex flex-col gap-y-10">
+      <div className="blogs-section-home px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col gap-y-10">
         <div className="down flex flex-wrap justify-between w-full">
           {blogs.map((item, index) => (
             <Link
               href={item.slug}
               key={`blogs ${index + 1}`}
-              className="w-[30%] bg-white shadow-lg rounded-lg"
+              className="lg:w-[30%] bg-white shadow-lg rounded-lg"
             >
               <div className="blog-card flex flex-col gap-y-6 w-full">
                 <div className="up">

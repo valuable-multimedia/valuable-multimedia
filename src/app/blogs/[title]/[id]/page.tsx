@@ -77,7 +77,7 @@ function BlogPage({ params }: any) {
   return (
     <div className="bg-[#fcfcfc] text-black">
       {/* direction banner  */}
-      <div className="bg-[#ffffff] gap-x-3 capitalize py-6 flex items-center px-24 text-gray-400">
+      <div className="bg-[#ffffff] gap-x-3 capitalize py-6 flex items-center px-5 lg:px-24 text-gray-400">
         <span>home</span>
         <span>
           <PiGreaterThan />
@@ -86,18 +86,18 @@ function BlogPage({ params }: any) {
         <span>
           <PiGreaterThan />
         </span>
-        <span>{blogData.title}</span>
+        <span className="">{blogData.title}</span>
       </div>
 
       {/* hero section  */}
-      <div className="px-[10rem] py-10 flex flex-col gap-y-10">
+      <div className="px-5 lg:px-[10rem] py-10 flex flex-col gap-y-10">
         <div className="top flex justify-center">
           <div className="bg-themeOrange text-white px-3 py-1 inline-flex rounded-xl">
             {blogData.keyword}
           </div>
         </div>
 
-        <h1 className="text-5xl font-medium text-center leading-[3.5rem]">
+        <h1 className="text-4xl lg:text-5xl font-medium text-center lg:leading-[3.5rem]">
           {blogData.title}
         </h1>
 
@@ -120,7 +120,7 @@ function BlogPage({ params }: any) {
       </div>
 
       {/* publisher section  */}
-      <div className="publisher-details px-[10rem] flex justify-between items-center text-gray-500 gap-x-4">
+      <div className="publisher-details px-5 lg:px-[10rem] flex flex-col lg:flex-row gap-y-4 justify-between items-center text-gray-500 gap-x-4">
         <div className="flex items-center gap-x-4">
           <h3 className="flex gap-x-1 capitalize">
             <span>by</span>
@@ -161,22 +161,22 @@ function BlogPage({ params }: any) {
       </div>
 
       {/* introduction section  */}
-      <div className="introduction px-[10rem] py-10 text-lg">
+      <div className="introduction px-5 lg:px-[10rem] py-10 text-lg">
         {blogData.content[0].data}
       </div>
 
       {/* title-paragraphs  */}
-      <div className="title-paragraphs px-[10rem] pb-5 flex flex-col gap-y-4">
-        <h2 className="text-4xl font-semibold">{blogData.content[1].title}</h2>
+      <div className="title-paragraphs px-5 lg:px-[10rem] pb-5 flex flex-col gap-y-4">
+        <h2 className="text-3xl lg:text-4xl font-semibold">{blogData.content[1].title}</h2>
         <p className="text-lg">{blogData.content[1].data}</p>
       </div>
 
       {blogData.content[2]?.bulks?.map((item, index) => (
         <div
-          className="title-subtitle-paragraphs px-[10rem] py-5 flex flex-col gap-y-6"
+          className="title-subtitle-paragraphs px-5 lg:px-[10rem] py-5 flex flex-col gap-y-6"
           key={`bumper-content-${index + 1}`}
         >
-          <h2 className="text-4xl font-semibold">{item.mainTitle}</h2>
+          <h2 className=" text-3xl lg:text-4xl font-semibold">{item.mainTitle}</h2>
 
           {item.subBulks?.map((item, index) => (
             <div
