@@ -22,7 +22,9 @@ function BlogPage() {
 
       {/* hero section  */}
       <div className="hero-section-blog px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col  gap-y-5 lg:gap-y-6">
-        <h1 className="capitalize text-4xl lg:text-5xl font-medium text-center">blogs</h1>
+        <h1 className="capitalize text-4xl lg:text-5xl font-medium text-center">
+          blogs
+        </h1>
         <p className="text-gray-400 text-center text-[18px]">
           Stay informed and inspired with our blog, packed with industry
           insights and expert advice.

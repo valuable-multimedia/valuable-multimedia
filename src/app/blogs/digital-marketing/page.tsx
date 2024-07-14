@@ -13,60 +13,9 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 
-function BlogPage({ params }: any) {
-  const id = params.id;
+function BlogPage() {
   const { blogs } = data;
   const [currentUrl, setCurrentUrl] = useState("");
-
-  const [blogData, setBlogData] = useState({
-    id: "",
-    imgUrl: "",
-    keyword: "",
-    date: "",
-    title: "",
-    slug: "",
-    content: [
-      {
-        data: "",
-      },
-      {
-        title: "",
-        data: "",
-      },
-      {
-        bulks: [
-          {
-            mainTitle: "",
-            subBulks: [
-              {
-                title: "",
-                description: "",
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  });
-
-  const fetchBlogFromId = async (id: any) => {
-    const blog = await blogs.filter((blog: any) => {
-      return blog.id === id;
-    });
-
-    console.log(blog[0]);
-
-    return blog[0];
-  };
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const blog: any = await fetchBlogFromId(id);
-      await setBlogData(blog);
-    };
-
-    fetchData();
-  }, []);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -86,19 +35,19 @@ function BlogPage({ params }: any) {
         <span>
           <PiGreaterThan />
         </span>
-        <span className="">{blogData.title}</span>
+        <span className="">{blogs[0].title}</span>
       </div>
 
       {/* hero section  */}
       <div className="px-5 lg:px-[10rem] py-10 flex flex-col gap-y-10">
         <div className="top flex justify-center">
           <div className="bg-themeOrange text-white px-3 py-1 inline-flex rounded-xl">
-            {blogData.keyword}
+            {blogs[0].keyword}
           </div>
         </div>
 
         <h1 className="text-4xl lg:text-5xl font-medium text-center lg:leading-[3.5rem]">
-          {blogData.title}
+          {blogs[0].title}
         </h1>
 
         {/* <div className="mt-5 flex">
@@ -110,7 +59,7 @@ function BlogPage({ params }: any) {
 
         <div className="blog-banner mx-auto">
           <Image
-            src={blogData.imgUrl}
+            src={blogs[0].imgUrl}
             alt="blog-banner"
             height={1000}
             width={1000}
@@ -162,21 +111,25 @@ function BlogPage({ params }: any) {
 
       {/* introduction section  */}
       <div className="introduction px-5 lg:px-[10rem] py-10 text-lg">
-        {blogData.content[0].data}
+        {blogs[0].content[0].data}
       </div>
 
       {/* title-paragraphs  */}
       <div className="title-paragraphs px-5 lg:px-[10rem] pb-5 flex flex-col gap-y-4">
-        <h2 className="text-3xl lg:text-4xl font-semibold">{blogData.content[1].title}</h2>
-        <p className="text-lg">{blogData.content[1].data}</p>
+        <h2 className="text-3xl lg:text-4xl font-semibold">
+          {blogs[0].content[1].title}
+        </h2>
+        <p className="text-lg">{blogs[0].content[1].data}</p>
       </div>
 
-      {blogData.content[2]?.bulks?.map((item, index) => (
+      {blogs[0].content[2]?.bulks?.map((item, index) => (
         <div
           className="title-subtitle-paragraphs px-5 lg:px-[10rem] py-5 flex flex-col gap-y-6"
           key={`bumper-content-${index + 1}`}
         >
-          <h2 className=" text-3xl lg:text-4xl font-semibold">{item.mainTitle}</h2>
+          <h2 className=" text-3xl lg:text-4xl font-semibold">
+            {item.mainTitle}
+          </h2>
 
           {item.subBulks?.map((item, index) => (
             <div
