@@ -14,7 +14,7 @@ function SocialMediaMarketingPage() {
   return (
     <div className="bg-[#fcfcfc] text-black">
       {/* direction banner  */}
-      <div className="bg-[#ffffff] gap-x-3 capitalize py-6 flex items-center px-24 text-gray-400">
+      <div className="bg-[#ffffff] gap-x-3 capitalize py-6 flex items-center px-5 lg:px-24 text-gray-400">
         <span>home</span>
         <span>
           <PiGreaterThan />
@@ -27,11 +27,11 @@ function SocialMediaMarketingPage() {
       </div>
 
       {/* hero section  */}
-      <div className="hero-section-wd px-24 py-16">
-        <div className="flex">
-          <div className="left w-[70%] flex flex-col gap-y-8">
+      <div className="hero-section-wd lg:px-24 px-5 py-10 lg:py-16">
+        <div className="flex flex-col lg:flex-row gap-y-6">
+          <div className="left lg:w-[70%] flex flex-col gap-y-8">
             <div className="flex flex-col gap-y-2">
-              <h1 className="text-5xl capitalize w-[80%] leading-[3.5rem] font-medium">
+              <h1 className="text-4xl lg:text-5xl capitalize lg:w-[80%] lg:leading-[3.5rem] font-medium">
                 Social Media <br /> Marketing Services
               </h1>
               <h3 className="text-themeOrange font-bold text-lg">
@@ -40,7 +40,7 @@ function SocialMediaMarketingPage() {
             </div>
 
             <div className="text-lg">
-              <p className="pr-20">
+              <p className="lg:pr-20">
                 Brands can captivate audiences in the most creative manner and
                 tell stories about themselves that people reminisce about. As
                 social networking sites are constantly upgrading to make
@@ -58,7 +58,7 @@ function SocialMediaMarketingPage() {
             </Link>
           </div>
 
-          <div className="right flex justify-center items-center w-[30%]">
+          <div className="right flex justify-center items-center lg:w-[30%]">
             <Image
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720280997/website-development/akkg875docq7tfvgpap6.webp"
@@ -72,10 +72,10 @@ function SocialMediaMarketingPage() {
       </div>
 
       {/* keywords section  */}
-      <div className="keywords-section px-[10rem] py-10 bg-[#ececec] flex gap-y-6 flex-wrap gap-x-12 justify-center">
+      <div className="keywords-section px-5 lg px-5:lg:px-[10rem] py-10 lg:py-10 bg-[#ececec] flex gap-y-6 flex-wrap gap-x-12 justify-center">
         {keywords.map((item, index) => (
           <div
-            className="keyword capitalize text-xl border-2 border-themeOrange inline-flex px-8 py-4 rounded-full items-center gap-x-4"
+            className="keyword capitalize text-xl border-2 border-themeOrange flex w-full lg:inline-flex px-4  lg:px-8 py-4 rounded-full items-center gap-x-4 lg:w-auto"
             key={`keyword number ${index + 1}`}
           >
             <span className="text-2xl">
@@ -87,13 +87,13 @@ function SocialMediaMarketingPage() {
       </div>
 
       {/* services section  */}
-      <div className="services-section px-[10rem] mb-5 py-16 flex flex-col gap-y-10">
-        <div className="flex">
-          <div className="left w-[60%] flex flex-col gap-y-6">
-            <h1 className="text-5xl font-medium capitalize">
+      <div className="services-section px-5 lg:px-[10rem] mb-5 py-10 lg:py-16 flex flex-col gap-y-10">
+        <div className="flex flex-col lg:flex-row gap-y-6">
+          <div className="left lg:w-[60%] flex flex-col gap-y-6">
+            <h1 className="text-3xl lg:text-5xl font-medium capitalize">
               paid for reach and attainment of goals
             </h1>
-            <p className="pr-20">
+            <p className="lg:pr-20">
               Social media feeds are busier than ever. To stand out, paid ads
               are inevitable. There is humongous scope in the social media
               pay-to-play game. Whatever is your objective, social giants like
@@ -107,7 +107,7 @@ function SocialMediaMarketingPage() {
             </p>
           </div>
 
-          <div className="right w-[40%]">
+          <div className="right lg:w-[40%]">
             <Image
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720287045/website-development/qccgnxs8vkw3nc5fbk7f.webp"
@@ -121,13 +121,13 @@ function SocialMediaMarketingPage() {
       </div>
 
       {/* black banner section  */}
-      <div className="black-banner-section px-[10rem] py-10 bg-black text-white flex  justify-between items-center">
-        <h1 className="text-5xl font-medium">
+      <div className="black-banner-section px-5 lg:px-[10rem] py-10 lg:py-10 bg-black text-white flex flex-col lg:flex-row gap-y-6 justify-between items-center">
+        <h1 className="text-3xl lg:text-5xl font-medium">
           Ready to take the first step, let&apos;s talk.
         </h1>
 
-        <div className="">
-          <Link href={"/contact-us"} className="mr-auto">
+        <div className="mr-auto lg:mr-0">
+          <Link href={"/contact-us"} className="lg:mr-auto">
             <button className="bg-themeOrange text-white hover:bg-black hover:border-b-[2px] hover:border-themeOrange transition-all hover:text-white font-medium px-4 py-3 text-lg capitalize border-b-[2px] border-black">
               send us your brief
             </button>
@@ -136,9 +136,9 @@ function SocialMediaMarketingPage() {
       </div>
 
       {/* process section  */}
-      <div className="process-section px-[10rem] py-20 flex flex-col gap-y-16">
+      <div className="process-section px-5 lg:px-[10rem] py-10 lg:py-20 flex flex-col gap-y-8 lg:gap-y-16">
         <div className="heading flex">
-          <div className="left w-[20%]">
+          <div className="left hidden lg:block w-[20%]">
             <Image
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720287482/website-development/yr07s9nnqdquka36ppmb.webp"
@@ -149,9 +149,9 @@ function SocialMediaMarketingPage() {
             />
           </div>
 
-          <div className="right w-[80%] flex flex-col gap-y-3">
+          <div className="right lg:w-[80%] flex flex-col gap-y-3">
             <h3 className="text-lg">Our Social Media Marketing Services</h3>
-            <h1 className="text-4xl font-medium">
+            <h1 className="text-3xl lg:text-4xl font-medium">
               <span>At Valuable Multimedia, </span>
               <span className="text-themeOrange"> social media marketing</span>
               <span> is our forte, and marketing is our passion.</span>
@@ -162,10 +162,10 @@ function SocialMediaMarketingPage() {
         <div className="down flex flex-wrap justify-center gap-x-14 gap-y-8">
           {information.map((item, index) => (
             <div
-              className="info-box w-[30%] flex flex-col gap-y-5"
+              className="info-box lg:w-[30%] flex flex-col gap-y-3 lg:gap-y-5"
               key={`information no ${index + 1}`}
             >
-              <h3 className="text-3xl capitalize">
+              <h3 className="text-2xl lg:text-3xl capitalize">
                 {item.title} <br /> {item.title2}{" "}
               </h3>
               <p className="text-justify">{item.content}</p>
@@ -175,9 +175,9 @@ function SocialMediaMarketingPage() {
       </div>
 
       {/* faqs section  */}
-      <div className="faqs-section px-[10rem] py-16">
+      <div className="faqs-section px-5 lg:px-[10rem] py-10 lg:py-16">
         <div className="faqs">
-          <h1 className="text-black text-center mx-auto capitalize text-4xl font-semibold">
+          <h1 className="text-black text-center mx-auto capitalize text-3xl lg:text-4xl font-semibold">
             frequently asked questions
           </h1>
           <div className="lg:px-5 lg:w-[80%] mx-auto">

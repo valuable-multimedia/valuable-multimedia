@@ -39,12 +39,12 @@
       "slug": "/about-us"
     },
     {
-      "title": "contact us",
-      "slug": "/contact-us"
-    },
-    {
       "title": "blogs",
       "slug": "/blogs"
+    },
+    {
+      "title": "contact us",
+      "slug": "/contact-us"
     }
   ]
 }

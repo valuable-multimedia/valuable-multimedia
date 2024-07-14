@@ -1,13 +1,49 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
 import { CgProfile } from "react-icons/cg";
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 function Contact() {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (!form.current) return;
+
+    if (
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID &&
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID &&
+      process.env.NEXT_PUBLIC_EMAILJS_USER_ID &&
+      form.current
+    ) {
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+          form.current,
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            toast.success("Thank you for your message. We'll contact you soon");
+          },
+          (error) => {
+            console.log(error.text);
+            toast.error("Error while sending message");
+          }
+        );
+    }
+    form.current.reset();
+  };
+
   return (
     <div className="contact-section-home px-5 lg:px-[9rem] py-5 lg:py-16">
       <div className="flex flex-col lg:flex-row">
@@ -36,7 +72,7 @@ function Contact() {
           </div>
 
           <div className="down">
-            <form action="" className="flex flex-col gap-y-6">
+            <form action="#" ref={form} onSubmit={sendEmail} method="post" className="flex flex-col gap-y-6">
               <div className="flex flex-col gap-y-2">
                 <label htmlFor="fullName">Full Name</label>
                 <div className="border px-3 py-2 flex items-center gap-x-2 rounded-full border-slate-400">

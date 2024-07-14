@@ -18,6 +18,17 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+  const toggleDropdown2 = () => {
+    setIsDropdownVisible(!isDropdownVisible);
+  };
+
+  const toggleDropdown3 = () => {
+    setIsDropdownVisible(!isDropdownVisible);
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="">
       {/* for large screens  */}
@@ -213,87 +224,92 @@ function Navbar() {
                         </span>
                       </Link>
 
-                      <div
-                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-semibold`}
-                      >
-                        <span className="ml-0 text-base flex gap-x-2 items-center font-medium text-white">
-                          Our Services{" "}
-                          <span className="text-2xl hidden">
-                            {" "}
-                            <IoMdArrowDropdown />
-                          </span>
-                        </span>
-                      </div>
+                      <ul>
+                        <li className="">
+                          <div className="flex w-full border-3 border-white">
+                            <div className="relative cursor-pointer">
+                              <div
+                                className="flex items-center justify-between"
+                                onClick={toggleDropdown2}
+                              >
+                                <div className="menu-hover my-2 capitalize pr-2 hover:text-themeOrange font-medium text-lg">
+                                  our services
+                                </div>
+                                <span>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    className={`h-6 w-6 transform transition-transform ${
+                                      isDropdownVisible ? "rotate-180" : ""
+                                    }`}
+                                  >
+                                    <path
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
 
-                      <Link
-                        href={"/services/facebook-ads"}
-                        className={` my-1 bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
-                        onClick={toggleMenu}
-                      >
-                        <span className="mx-1 ml-0 text-base font-medium text-white">
-                          Facebook Ads
-                        </span>
-                      </Link>
-
-                      <Link
-                        href={"/services/instagram-ads"}
-                        className={`bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
-                        onClick={toggleMenu}
-                      >
-                        <span className="mx-1 ml-0 text-base font-medium text-white">
-                          Instagram Ads
-                        </span>
-                      </Link>
-
-                      <Link
-                        href={"/services/google-ads"}
-                        className={`bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
-                        onClick={toggleMenu}
-                      >
-                        <span className="mx-1 ml-0 text-base font-medium text-white">
-                          PPC (Google Ads)
-                        </span>
-                      </Link>
-
-                      <Link
-                        href={"/services/social-media-marketing"}
-                        className={`bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
-                        onClick={toggleMenu}
-                      >
-                        <span className="mx-1 ml-0 text-base font-medium text-white">
-                          Social Media Marketing
-                        </span>
-                      </Link>
-
-                      <Link
-                        href={"/services/seo"}
-                        className={`bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
-                        onClick={toggleMenu}
-                      >
-                        <span className="mx-1 capitalize ml-0 text-base font-medium text-white">
-                          search engine optimization (SEO)
-                        </span>
-                      </Link>
-
-                      <Link
-                        href={"/services/ui-ux-designing"}
-                        className={`bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
-                        onClick={toggleMenu}
-                      >
-                        <span className="mx-1 capitalize ml-0 text-base font-medium text-white">
-                          UI & UX designing
-                        </span>
-                      </Link>
-
-                      <Link
-                        href={"/services/website-development"}
-                        className={`bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
-                        onClick={toggleMenu}
-                      >
-                        <span className="mx-1 capitalize ml-0 text-base font-medium text-white">
-                          website development
-                        </span>
-                      </Link>
+                              <div
+                                className={`absolute z-50 flex w-full flex-col bg-gray-800 py-1 px-4 text-white min-w-[340px] shadow-xl transition-all duration-300 ${
+                                  isDropdownVisible
+                                    ? "visible opacity-100"
+                                    : "invisible opacity-0"
+                                }`}
+                                onClick={toggleDropdown3}
+                              >
+                                <Link
+                                  className="my-2 block border-b border-gray-100 py-1 font-medium text-white hover:text-themeOrange md:mx-2 capitalize"
+                                  href={"/services/facebook-ads"}
+                                >
+                                  Facebook Ads
+                                </Link>
+                                <Link
+                                  className="my-2 block border-b border-gray-100 py-1 font-medium text-white hover:text-themeOrange md:mx-2 capitalize"
+                                  href={"/services/instagram-ads"}
+                                >
+                                  Instagram Ads
+                                </Link>
+                                <Link
+                                  className="my-2 block border-b border-gray-100 py-1 font-medium text-white hover:text-themeOrange md:mx-2 capitalize"
+                                  href={"/services/google-ads"}
+                                >
+                                  PPC (google ads)
+                                </Link>
+                                <Link
+                                  className="my-2 block border-b border-gray-100 py-1 font-medium text-white hover:text-themeOrange md:mx-2 capitalize"
+                                  href={"/services/social-media-marketing"}
+                                >
+                                  social media marketing
+                                </Link>
+                                <Link
+                                  className="my-2 block border-b border-gray-100 py-1 font-medium text-white hover:text-themeOrange md:mx-2 capitalize"
+                                  href={"/services/seo"}
+                                >
+                                  search engine optimization (SEO)
+                                </Link>
+                                <Link
+                                  className="my-2 block border-b border-gray-100 py-1 font-medium text-white hover:text-themeOrange md:mx-2 capitalize"
+                                  href={"/services/ui-ux-designing"}
+                                >
+                                  UI &amp; UX designing
+                                </Link>
+                                <Link
+                                  className="my-2 block border-b border-gray-100 py-1 font-medium text-white hover:text-themeOrange md:mx-2 capitalize"
+                                  href={"/services/website-development"}
+                                >
+                                  website development
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
 
                       <Link
                         href={"/blogs"}

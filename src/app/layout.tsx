@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Link from "next/link";
 import { BsWhatsapp } from "react-icons/bs";
+import { Toaster } from "react-hot-toast";
 
 const sora = Sora({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={sora.className}>
+        <Toaster />
         <Navbar />
         <div className="sticker fixed top-[50%] -right-[4.5rem] rounded-lg py-3 text-white bg-themeOrange rotate-90">
           <Link href={"/contact-us"} className="text-lg px-4">

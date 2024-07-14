@@ -15,7 +15,7 @@ function FacebookAdsPage() {
   return (
     <div className="bg-[#fcfcfc] text-black">
       {/* direction banner  */}
-      <div className="bg-[#ffffff] gap-x-3 capitalize py-6 flex items-center px-24 text-gray-400">
+      <div className="bg-[#ffffff] gap-x-3 capitalize py-6 flex items-center px-5 lg:px-24 text-gray-400">
         <span>home</span>
         <span>
           <PiGreaterThan />
@@ -28,11 +28,11 @@ function FacebookAdsPage() {
       </div>
 
       {/* hero section  */}
-      <div className="hero-section-wd px-24 py-16">
-        <div className="flex">
-          <div className="left w-[70%] flex flex-col gap-y-8">
+      <div className="hero-section-wd lg:px-24 px-5 py-10 lg:py-16">
+        <div className="flex flex-col lg:flex-row gap-y-6">
+          <div className="left lg:w-[70%] flex flex-col gap-y-8">
             <div className="flex flex-col gap-y-2">
-              <h1 className="text-5xl capitalize w-[80%] leading-[3.5rem] font-medium">
+              <h1 className="text-4xl lg:text-5xl capitalize lg:w-[80%] lg:leading-[3.5rem] font-medium">
                 facebook ads <br /> services
               </h1>
               <h3 className="text-themeOrange font-bold text-lg">
@@ -41,7 +41,7 @@ function FacebookAdsPage() {
             </div>
 
             <div className="text-lg">
-              <p className="pr-20">
+              <p className="lg:pr-20">
                 Unlock the potential of Facebook Ads to reach your target
                 audience with precision and creativity. As one of the leading
                 Facebook Ads specialists in India, we craft compelling campaigns
@@ -59,7 +59,7 @@ function FacebookAdsPage() {
             </Link>
           </div>
 
-          <div className="right flex justify-center items-center w-[30%]">
+          <div className="right flex justify-center items-center lg:w-[30%]">
             <Image
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720342221/website-development/tm7p5wuvh4kzfp58loig.webp"
@@ -73,10 +73,10 @@ function FacebookAdsPage() {
       </div>
 
       {/* keywords section  */}
-      <div className="keywords-section px-[10rem] py-10 bg-[#ececec] flex gap-y-6 flex-wrap gap-x-12 justify-center">
+      <div className="keywords-section px-5 lg:px-[10rem] py-10 lg:py-10 bg-[#ececec] flex gap-y-6 flex-wrap gap-x-12 justify-center">
         {keywords.map((item, index) => (
           <div
-            className="keyword capitalize text-xl border-2 border-themeOrange inline-flex px-8 py-4 rounded-full items-center gap-x-4"
+            className="keyword capitalize text-xl border-2 border-themeOrange flex w-full lg:inline-flex px-4  lg:px-8 py-4 rounded-full items-center gap-x-4 lg:w-auto"
             key={`keyword number ${index + 1}`}
           >
             <span className="text-2xl">
@@ -88,9 +88,9 @@ function FacebookAdsPage() {
       </div>
 
       {/* process section  */}
-      <div className="process-section px-[10rem] py-20 flex flex-col gap-y-16">
+      <div className="process-section px-5 lg:px-[10rem] py-10 lg:py-20 flex flex-col gap-y-8 lg:gap-y-16">
         <div className="heading flex">
-          <h1 className="text-5xl font-medium capitalize">
+          <h1 className="text-3xl lg:text-5xl font-medium capitalize">
             Strategic campaign management
           </h1>
         </div>
@@ -98,10 +98,10 @@ function FacebookAdsPage() {
         <div className="down flex flex-wrap justify-center gap-x-14 gap-y-8">
           {information.map((item, index) => (
             <div
-              className="info-box w-[30%] flex flex-col gap-y-5"
+              className="info-box lg:w-[30%] flex flex-col gap-y-5"
               key={`information no ${index + 1}`}
             >
-              <h3 className="text-3xl capitalize">
+              <h3 className="text-2xl lg:text-3xl capitalize">
                 {item.title} <br /> {item.title2}{" "}
               </h3>
               <p className="text-justify">{item.content}</p>
@@ -111,13 +111,13 @@ function FacebookAdsPage() {
       </div>
 
       {/* black banner section  */}
-      <div className="black-banner-section px-[10rem] py-10 bg-black text-white flex  justify-between items-center">
-        <h1 className="text-5xl font-medium">
+      <div className="black-banner-section px-5 lg:px-[10rem] py-10 lg:py-10 bg-black text-white flex flex-col lg:flex-row gap-y-6 justify-between items-center">
+        <h1 className="text-3xl lg:text-5xl font-medium">
           Ready to take the first step, let&apos;s talk.
         </h1>
 
-        <div className="">
-          <Link href={"/contact-us"} className="mr-auto">
+        <div className="mr-auto lg:mr-0">
+          <Link href={"/contact-us"} className="lg:mr-auto">
             <button className="bg-themeOrange text-white hover:bg-black hover:border-b-[2px] hover:border-themeOrange transition-all hover:text-white font-medium px-4 py-3 text-lg capitalize border-b-[2px] border-black">
               send us your brief
             </button>
@@ -126,9 +126,9 @@ function FacebookAdsPage() {
       </div>
 
       {/* why section  */}
-      <div className="keypoints-section bg-[#fff] px-[10rem] py-16">
+      <div className="keypoints-section bg-[#fff] px-5 lg:px-[10rem] py-16">
         <div className="border-l-4 border-themeOrange border-r-4 bg-[#ececec] p-6 flex flex-col gap-y-6">
-          <h1 className="text-4xl capitalize leading-[3.3rem] font-medium">
+          <h1 className="text-4xl capitalize lg:leading-[3.3rem] font-medium">
             why facebook ads ?
           </h1>
 
@@ -156,9 +156,9 @@ function FacebookAdsPage() {
       <Testimonials />
 
       {/* faqs section  */}
-      <div className="faqs-section px-[10rem] py-10">
+      <div className="faqs-section px-5 lg:px-[10rem] py-10 lg:py-10">
         <div className="faqs">
-        <h1 className="text-black text-center mx-auto mt-4 capitalize text-4xl font-semibold">
+        <h1 className="text-black text-center mx-auto mt-4 capitalize text-3xl lg:text-4xl font-semibold">
           frequently asked questions
         </h1>
           <div className="lg:px-5 lg:w-[80%] mx-auto">

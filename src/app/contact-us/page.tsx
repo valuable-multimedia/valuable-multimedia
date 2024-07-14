@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useRef, useState } from "react";
 import { PiGreaterThan } from "react-icons/pi";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
@@ -9,8 +9,48 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
+import { CgProfile } from "react-icons/cg";
+import { MdEmail } from "react-icons/md";
+import { IoCall } from "react-icons/io5";
+import { FaArrowRight } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 function ContactUsPage() {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (!form.current) return;
+
+    if (
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID &&
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID &&
+      process.env.NEXT_PUBLIC_EMAILJS_USER_ID &&
+      form.current
+    ) {
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+          form.current,
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            toast.success("Thank you for your message. We'll contact you soon");
+          },
+          (error) => {
+            console.log(error.text);
+            toast.error("Error while sending message");
+          }
+        );
+    }
+    form.current.reset();
+  };
+
   return (
     <div className="bg-[#fcfcfc] text-black">
       {/* direction banner  */}
@@ -36,7 +76,9 @@ function ContactUsPage() {
             </p>
 
             <div className="flex flex-col gap-y-4">
-              <h2 className="text-4xl lg:text-5xl font-medium">Prefer to talk?</h2>
+              <h2 className="text-4xl lg:text-5xl font-medium">
+                Prefer to talk?
+              </h2>
 
               <p className="text-gray-400 lg:pr-28">
                 Give us a call at{" "}
@@ -55,55 +97,87 @@ function ContactUsPage() {
             </div>
           </div>
 
-          <div className="right lg:w-1/2 lg:px-10">
-            <form action="#" className="w-full flex flex-col gap-y-3">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="your name here"
-                className="px-3 py-2 focus:outline-none border-b-[2px] focus:border-b-[2px] focus:border-themeOrange w-full capitalize"
-              />
+          <div className="right lg:w-1/2 lg:px-10 flex items-center">
+            <form
+              action="#"
+              ref={form}
+              onSubmit={sendEmail}
+              className="flex flex-col gap-y-6 w-full"
+            >
+              <div className="flex flex-col gap-y-2">
+                <label htmlFor="fullName">Full Name</label>
+                <div className="border px-3 py-2 flex items-center gap-x-2 rounded-full border-slate-400">
+                  <div className="text-gray-500 text-xl">
+                    <CgProfile />
+                  </div>
+                  <input
+                    type="text"
+                    name="fullName"
+                    id="fullName"
+                    placeholder="Enter first name"
+                    className=" capitalize focus:outline-none w-full"
+                  />
+                </div>
+              </div>
 
-              <input
-                type="text"
-                name="businessName"
-                id="businessName"
-                placeholder="your business name"
-                className="px-3 py-2 focus:outline-none border-b-[2px] focus:border-b-[2px] focus:border-themeOrange w-full capitalize"
-              />
+              <div className="flex flex-col gap-y-2">
+                <label htmlFor="email">Email</label>
+                <div className="border px-3 py-2 flex items-center gap-x-2 rounded-full border-slate-400">
+                  <div className="text-gray-500 text-xl">
+                    <MdEmail />
+                  </div>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Enter email ID"
+                    className=" capitalize focus:outline-none w-full"
+                  />
+                </div>
+              </div>
 
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="your email ID"
-                className="px-3 py-2 focus:outline-none border-b-[2px] focus:border-b-[2px] focus:border-themeOrange w-full capitalize"
-              />
+              <div className="flex flex-col gap-y-2">
+                <label htmlFor="number">Phone Number</label>
+                <div className="border px-3 py-2 flex items-center gap-x-2 rounded-full border-slate-400">
+                  <div className="text-gray-500 text-xl">
+                    <IoCall />
+                  </div>
+                  <input
+                    type="text"
+                    name="number"
+                    id="number"
+                    placeholder="Enter phone number"
+                    className=" capitalize focus:outline-none w-full"
+                  />
+                </div>
+              </div>
 
-              <input
-                type="text"
-                name="number"
-                id="number"
-                placeholder="mobile number"
-                className="px-3 py-2 focus:outline-none border-b-[2px] focus:border-b-[2px] focus:border-themeOrange w-full capitalize"
-              />
-
-              <textarea
-                name="brief"
-                id="brief"
-                rows={7}
-                cols={30}
-                className="px-3 py-2 focus:outline-none border-b-[2px] focus:border-b-[2px] focus:border-themeOrange w-full capitalize text-gray-400"
-              >
-                your brief
-              </textarea>
+              <div className="flex flex-col gap-y-2">
+                <label htmlFor="lookingFor">Looking For</label>
+                <div className="border px-3 py-2 flex items-start gap-x-4 rounded-xl border-slate-400">
+                  {/* <div className="text-gray-500 text-xl">
+                    <IoCall />
+                  </div> */}
+                  <textarea
+                    name="lookingFor"
+                    id="lookingFor"
+                    cols={30}
+                    rows={4}
+                    className="w-full focus:outline-none"
+                  >
+                    Enter your main text here...
+                  </textarea>
+                </div>
+              </div>
 
               <button
                 type="submit"
-                className="capitalize bg-themeOrange text-white px-4 py-2 lg:w-[30%] hover:bg-white hover:text-black hover:border-themeOrange border border-themeOrange hover:border mb-4 mt-8"
+                className="capitalize flex gap-x-3 justify-center items-center bg-themeOrange text-white px-4 py-2 rounded-full hover:bg-white hover:text-black hover:border-themeOrange border border-themeOrange hover:border mb-4 mt-0"
               >
-                get started
+                <span>submit</span>
+                <span>
+                  <FaArrowRight />
+                </span>
               </button>
             </form>
           </div>
@@ -124,8 +198,8 @@ function ContactUsPage() {
                   <FaLocationDot />
                 </span>
                 <div className="lg:text-[18px]">
-                  408,Nalanda Enclave,Opp-Sudama
-                  Resort,Pritamnagar,Paldi,<br /> Ahmedabad,Gujarat,India
+                  408,Nalanda Enclave,Opp-Sudama Resort,Pritamnagar,Paldi,
+                  <br /> Ahmedabad,Gujarat,India
                 </div>
               </Link>
             </div>
