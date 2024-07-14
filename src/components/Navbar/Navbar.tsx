@@ -107,7 +107,7 @@ function Navbar() {
                         className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
                         href={"/services/seo"}
                       >
-                       search engine optimization (SEO)
+                        search engine optimization (SEO)
                       </Link>
                       <Link
                         className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-themeOrange md:mx-2 capitalize"
@@ -145,13 +145,13 @@ function Navbar() {
       </div>
 
       {/* for small screens */}
-      <div className="relative lg:hidden w-full py-2 pl-3 pr-2 bg-themeBlue text-white">
+      <div className="relative lg:hidden w-full py-2 pl-3 pr-2 bg-black text-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
           <div className="inline-flex items-center space-x-2">
             <Link href={"/"}>
               <Image
                 src={
-                  "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1715850413/elito-batteries/ygitcgylhdoachafpdp4.svg"
+                  "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719909599/ll3rkhggdrnrh1yh2lzb.png"
                 }
                 alt="logo"
                 height="80"
@@ -165,14 +165,14 @@ function Navbar() {
           </div>
           {isMenuOpen && (
             <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden">
-              <div className="divide-y-2 divide-gray-50 rounded-lg bg-themeBlue text-white shadow-lg ring-1 ring-black ring-opacity-5">
+              <div className="divide-y-2 divide-gray-50 rounded-lg bg-gray-800 text-white shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="px-5 pb-6 pt-5">
                   <div className="flex items-center justify-between">
                     <div className="inline-flex items-center space-x-2">
                       <Link href={"/"}>
                         <Image
                           src={
-                            "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1715850413/elito-batteries/ygitcgylhdoachafpdp4.svg"
+                            "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719909599/ll3rkhggdrnrh1yh2lzb.png"
                           }
                           alt="logo"
                           height="80"
@@ -195,7 +195,7 @@ function Navbar() {
                     <nav className="grid gap-y-4">
                       <Link
                         href={"/"}
-                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-medium`}
+                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-semibold`}
                         onClick={toggleMenu}
                       >
                         <span className="ml-0 text-base font-medium text-white">
@@ -205,61 +205,99 @@ function Navbar() {
 
                       <Link
                         href={"/about-us"}
-                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-medium`}
+                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-semibold`}
                         onClick={toggleMenu}
                       >
                         <span className="ml-0 text-base font-medium text-white">
-                          About Elito
+                          About Us
                         </span>
                       </Link>
 
-                      <Link
-                        href={"/products"}
-                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-medium`}
-                        onClick={toggleMenu}
+                      <div
+                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-semibold`}
                       >
                         <span className="ml-0 text-base flex gap-x-2 items-center font-medium text-white">
-                          Our Products{" "}
+                          Our Services{" "}
                           <span className="text-2xl hidden">
                             {" "}
                             <IoMdArrowDropdown />
                           </span>
                         </span>
-                      </Link>
+                      </div>
 
                       <Link
-                        href={"/products/truck-tractor-battery"}
-                        className={`-m-3 bg-[#03528D] mx-1 rounded-md p-3 text-sm font-medium w-full`}
+                        href={"/services/facebook-ads"}
+                        className={` my-1 bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
                         onClick={toggleMenu}
                       >
-                        <span className="bg-[#03528D] mx-1 ml-0 text-base font-medium text-white">
-                          Truck/Tractor Battery
+                        <span className="mx-1 ml-0 text-base font-medium text-white">
+                          Facebook Ads
                         </span>
                       </Link>
 
                       <Link
-                        href={"/products/car-suv-battery"}
-                        className={`-m-3 bg-[#03528D] mx-1 mt-1 rounded-md p-3 text-sm font-medium w-full`}
+                        href={"/services/instagram-ads"}
+                        className={`bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
                         onClick={toggleMenu}
                       >
-                        <span className="bg-[#03528D] mx-1 ml-0 text-base font-medium text-white">
-                          Car/Suv Battery
+                        <span className="mx-1 ml-0 text-base font-medium text-white">
+                          Instagram Ads
                         </span>
                       </Link>
 
                       <Link
-                        href={"/resources"}
-                        className={`-m-3 mt-2 flex items-center rounded-md p-3 text-sm font-medium`}
+                        href={"/services/google-ads"}
+                        className={`bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
                         onClick={toggleMenu}
                       >
-                        <span className="ml-0 text-base font-medium text-white">
-                          Resources
+                        <span className="mx-1 ml-0 text-base font-medium text-white">
+                          PPC (Google Ads)
+                        </span>
+                      </Link>
+
+                      <Link
+                        href={"/services/social-media-marketing"}
+                        className={`bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
+                        onClick={toggleMenu}
+                      >
+                        <span className="mx-1 ml-0 text-base font-medium text-white">
+                          Social Media Marketing
+                        </span>
+                      </Link>
+
+                      <Link
+                        href={"/services/seo"}
+                        className={`bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
+                        onClick={toggleMenu}
+                      >
+                        <span className="mx-1 capitalize ml-0 text-base font-medium text-white">
+                          search engine optimization (SEO)
+                        </span>
+                      </Link>
+
+                      <Link
+                        href={"/services/ui-ux-designing"}
+                        className={`bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
+                        onClick={toggleMenu}
+                      >
+                        <span className="mx-1 capitalize ml-0 text-base font-medium text-white">
+                          UI & UX designing
+                        </span>
+                      </Link>
+
+                      <Link
+                        href={"/services/website-development"}
+                        className={`bg-themeOrange mx-1 rounded-md p-3 text-sm font-semibold w-full`}
+                        onClick={toggleMenu}
+                      >
+                        <span className="mx-1 capitalize ml-0 text-base font-medium text-white">
+                          website development
                         </span>
                       </Link>
 
                       <Link
                         href={"/blogs"}
-                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-medium`}
+                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-semibold`}
                         onClick={toggleMenu}
                       >
                         <span className="ml-0 text-base font-medium text-white">
@@ -268,12 +306,12 @@ function Navbar() {
                       </Link>
 
                       <Link
-                        href={"/become-a-distributor"}
-                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-medium`}
+                        href={"/contact-us"}
+                        className={`-m-3 flex items-center rounded-md p-3 text-sm font-semibold`}
                         onClick={toggleMenu}
                       >
                         <span className="ml-0 text-base font-medium text-white">
-                          Become A Distributor
+                          Contact Us
                         </span>
                       </Link>
                     </nav>

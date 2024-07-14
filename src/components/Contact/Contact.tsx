@@ -9,17 +9,17 @@ import { FaArrowRight } from "react-icons/fa";
 
 function Contact() {
   return (
-    <div className="contact-section-home px-5 lg:px-[9rem] py-16">
-      <div className="flex">
-        <div className="left w-[45%] flex justify-center items-center">
+    <div className="contact-section-home px-5 lg:px-[9rem] py-5 lg:py-16">
+      <div className="flex flex-col lg:flex-row">
+        <div className="left lg:w-[45%] flex justify-center items-center">
           <div className="p-4 bg-black text-white flex flex-col gap-y-4 shadow-lg  shadow-white">
-            <h2 className="w-[90%] text-4xl font-medium capitalize">
+            <h2 className="lg:w-[90%] text-3xl lg:text-4xl font-medium capitalize">
               Are you planning for growth?
             </h2>
             <p className="text-themeOrange capitalize">
               We bring you the right leads.
             </p>
-            <div className="capitalize flex gap-x-3 border-t pt-6 mb-8">
+            <div className="capitalize flex gap-x-3 border-t pt-6 mb-2 lg:mb-8">
               <span>contact us @</span>
               <Link href={"tel:+919016850552"}>
                 <span className="text-themeOrange">+91 90168 50552</span>
@@ -28,7 +28,7 @@ function Contact() {
           </div>
         </div>
 
-        <div className="right w-[55%] border bg-white shadow-lg p-6 flex flex-col gap-y-6">
+        <div className="right lg:w-[55%] border bg-white shadow-lg p-6 flex flex-col gap-y-6">
           <div className="up">
             <h3 className="text-themeOrange capitalize text-2xl font-semibold">
               let&apos;s get in touch

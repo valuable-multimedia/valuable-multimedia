@@ -48,7 +48,7 @@ export default function Home() {
       </div>
 
       {/* content section */}
-      <div className="content-section-home px-5 lg:px-[10rem] py-8 lg:py-16">
+      <div className="content-section-home px-5 lg:px-[10rem] py-10 lg:py-16">
         <div className="flex gap-y-6 flex-col">
           <div className="up">
             <h1 className="lg:text-5xl text-3xl capitalize">
@@ -88,7 +88,7 @@ export default function Home() {
       </div>
 
       {/* services section  */}
-      <div className="service-section-home px-5 lg:px-[10rem] lg:pb-24 py-8 lg:py-20 bg-[#ececec] flex flex-col gap-y-8">
+      <div className="service-section-home px-5 lg:px-[10rem] lg:pb-24 py-10 lg:py-20 bg-[#ececec] flex flex-col gap-y-8">
         <div className="up">
           <h1 className="text-themeOrange text-xl font-semibold capitalize">
             what we are best at
@@ -118,24 +118,30 @@ export default function Home() {
       </div>
 
       {/* info section  */}
-      <div className="info-section-home flex flex-col gap-y-16 px-[10rem] py-14">
+      <div className="info-section-home flex flex-col gap-y-10 lg:gap-y-16 px-5 lg:px-[10rem] py-10 lg:py-14">
         <div className="up flex flex-col gap-y-3">
-          <h3 className="text-themeOrange text-xl font-semibold">
+          <h3 className="text-themeOrange text-lg lg:text-xl font-semibold">
             Tailored Solutions for our clients
           </h3>
-          <h1 className="capitalize text-5xl">
+          <h1 className="capitalize text-3xl lg:text-5xl">
             Take Your Business To Newer Heights
           </h1>
         </div>
 
-        <div className="down flex flex-wrap justify-between gap-y-8">
+        <div className="down flex flex-wrap justify-between gap-y-6 lg:gap-y-8">
           {informations.map((item, index) => (
             <div
-              className="item-detail-box flex flex-col gap-y-4 w-[30%]"
+              className="item-detail-box flex flex-col gap-y-3 lg:gap-y-4 lg:w-[30%]"
               key={`info ${index + 1}`}
             >
-              <div className="text-6xl text-themeOrange">{item.icon}</div>
-              <h2 className="text-3xl capitalize flex flex-col">
+              <div className="text-4xl lg:text-6xl text-themeOrange">
+                {item.icon}
+              </div>
+              <h2 className="text-2xl capitalize flex flex-row gap-x-2 lg:hidden">
+                <span>{item.title}</span>
+                <span>{item.title2}</span>
+              </h2>
+              <h2 className="text-3xl capitalize lg:flex flex-col hidden">
                 <span>{item.title}</span>
                 <span>{item.title2}</span>
               </h2>
@@ -147,16 +153,18 @@ export default function Home() {
       </div>
 
       {/* tools section  */}
-      <div className="tools-section-home px-[10rem] py-16 flex flex-col gap-y-10">
-        <div className="up flex flex-col gap-y-4">
-          <h1 className="text-5xl font-medium">Tools of the Trade</h1>
+      <div className="tools-section-home lg:px-[10rem] px-5 py-5 lg:py-16 flex flex-col gap-y-10">
+        <div className="up flex flex-col gap-y-2 lg:gap-y-4">
+          <h1 className="text-3xl lg:text-5xl font-medium">
+            Tools of the Trade
+          </h1>
           <p className="text-gray-500">
             Using top tools for optimal outcomes and deeper insights.
           </p>
         </div>
 
         <div className="down">
-          <div className="top flex justify-between border-b border-gray-300 pb-4">
+          <div className="top hidden lg:flex justify-between border-b border-gray-300 pb-4">
             {toolsOne.map((item, index) => (
               <Image
                 src={item}
@@ -164,18 +172,44 @@ export default function Home() {
                 height={110}
                 width={110}
                 key={`tools-one-image ${index + 1}`}
+                className=""
               />
             ))}
           </div>
 
-          <div className="bottom flex justify-between pb-4">
+          <div className="top flex lg:hidden justify-between border-b border-gray-300 pb-4">
+            {toolsOne.map((item, index) => (
+              <Image
+                src={item}
+                alt="tools-icon"
+                height={50}
+                width={50}
+                key={`tools-one-image ${index + 1}`}
+                className=""
+              />
+            ))}
+          </div>
+
+          <div className="bottom hidden lg:flex justify-between pb-4">
             {toolsTwo.map((item, index) => (
               <Image
                 src={item}
                 alt="tools-icon"
                 height={110}
                 width={110}
-                key={`tools-one-image ${index + 1}`}
+                key={`tools-one-mobile-image ${index + 1}`}
+              />
+            ))}
+          </div>
+
+          <div className="bottom flex lg:hidden justify-between pb-4">
+            {toolsTwo.map((item, index) => (
+              <Image
+                src={item}
+                alt="tools-icon"
+                height={50}
+                width={50}
+                key={`tools-one-mobile-image ${index + 1}`}
               />
             ))}
           </div>
@@ -183,11 +217,11 @@ export default function Home() {
       </div>
 
       {/* poster section  */}
-      <div className="poster-section-home border-[2px] border-themeOrange mx-16 mb-16 py-10 px-32">
-        <div className="flex">
-          <div className="left flex flex-col gap-y-6 justify-center pr-8 w-1/2">
+      <div className="poster-section-home border-[2px] border-themeOrange lg:mx-16 mx-5 lg:mb-16 py-10 lg:px-32 px-5">
+        <div className="flex flex-col lg:flex-row gap-y-4">
+          <div className="left flex flex-col gap-y-4 lg:gap-y-6 justify-center lg:pr-8 lg:w-1/2">
             <div className="up">
-              <h1 className="capitalize text-5xl font-medium leading-[3.2rem] text-themeOrange">
+              <h1 className="capitalize text-3xl lg:text-5xl font-medium lg:leading-[3.2rem] text-themeOrange">
                 we understand your love for heights
               </h1>
             </div>
@@ -202,7 +236,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="right w-1/2">
+          <div className="right lg:w-1/2">
             <Image
               src="https://res.cloudinary.com/dyvr2mbun/image/upload/v1719813878/bw0vaqxgx7wvhcsy8g0l.webp"
               alt="hand-image"
@@ -214,22 +248,22 @@ export default function Home() {
       </div>
 
       {/* sectors section  */}
-      <div className="sectors-section-home bg-[#ececec] px-[10rem] py-16">
-        <div className="flex">
-          <div className="left w-[40%] flex flex-col justify-center gap-y-6">
-            <h3 className="text-themeOrange capitalize text-xl font-semibold">
+      <div className="sectors-section-home bg-[#ececec] lg:px-[10rem] my-5 lg:my-0 lg:py-16 px-5 py-10">
+        <div className="flex flex-col lg:flex-row gap-y-6">
+          <div className="left lg:w-[40%] flex flex-col justify-center gap-y-4 lg:gap-y-6">
+            <h3 className="text-themeOrange capitalize lg:text-xl font-semibold">
               Delivering services
             </h3>
 
-            <h1 className="text-5xl w-[60%] border font-medium leading-[3.4rem]">
+            <h1 className="text-3xl lg:text-5xl lg:w-[60%] border font-medium lg:leading-[3.4rem]">
               Across Multiple Industries
             </h1>
           </div>
 
-          <div className="right bg-white w-[60%] gap-y-8 p-8 rounded-lg flex flex-wrap justify-between">
+          <div className="right bg-white lg:w-[60%] gap-y-8 p-8 rounded-lg flex flex-wrap justify-between">
             {industries.map((item, index) => (
               <div
-                className="item-box w-[15%] flex flex-col gap-y-2 justify-center items-center"
+                className="item-box w-[30%] lg:w-[15%] flex flex-col gap-y-2 justify-center items-center"
                 key={`industry ${index + 1}`}
               >
                 <Image
@@ -246,7 +280,7 @@ export default function Home() {
       </div>
 
       {/* clients section  */}
-      <div className="clients-section-home px-[10rem] py-16 flex flex-col gap-y-10">
+      <div className="clients-section-home px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col gap-y-10">
         <div className="up">
           <h3 className="text-themeOrange capitalize text-xl font-semibold">
             Serving distinct &amp; influential businesses
@@ -256,7 +290,7 @@ export default function Home() {
         <div className="down flex flex-wrap justify-between gap-y-8">
           {clients.map((item, index) => (
             <div
-              className="client-box w-[30%] flex justify-center items-center hover:border-b-[2px] hover:border-themeOrange border-b-[2px] border-white transition-all cursor-pointer pb-2"
+              className="client-box w-[45%] lg:w-[30%] flex justify-center items-center hover:border-b-[2px] hover:border-themeOrange border-b-[2px] border-white transition-all cursor-pointer pb-2"
               key={`client ${index + 1}`}
             >
               <Image src={item} alt="client-logo" height={100} width={300} />
@@ -266,10 +300,12 @@ export default function Home() {
       </div>
 
       {/* testimonials section  */}
+      <div className="py-4 lg:py-0">
       <Testimonials />
+      </div>
 
       {/* blogs section  */}
-      <div className="blogs-section-home px-[10rem] pt-16 pb-10 flex flex-col gap-y-10">
+      <div className="blogs-section-home px-5 lg:px-[10rem] lg:pt-16 lg:pb-10 pt-12 flex flex-col gap-y-6 lg:gap-y-10">
         <div className="up">
           <h2 className="capitalize text-3xl">recent blogs</h2>
         </div>
@@ -279,7 +315,7 @@ export default function Home() {
             <Link
               href={item.slug}
               key={`blogs ${index + 1}`}
-              className="w-[30%] bg-white shadow-lg rounded-lg"
+              className="lg:w-[30%] bg-white shadow-lg rounded-lg"
             >
               <div className="blog-card flex flex-col gap-y-6 w-full">
                 <div className="up">
@@ -303,9 +339,9 @@ export default function Home() {
       </div>
 
       {/* faqs section  */}
-      <div className="faqs-section px-[10rem] py-16">
+      <div className="faqs-section px-5 lg:px-[10rem] py-10 lg:py-16">
         <div className="faqs">
-          <h1 className="text-black text-center mx-auto mt-4 capitalize text-4xl font-semibold">
+          <h1 className="text-black text-center mx-auto mt-4 capitalize text-3xl lg:text-4xl font-semibold">
             frequently asked questions
           </h1>
           <div className="lg:px-5 lg:w-[80%] mx-auto">

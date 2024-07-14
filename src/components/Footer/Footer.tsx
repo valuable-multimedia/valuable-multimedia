@@ -15,10 +15,10 @@ function Footer() {
   const { navLinks, mainNavLinks } = data;
 
   return (
-    <div className="bg-black flex justify-between flex-col text-white px-[10rem] pt-10 gap-y-10 pb-2">
-      <div className="flex up justify-between">
-        <div className="left w-[20%]">
-          <div className="up flex flex-col gap-y-8">
+    <div className="bg-black flex justify-between flex-col text-white px-5 lg:px-[10rem] pt-5 lg:pt-10 gap-y-10 pb-2">
+      <div className="flex up flex-col gap-y-6 lg:flex-row justify-between">
+        <div className="left lg:w-[20%]">
+          <div className="up flex flex-col gap-y-4 lg:gap-y-8">
             <Link href={"/"}>
               <Image
                 src={
@@ -38,9 +38,9 @@ function Footer() {
           </div>
         </div>
 
-        <div className="middle w-[20%] flex flex-col gap-y-4">
+        <div className="middle lg:w-[20%] flex flex-col gap-y-4">
           <div className="up">
-            <h2 className="capitalize text-2xl font-medium border-b border-white pb-4">
+            <h2 className="capitalize text-2xl font-medium border-b border-white pb-2 lg:pb-4">
               services
             </h2>
           </div>
@@ -61,9 +61,9 @@ function Footer() {
           </div>
         </div>
 
-        <div className="middle-two w-[15%] flex flex-col gap-y-4">
+        <div className="middle-two lg:w-[15%] flex flex-col gap-y-4">
           <div className="up">
-            <h2 className="capitalize text-2xl font-medium border-b border-white pb-4">
+            <h2 className="capitalize text-2xl font-medium border-b border-white pb-2 lg:pb-4">
               quick links
             </h2>
           </div>
@@ -84,9 +84,9 @@ function Footer() {
           </div>
         </div>
 
-        <div className="right w-[35%] flex flex-col gap-y-4">
+        <div className="right lg:w-[35%] flex flex-col gap-y-4">
           <div className="up">
-            <h2 className="capitalize text-2xl font-medium border-b border-white pb-4">
+            <h2 className="capitalize text-2xl font-medium border-b border-white pb-2 lg:pb-4">
               contact us
             </h2>
           </div>
@@ -97,8 +97,14 @@ function Footer() {
                 <FaLocationDot />
               </span>
               <div className="">
-                <Link href={"https://maps.app.goo.gl/cf7LSsm86BxyJ3t67"} className="">
-                  408,Nalanda Enclave,Opp-Sudama Resort, Pritamnagar,Paldi,Ahmedabad,Gujarat,India
+                <Link
+                  href={"https://maps.app.goo.gl/cf7LSsm86BxyJ3t67"}
+                  className=""
+                >
+                  <p>
+                    408,Nalanda Enclave,Opp-Sudama Resort,
+                    Pritamnagar,Paldi,Ahmedabad,Gujarat, India
+                  </p>
                 </Link>
               </div>
             </div>
@@ -113,7 +119,7 @@ function Footer() {
             </div>
 
             <div className="address flex flex-col gap-x-4">
-              <span className="text-xl capitalize border-b-[2px] pb-4">
+              <span className="text-xl capitalize border-b-[2px] pb-2 lg:pb-4">
                 social media links
               </span>
               <div className="mt-4 text-3xl flex gap-x-4">
@@ -152,12 +158,13 @@ function Footer() {
 
       <div className="flex flex-col gap-y-2 text-sm">
         <div className="w-full h-[1px] bg-gray-500"></div>
-        <div className="down flex justify-between items-center">
-          <div className="capitalize">
+
+        <div className="down flex flex-col gap-y-2 lg:flex-row justify-center lg:justify-between items-center -ml-3 lg:-ml-0">
+          <div className="capitalize text-[12px]">
             {" "}
             &copy; VALUABLE MULTIMEDIA 2024 - all rights reserved{" "}
           </div>
-          <div className="capitalize flex items-center gap-x-4">
+          <div className="capitalize justify-center flex items-center gap-x-4">
             <Link
               href={"/terms-and-conditions"}
               className="hover:text-themeOrange transition-all"
