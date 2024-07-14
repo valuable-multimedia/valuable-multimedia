@@ -32,7 +32,7 @@ function AboutUsPage() {
   return (
     <div className="bg-[#fcfcfc] text-black">
       {/* direction banner  */}
-      <div className="bg-[#ffffff] gap-x-3 capitalize py-6 flex items-center px-24 text-gray-400">
+      <div className="bg-[#ffffff] gap-x-3 capitalize py-6 flex items-center px-5 lg:px-24 text-gray-400">
         <span>home</span>
         <span>
           <PiGreaterThan />
@@ -41,12 +41,12 @@ function AboutUsPage() {
       </div>
 
       {/* hero section  */}
-      <div className="hero-section-about px-[10rem] py-16">
-        <div className="heading text-center flex flex-col gap-y-6">
-          <h3 className="text-themeOrange capitalize text-xl font-semibold">
+      <div className="hero-section-about px-5 lg:px-[10rem] py-10 lg:py-16">
+        <div className="heading text-center flex flex-col gap-y-4 lg:gap-y-6">
+          <h3 className="text-themeOrange capitalize text-lg lg:text-xl font-semibold">
             we are valuable multimedia
           </h3>
-          <h1 className="text-5xl font-medium w-[85%] mx-auto leading-[4rem]">
+          <h1 className="text-3xl lg:text-5xl font-medium w-[85%] mx-auto leading-[2.5rem] lg:leading-[4rem]">
             For your brand and For your digital growth,{" "}
             <span className="text-themeOrange">
               Choose ORGANIC, Choose VALUABLE MULTIMEDIA!{" "}
@@ -54,7 +54,7 @@ function AboutUsPage() {
           </h1>
         </div>
 
-        <div className="banner mt-14">
+        <div className="banner mt-6 lg:mt-14">
           <Image
             src={
               "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720759373/about-us/gpnvwcom6ro5gf3olibd.jpg"
@@ -68,13 +68,13 @@ function AboutUsPage() {
       </div>
 
       {/* intro section  */}
-      <div className="intro-section-about px-[10rem] py-16 bg-[#ececec]">
-        <div className="flex">
-          <div className="left w-[30%]">
-            <h1 className="capitalize text-5xl">take a dive</h1>
+      <div className="intro-section-about px-5 lg:px-[10rem] py-10 lg:py-16 bg-[#ececec]">
+        <div className="flex flex-col lg:flex-row gap-y-6">
+          <div className="left lg:w-[30%]">
+            <h1 className="capitalize text-3xl lg:text-5xl">take a dive</h1>
           </div>
 
-          <div className="right w-[70%] flex flex-col gap-y-5">
+          <div className="right lg:w-[70%] flex flex-col gap-y-5">
             <p>
               Valuable Multimedia is dedicated to delivering exceptional ROI in
               digital marketing by optimizing your budget for maximum
@@ -107,14 +107,19 @@ function AboutUsPage() {
       </div>
 
       {/* teams section  */}
-      <div className="teams-section-about px-[12rem] py-16 flex flex-col gap-y-10">
+      <div className="teams-section-about px-5 lg:px-[12rem] py-10 lg:py-16 flex flex-col gap-y-6 lg:gap-y-10">
         <div className="up">
-          <h2 className="text-4xl font-medium capitalize">meet our team</h2>
+          <h2 className="text-3xl lg:text-4xl font-medium capitalize">
+            meet our team
+          </h2>
         </div>
 
-        <div className="down flex flex-wrap justify-center gap-x-10 gap-y-8">
+        <div className="down flex flex-wrap justify-evenly lg:justify-center lg:gap-x-10 gap-y-8">
           {team.map((item, index) => (
-            <div className="w-[30%]" key={`team member ${index + 1}`}>
+            <div
+              className="w-[45%] lg:w-[30%]"
+              key={`team member ${index + 1}`}
+            >
               <Image
                 src={item}
                 alt="team-image"
@@ -128,53 +133,55 @@ function AboutUsPage() {
       </div>
 
       {/* show section */}
-      <div className="show-section-about px-[10rem] py-16 flex flex-col gap-y-14">
+      <div className="show-section-about px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col gap-y-14">
         <div className="heading flex flex-col gap-y-4">
-          <h3 className="text-themeOrange text-xl font-semibold">
+          <h3 className="text-themeOrange text-lg lg:text-xl font-semibold">
             This characteristic sets us apart as
           </h3>
-          <h1 className="text-5xl capitalize">
+          <h1 className="text-3xl lg:text-5xl capitalize">
             an exceptional partner in driving growth.
           </h1>
         </div>
 
-        <div className="dowm flex gap-x-4">
+        <div className="dowm flex flex-wrap justify-evenly gap-y-8 lg:justify-start gap-x-4">
           {aInformations.map((item, index) => (
             <div
-              className="show-box w-[20%] flex flex-col gap-y-6"
+              className="show-box w-[40%] lg:w-[20%] flex flex-col gap-y-6"
               key={`show-box-${index + 1}`}
             >
-              <div className="text-5xl text-themeOrange">{item.icon}</div>
-              <p className="text-gray-500 text-lg">{item.para}</p>
+              <div className="text-4xl lg:text-5xl text-themeOrange">
+                {item.icon}
+              </div>
+              <p className="text-gray-500 lg:text-lg">{item.para}</p>
             </div>
           ))}
         </div>
       </div>
 
       {/* stats section  */}
-      <div className="stats-section-about px-[10rem] pb-16 bg-[#ececec]">
-        <div className="flex gap-x-10">
-          <div className="left w-[35%] bg-themeOrange text-white px-8 py-10">
+      <div className="stats-section-about px-5 lg:px-[10rem] pb-10 lg:pb-16 bg-[#ececec]">
+        <div className="flex flex-col lg:flex-row gap-y-6 gap-x-10">
+          <div className="left lg:w-[35%] bg-themeOrange text-white px-8 py-10">
             <h1 className="text-4xl font-medium capitalize leading-[3rem]">
               Experience what we bring to the table
             </h1>
           </div>
 
-          <div className="right w-[65%] flex items-center px-8">
+          <div className="right lg:w-[65%] flex items-center px-2 lg:px-8">
             <div className="text-black w-full flex items-center">
               <div
                 ref={ref}
-                className="flex justify-center w-full items-center"
+                className="flex justify-center flex-wrap w-full items-center"
               >
                 <motion.div
                   initial={{ opacity: 0, scale: 0 }}
                   animate={controls}
                   transition={{ duration: 1 }}
-                  className="flex lg:flex-wrap w-full flex-col lg:flex-row gap-x-4 gap-y-10 lg:gap-y-14 my-auto"
+                  className="flex justify-center lg:justify-start flex-wrap w-full flex-row gap-x-4 gap-y-10 lg:gap-y-14 my-auto"
                 >
                   {stats?.map((item, index) => (
                     <div
-                      className="lg:w-[30%] text-black w-full flex flex-col gap-x-4 gap-y-6"
+                      className="w-[30%] lg:w-[30%] text-black flex flex-col gap-x-4 gap-y-4 lg:gap-y-6"
                       key={index}
                     >
                       <span className="text-4xl lg:text-[2.5rem] font-semibold min-w-[120px] lg:min-w-[80px] flex gap-x-4 items-center text-gray-400">
@@ -182,11 +189,11 @@ function AboutUsPage() {
                           start={inView ? 0 : 0} // Start counting only when in view
                           end={item.number}
                           duration={4}
-                          className="font-medium text-themeOrange text-7xl"
+                          className="font-medium text-themeOrange text-4xl lg:text-7xl"
                         />
                         {item.sign}
                       </span>
-                      <span className="text-xl text-gray-500 font-poppins font-normal capitalize">
+                      <span className=" lg:text-xl text-gray-500 font-poppins font-normal capitalize">
                         {item.name1} <br /> {item.name2}
                       </span>
                     </div>
@@ -199,9 +206,9 @@ function AboutUsPage() {
       </div>
 
       {/* clients section  */}
-      <div className="clients-section-home px-[10rem] py-16 flex flex-col gap-y-14">
+      <div className="clients-section-home px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col gap-y-8 mb-4 lg:mb-0 lg:gap-y-14">
         <div className="up">
-          <h1 className="text-black capitalize text-4xl font-semibold">
+          <h1 className="text-black capitalize text-3xl lg:text-4xl font-semibold">
             Growing List Of Happy Clients
           </h1>
         </div>
@@ -209,7 +216,7 @@ function AboutUsPage() {
         <div className="down flex flex-wrap justify-between gap-y-8">
           {clients.map((item, index) => (
             <div
-              className="client-box w-[30%] flex justify-center items-center hover:border-b-[2px] hover:border-themeOrange border-b-[2px] border-white transition-all cursor-pointer pb-2"
+              className="client-box w-[45%] lg:w-[30%] flex justify-center items-center hover:border-b-[2px] hover:border-themeOrange border-b-[2px] border-white transition-all cursor-pointer pb-2"
               key={`client ${index + 1}`}
             >
               <Image src={item} alt="client-logo" height={100} width={300} />
