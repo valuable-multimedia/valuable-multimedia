@@ -24,7 +24,7 @@ function Testimonials() {
   return (
     <div className="testimonials-section-home flex bg-[#ececec] mx-5 lg:mx-10 rounded-xl px-5 lg:px-[8rem] lg:pt-16 lg:pb-12 py-8">
       <div className="left hidden lg:block w-[20%]">
-        <Image
+        <img
           src={
             "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719837575/home/uetf6qm9tnh5j3mosphg.webp"
           }
@@ -64,7 +64,7 @@ function Testimonials() {
       </div>
 
       <div className="right hidden lg:block w-[20%]">
-        <Image
+        <img
           src={
             "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719837577/home/fjgc1awtgm9v4eum5txy.webp"
           }

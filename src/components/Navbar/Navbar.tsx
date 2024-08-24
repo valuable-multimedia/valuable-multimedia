@@ -35,7 +35,7 @@ function Navbar() {
       <div className="font-saira hidden lg:flex px-24 py-4 bg-themeBlue text-black justify-between items-center bg-[#fcfcfc]">
         <div className="left">
           <Link href={"/"} className="">
-            <Image
+            <img
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719668005/ohioqrk8p2j27ck1wqb3.png"
               }
@@ -160,7 +160,7 @@ function Navbar() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
           <div className="inline-flex items-center space-x-2">
             <Link href={"/"}>
-              <Image
+              <img
                 src={
                   "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719909599/ll3rkhggdrnrh1yh2lzb.png"
                 }
@@ -181,7 +181,7 @@ function Navbar() {
                   <div className="flex items-center justify-between">
                     <div className="inline-flex items-center space-x-2">
                       <Link href={"/"}>
-                        <Image
+                        <img
                           src={
                             "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719909599/ll3rkhggdrnrh1yh2lzb.png"
                           }

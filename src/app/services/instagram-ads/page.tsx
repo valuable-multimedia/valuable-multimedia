@@ -66,7 +66,7 @@ function InstagramAdsPage() {
           </div>
 
           <div className="right flex justify-center items-center lg:w-[30%]">
-            <Image
+            <img
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720356002/website-development/v9ylxwe38rdrebz6bub6.webp"
               }
@@ -110,7 +110,7 @@ function InstagramAdsPage() {
               <h3 className="text-2xl lg:text-3xl capitalize">
                 {item.title} <br /> {item.title2}{" "}
               </h3>
-              <p className="text-justify">{item.content}</p>
+              <p className="">{item.content}</p>
             </div>
           ))}
         </div>

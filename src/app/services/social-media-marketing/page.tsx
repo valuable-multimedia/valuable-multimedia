@@ -59,7 +59,7 @@ function SocialMediaMarketingPage() {
           </div>
 
           <div className="right flex justify-center items-center lg:w-[30%]">
-            <Image
+            <img
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720280997/website-development/akkg875docq7tfvgpap6.webp"
               }
@@ -108,7 +108,7 @@ function SocialMediaMarketingPage() {
           </div>
 
           <div className="right lg:w-[40%]">
-            <Image
+            <img
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720287045/website-development/qccgnxs8vkw3nc5fbk7f.webp"
               }
@@ -139,7 +139,7 @@ function SocialMediaMarketingPage() {
       <div className="process-section px-5 lg:px-[10rem] py-10 lg:py-20 flex flex-col gap-y-8 lg:gap-y-16">
         <div className="heading flex">
           <div className="left hidden lg:block w-[20%]">
-            <Image
+            <img
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720287482/website-development/yr07s9nnqdquka36ppmb.webp"
               }
@@ -168,7 +168,7 @@ function SocialMediaMarketingPage() {
               <h3 className="text-2xl lg:text-3xl capitalize">
                 {item.title} <br /> {item.title2}{" "}
               </h3>
-              <p className="text-justify">{item.content}</p>
+              <p className="">{item.content}</p>
             </div>
           ))}
         </div>

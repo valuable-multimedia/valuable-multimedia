@@ -72,7 +72,13 @@ function Contact() {
           </div>
 
           <div className="down">
-            <form action="#" ref={form} onSubmit={sendEmail} method="post" className="flex flex-col gap-y-6">
+            <form
+              action="#"
+              ref={form}
+              onSubmit={sendEmail}
+              method="post"
+              className="flex flex-col gap-y-6"
+            >
               <div className="flex flex-col gap-y-2">
                 <label htmlFor="fullName">Full Name</label>
                 <div className="border px-3 py-2 flex items-center gap-x-2 rounded-full border-slate-400">
@@ -83,7 +89,8 @@ function Contact() {
                     type="text"
                     name="fullName"
                     id="fullName"
-                    placeholder="Enter first name"
+                    required
+                    placeholder="Enter full name"
                     className=" capitalize focus:outline-none w-full"
                   />
                 </div>
@@ -98,9 +105,10 @@ function Contact() {
                   <input
                     type="text"
                     name="email"
+                    required
                     id="email"
                     placeholder="Enter email ID"
-                    className=" capitalize focus:outline-none w-full"
+                    className="focus:outline-none w-full"
                   />
                 </div>
               </div>
@@ -114,6 +122,7 @@ function Contact() {
                   <input
                     type="text"
                     name="number"
+                    required
                     id="number"
                     placeholder="Enter phone number"
                     className=" capitalize focus:outline-none w-full"
@@ -131,6 +140,7 @@ function Contact() {
                     name="lookingFor"
                     id="lookingFor"
                     cols={30}
+                    required
                     rows={4}
                     className="w-full focus:outline-none"
                   >

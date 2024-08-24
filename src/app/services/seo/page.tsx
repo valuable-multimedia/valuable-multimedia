@@ -62,7 +62,7 @@ function SEOPage() {
           </div>
 
           <div className="right flex justify-center items-center lg:w-[30%]">
-            <Image
+            <img
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720342813/website-development/bo57r9sa6csgaxhqvu6q.webp"
               }
@@ -158,7 +158,7 @@ function SEOPage() {
               <h3 className="text-2xl lg:hidden block lg:text-3xl capitalize">
                 {item.title}  {item.title2}{" "}
               </h3>
-              <p className="text-justify">{item.content}</p>
+              <p className="">{item.content}</p>
             </div>
           ))}
         </div>

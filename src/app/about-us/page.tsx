@@ -55,7 +55,7 @@ function AboutUsPage() {
         </div>
 
         <div className="banner mt-6 lg:mt-14">
-          <Image
+          <img
             src={
               "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720759373/about-us/gpnvwcom6ro5gf3olibd.jpg"
             }
@@ -120,7 +120,7 @@ function AboutUsPage() {
               className="w-[45%] lg:w-[30%]"
               key={`team member ${index + 1}`}
             >
-              <Image
+              <img
                 src={item}
                 alt="team-image"
                 height={300}
@@ -219,7 +219,7 @@ function AboutUsPage() {
               className="client-box w-[45%] lg:w-[30%] flex justify-center items-center hover:border-b-[2px] hover:border-themeOrange border-b-[2px] border-white transition-all cursor-pointer pb-2"
               key={`client ${index + 1}`}
             >
-              <Image src={item} alt="client-logo" height={100} width={300} />
+              <img src={item} alt="client-logo" height={100} width={300} />
             </div>
           ))}
         </div>

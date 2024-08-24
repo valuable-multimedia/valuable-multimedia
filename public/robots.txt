@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://valuablemultimedia.com
+
+# Sitemaps
+Sitemap: https://valuablemultimedia.com/sitemap.xml

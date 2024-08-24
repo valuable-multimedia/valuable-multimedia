@@ -13,7 +13,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 
-function BlogPage() {
+function BlogPage2() {
   const { blogs } = data;
   const [currentUrl, setCurrentUrl] = useState("");
 
@@ -35,19 +35,19 @@ function BlogPage() {
         <span>
           <PiGreaterThan />
         </span>
-        <span className="">{blogs[0].title}</span>
+        <span className="">{blogs[1].title}</span>
       </div>
 
       {/* hero section  */}
       <div className="px-5 lg:px-[10rem] py-10 flex flex-col gap-y-10">
         <div className="top flex justify-center">
           <div className="bg-themeOrange text-white px-3 py-1 inline-flex rounded-xl">
-            {blogs[0].keyword}
+            {blogs[1].keyword}
           </div>
         </div>
 
         <h1 className="text-4xl lg:text-5xl font-medium text-center lg:leading-[3.5rem]">
-          {blogs[0].title}
+          {blogs[1].title}
         </h1>
 
         {/* <div className="mt-5 flex">
@@ -59,7 +59,7 @@ function BlogPage() {
 
         <div className="blog-banner mx-auto">
           <img
-            src={blogs[0].imgUrl}
+            src={blogs[1].imgUrl}
             alt="blog-banner"
             height={1000}
             width={1000}
@@ -111,18 +111,11 @@ function BlogPage() {
 
       {/* introduction section  */}
       <div className="introduction px-5 lg:px-[10rem] py-10 text-lg">
-        {blogs[0].content[0].data}
+        {blogs[1].content[0].data}
       </div>
 
-      {/* title-paragraphs  */}
-      <div className="title-paragraphs px-5 lg:px-[10rem] pb-5 flex flex-col gap-y-4">
-        <h2 className="text-3xl lg:text-4xl font-semibold">
-          {blogs[0].content[1].title}
-        </h2>
-        <p className="text-lg">{blogs[0].content[1].data}</p>
-      </div>
-
-      {blogs[0].content[2]?.bulks?.map((item, index) => (
+      {/* main blog pointers  */}
+      {blogs[1].content[1]?.bulks?.map((item, index) => (
         <div
           className="title-subtitle-paragraphs px-5 lg:px-[10rem] py-5 flex flex-col gap-y-6"
           key={`bumper-content-${index + 1}`}
@@ -144,8 +137,50 @@ function BlogPage() {
           ))}
         </div>
       ))}
+
+      {/* title-paragraphs  */}
+      <div className="title-paragraphs px-5 lg:px-[10rem] pb-5 flex flex-col gap-y-4">
+        <h2 className="text-3xl lg:text-4xl font-semibold">
+          {blogs[1].content[2].title}
+        </h2>
+        <p className="text-lg">
+          Social media advertising is no longer just an option; it&apos;s a
+          necessity for brands looking to thrive in the digital age. The
+          advantages—from increased brand awareness to boosted sales—are clear.
+          By leveraging the power of social media platforms, your brand can
+          reach new heights and connect with customers like never before.
+        </p>
+        <p className="text-lg">
+          At Valuable Multimedia, we specialize in crafting tailored social
+          media advertising strategies that deliver results. Whether you&apos;re
+          looking to boost brand awareness, drive sales, or increase website
+          traffic, we&apos;re here to help.{" "}
+          <span className="font-bold">
+            Ready to take your brand to the next level?{" "}
+          </span>{" "}
+          <span>
+            <Link href={"/contact-us"} className="text-sky-500 underline">
+              Contact us today
+            </Link>
+          </span>{" "}
+          to discuss how we can help you harness the power of social media
+          advertising and achieve your business goals.
+        </p>
+
+        <p className="text-lg">
+          Remember, in the world of social media, staying ahead means being
+          proactive. Start your journey with{" "}
+          <span>
+            <Link href={"/"} className="text-sky-500 underline">
+              {" "}
+              Valuable Multimedia
+            </Link>
+          </span>
+          , and let&apos;s build something extraordinary together.
+        </p>
+      </div>
     </div>
   );
 }
 
-export default BlogPage;
+export default BlogPage2;

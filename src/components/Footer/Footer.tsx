@@ -20,7 +20,7 @@ function Footer() {
         <div className="left lg:w-[20%]">
           <div className="up flex flex-col gap-y-4 lg:gap-y-8">
             <Link href={"/"}>
-              <Image
+              <img
                 src={
                   "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719909599/ll3rkhggdrnrh1yh2lzb.png"
                 }

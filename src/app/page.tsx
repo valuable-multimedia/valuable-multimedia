@@ -35,7 +35,7 @@ export default function Home() {
         </div>
 
         <div className="right flex justify-center items-center lg:w-[45%] font-bold">
-          <Image
+          <img
             src={
               "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720759168/home/fgafzicb8wkzkzmwm3j7.jpg"
             }
@@ -60,7 +60,7 @@ export default function Home() {
               <h4 className="text-xl lg:text-2xl">
                 Why sweat online presence?
               </h4>
-              <p className="text-justify">
+              <p className="">
                 over years of rigor, consistency, sincerity, and dedication.
                 With our gamut of fully integrated digital marketing services,
                 we provide significant, sustainable, and measurable business
@@ -145,7 +145,7 @@ export default function Home() {
                 <span>{item.title}</span>
                 <span>{item.title2}</span>
               </h2>
-              <p className="text-justify">{item.description}</p>
+              <p className="">{item.description}</p>
               <div className=""></div>
             </div>
           ))}
@@ -166,7 +166,7 @@ export default function Home() {
         <div className="down">
           <div className="top hidden lg:flex justify-between border-b border-gray-300 pb-4">
             {toolsOne.map((item, index) => (
-              <Image
+              <img
                 src={item}
                 alt="tools-icon"
                 height={110}
@@ -179,7 +179,7 @@ export default function Home() {
 
           <div className="top flex lg:hidden justify-between border-b border-gray-300 pb-4">
             {toolsOne.map((item, index) => (
-              <Image
+              <img
                 src={item}
                 alt="tools-icon"
                 height={50}
@@ -192,7 +192,7 @@ export default function Home() {
 
           <div className="bottom hidden lg:flex justify-between pb-4">
             {toolsTwo.map((item, index) => (
-              <Image
+              <img
                 src={item}
                 alt="tools-icon"
                 height={110}
@@ -204,7 +204,7 @@ export default function Home() {
 
           <div className="bottom flex lg:hidden justify-between pb-4">
             {toolsTwo.map((item, index) => (
-              <Image
+              <img
                 src={item}
                 alt="tools-icon"
                 height={50}
@@ -237,7 +237,7 @@ export default function Home() {
           </div>
 
           <div className="right lg:w-1/2">
-            <Image
+            <img
               src="https://res.cloudinary.com/dyvr2mbun/image/upload/v1719813878/bw0vaqxgx7wvhcsy8g0l.webp"
               alt="hand-image"
               height={400}
@@ -266,7 +266,7 @@ export default function Home() {
                 className="item-box w-[30%] lg:w-[15%] flex flex-col gap-y-2 justify-center items-center"
                 key={`industry ${index + 1}`}
               >
-                <Image
+                <img
                   src={item.imgUrl}
                   alt="industry-icon"
                   height={50}
@@ -293,7 +293,7 @@ export default function Home() {
               className="client-box w-[45%] lg:w-[30%] flex justify-center items-center hover:border-b-[2px] hover:border-themeOrange border-b-[2px] border-white transition-all cursor-pointer pb-2"
               key={`client ${index + 1}`}
             >
-              <Image src={item} alt="client-logo" height={100} width={300} />
+              <img src={item} alt="client-logo" height={100} width={300} />
             </div>
           ))}
         </div>
@@ -301,7 +301,7 @@ export default function Home() {
 
       {/* testimonials section  */}
       <div className="py-4 lg:py-0">
-      <Testimonials />
+        <Testimonials />
       </div>
 
       {/* blogs section  */}
@@ -310,7 +310,7 @@ export default function Home() {
           <h2 className="capitalize text-3xl">recent blogs</h2>
         </div>
 
-        <div className="down flex flex-wrap justify-between w-full">
+        <div className="down flex flex-wrap justify-start gap-x-16 w-full">
           {blogs.map((item, index) => (
             <Link
               href={item.slug}
@@ -319,11 +319,12 @@ export default function Home() {
             >
               <div className="blog-card flex flex-col gap-y-6 w-full">
                 <div className="up">
-                  <Image
+                  <img
                     src={item.imgUrl}
                     alt="blog-image"
                     height={400}
                     width={400}
+                    className="max-h-[250px] overflow-hidden"
                   />
                 </div>
                 <div className="down flex flex-col gap-y-3 px-4 py-2">

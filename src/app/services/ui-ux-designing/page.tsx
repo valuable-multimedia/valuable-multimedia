@@ -53,7 +53,7 @@ function UIUXDesigningPage() {
           </div>
 
           <div className="right flex justify-center items-center lg:w-[30%]">
-            <Image
+            <img
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720333876/website-development/amnbgou5hphogatx2zlq.webp"
               }
@@ -149,7 +149,7 @@ function UIUXDesigningPage() {
               <h3 className="text-2xl lg:hidden block lg:text-3xl capitalize">
                 {item.title} {item?.title2 || ""}{" "}
               </h3>
-              <p className="text-justify">{item.content}</p>
+              <p className="">{item.content}</p>
             </div>
           ))}
         </div>

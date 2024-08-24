@@ -114,7 +114,8 @@ function ContactUsPage() {
                     type="text"
                     name="fullName"
                     id="fullName"
-                    placeholder="Enter first name"
+                    required
+                    placeholder="Enter full name"
                     className=" capitalize focus:outline-none w-full"
                   />
                 </div>
@@ -131,7 +132,8 @@ function ContactUsPage() {
                     name="email"
                     id="email"
                     placeholder="Enter email ID"
-                    className=" capitalize focus:outline-none w-full"
+                    className="focus:outline-none w-full"
+                    required
                   />
                 </div>
               </div>
@@ -148,6 +150,7 @@ function ContactUsPage() {
                     id="number"
                     placeholder="Enter phone number"
                     className=" capitalize focus:outline-none w-full"
+                    required
                   />
                 </div>
               </div>
@@ -164,6 +167,7 @@ function ContactUsPage() {
                     cols={30}
                     rows={4}
                     className="w-full focus:outline-none"
+                    required
                   >
                     Enter your main text here...
                   </textarea>

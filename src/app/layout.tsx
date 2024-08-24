@@ -19,9 +19,44 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  let GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GTM_ID}`}
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+               window.dataLayer = window.dataLayer || [];
+               function gtag(){dataLayer.push(arguments);}
+               gtag('js', new Date());
+               gtag('config','${GTM_ID}',{
+               page_path: window.location.pathname
+               });
+              `,
+          }}
+        />
+
+        <meta
+          name="google-site-verification"
+          content="YG3OEzLExFEl9kzEIZ_10yjgjxo83Gh4oLrsM5P8OrI"
+        />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body className={sora.className}>
+        {/* <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WK3JZJJP"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript> */}
         <Toaster />
         <Navbar />
         <div className="sticker fixed top-[50%] -right-[4.5rem] rounded-lg py-3 text-white bg-themeOrange rotate-90">

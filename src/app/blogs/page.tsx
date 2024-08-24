@@ -6,7 +6,7 @@ import Link from "next/link";
 import data from "@/data/blogs_data.json";
 import Image from "next/image";
 
-function BlogPage() {
+function BlogPageMain() {
   const { blogs } = data;
 
   return (
@@ -33,7 +33,7 @@ function BlogPage() {
 
       {/* blogs section  */}
       <div className="blogs-section-home px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col gap-y-10">
-        <div className="down flex flex-wrap justify-between w-full">
+        <div className="down flex flex-wrap justify-center gap-x-10 w-full">
           {blogs.map((item, index) => (
             <Link
               href={item.slug}
@@ -42,12 +42,12 @@ function BlogPage() {
             >
               <div className="blog-card flex flex-col gap-y-6 w-full">
                 <div className="up">
-                  <Image
+                  <img
                     src={item.imgUrl}
                     alt="blog-image"
                     height={400}
                     width={400}
-                    className="rounded-t-lg"
+                    className="rounded-t-lg max-h-[250px] overflow-hidden"
                   />
                 </div>
                 <div className="down flex flex-col gap-y-3 px-4 py-2">
@@ -65,4 +65,4 @@ function BlogPage() {
   );
 }
 
-export default BlogPage;
+export default BlogPageMain;

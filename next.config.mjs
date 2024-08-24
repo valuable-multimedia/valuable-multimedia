@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: "export", // new one 
+  output: "export", // new one
   images: {
     domains: [
       "pexels.com",
