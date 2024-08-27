@@ -34,7 +34,7 @@ function BlogPageMain() {
       {/* blogs section  */}
       <div className="blogs-section-home px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col gap-y-10">
         <div className="down flex flex-wrap justify-center gap-x-10 w-full">
-          {blogs.map((item, index) => (
+          {blogs.slice().reverse().map((item, index) => (
             <Link
               href={item.slug}
               key={`blogs ${index + 1}`}

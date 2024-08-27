@@ -112,16 +112,16 @@
   ],
   "blogs": [
     {
-      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1724474946/blogs/lajiuzlstapjnmferasl.jpg",
-      "date": "26 march,2024",
-      "title": "The Essential Role of Digital Marketing in Modern Business Success",
-      "slug": "/blogs/digital-marketing"
-    },
-    {
       "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1724472924/blogs/d4fwfaopschrevka46e2.webp",
       "date": "24 september,2024",
       "title": "Top 8 Advantages of Social Media Advertising for your Brands",
       "slug": "/blogs/advantages-of-social-media-advertising-for-your-brands"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/dyvr2mbun/image/upload/v1724474946/blogs/lajiuzlstapjnmferasl.jpg",
+      "date": "26 march,2024",
+      "title": "The Essential Role of Digital Marketing in Modern Business Success",
+      "slug": "/blogs/digital-marketing"
     }
   ],
   "testimonials": [

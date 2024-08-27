@@ -78,7 +78,7 @@ function BlogPage2() {
           <div className="text-gray-300 text-sm">
             <FaCircle />
           </div>
-          <h3>July 9, 2024</h3>
+          <h3>24 September, 2024</h3>
         </div>
 
         <div className="flex gap-x-2 text-2xl">
