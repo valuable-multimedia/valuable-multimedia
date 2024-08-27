@@ -35,7 +35,7 @@ export default function Home() {
         </div>
 
         <div className="right flex justify-center items-center lg:w-[45%] font-bold">
-          <img
+          <Image
             src={
               "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720759168/home/fgafzicb8wkzkzmwm3j7.jpg"
             }
@@ -51,9 +51,9 @@ export default function Home() {
       <div className="content-section-home px-5 lg:px-[10rem] py-10 lg:py-16">
         <div className="flex gap-y-6 flex-col">
           <div className="up">
-            <h1 className="lg:text-5xl text-3xl capitalize">
+            <h2 className="lg:text-5xl text-3xl capitalize">
               We&apos;re Result Driven Digital Marketing Agency
-            </h1>
+            </h2>
           </div>
           <div className="down flex flex-col gap-y-6 lg:flex-row">
             <div className="left w-full lg:w-[80%] flex flex-col gap-y-3">
@@ -90,9 +90,9 @@ export default function Home() {
       {/* services section  */}
       <div className="service-section-home px-5 lg:px-[10rem] lg:pb-24 py-10 lg:py-20 bg-[#ececec] flex flex-col gap-y-8">
         <div className="up">
-          <h1 className="text-themeOrange text-xl font-semibold capitalize">
+          <h2 className="text-themeOrange text-xl font-semibold capitalize">
             what we are best at
-          </h1>
+          </h2>
         </div>
 
         <div className="lower flex flex-col lg:flex-row gap-y-6 lg:gap-y-10 justify-center gap-x-14 border flex-wrap">
@@ -123,9 +123,9 @@ export default function Home() {
           <h3 className="text-themeOrange text-lg lg:text-xl font-semibold">
             Tailored Solutions for our clients
           </h3>
-          <h1 className="capitalize text-3xl lg:text-5xl">
+          <h2 className="capitalize text-3xl lg:text-5xl">
             Take Your Business To Newer Heights
-          </h1>
+          </h2>
         </div>
 
         <div className="down flex flex-wrap justify-between gap-y-6 lg:gap-y-8">
@@ -155,9 +155,9 @@ export default function Home() {
       {/* tools section  */}
       <div className="tools-section-home lg:px-[10rem] px-5 py-5 lg:py-16 flex flex-col gap-y-10">
         <div className="up flex flex-col gap-y-2 lg:gap-y-4">
-          <h1 className="text-3xl lg:text-5xl font-medium">
+          <h2 className="text-3xl lg:text-5xl font-medium">
             Tools of the Trade
-          </h1>
+          </h2>
           <p className="text-gray-500">
             Using top tools for optimal outcomes and deeper insights.
           </p>
@@ -166,7 +166,7 @@ export default function Home() {
         <div className="down">
           <div className="top hidden lg:flex justify-between border-b border-gray-300 pb-4">
             {toolsOne.map((item, index) => (
-              <img
+              <Image
                 src={item}
                 alt="tools-icon"
                 height={110}
@@ -179,7 +179,7 @@ export default function Home() {
 
           <div className="top flex lg:hidden justify-between border-b border-gray-300 pb-4">
             {toolsOne.map((item, index) => (
-              <img
+              <Image
                 src={item}
                 alt="tools-icon"
                 height={50}
@@ -192,7 +192,7 @@ export default function Home() {
 
           <div className="bottom hidden lg:flex justify-between pb-4">
             {toolsTwo.map((item, index) => (
-              <img
+              <Image
                 src={item}
                 alt="tools-icon"
                 height={110}
@@ -204,7 +204,7 @@ export default function Home() {
 
           <div className="bottom flex lg:hidden justify-between pb-4">
             {toolsTwo.map((item, index) => (
-              <img
+              <Image
                 src={item}
                 alt="tools-icon"
                 height={50}
@@ -221,9 +221,9 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row gap-y-4">
           <div className="left flex flex-col gap-y-4 lg:gap-y-6 justify-center lg:pr-8 lg:w-1/2">
             <div className="up">
-              <h1 className="capitalize text-3xl lg:text-5xl font-medium lg:leading-[3.2rem] text-themeOrange">
+              <h2 className="capitalize text-3xl lg:text-5xl font-medium lg:leading-[3.2rem] text-themeOrange">
                 we understand your love for heights
-              </h1>
+              </h2>
             </div>
 
             <p>
@@ -237,7 +237,7 @@ export default function Home() {
           </div>
 
           <div className="right lg:w-1/2">
-            <img
+            <Image
               src="https://res.cloudinary.com/dyvr2mbun/image/upload/v1719813878/bw0vaqxgx7wvhcsy8g0l.webp"
               alt="hand-image"
               height={400}
@@ -255,9 +255,9 @@ export default function Home() {
               Delivering services
             </h3>
 
-            <h1 className="text-3xl lg:text-5xl lg:w-[60%] border font-medium lg:leading-[3.4rem]">
+            <h2 className="text-3xl lg:text-5xl lg:w-[60%] border font-medium lg:leading-[3.4rem]">
               Across Multiple Industries
-            </h1>
+            </h2>
           </div>
 
           <div className="right bg-white lg:w-[60%] gap-y-8 p-8 rounded-lg flex flex-wrap justify-between">
@@ -266,7 +266,7 @@ export default function Home() {
                 className="item-box w-[30%] lg:w-[15%] flex flex-col gap-y-2 justify-center items-center"
                 key={`industry ${index + 1}`}
               >
-                <img
+                <Image
                   src={item.imgUrl}
                   alt="industry-icon"
                   height={50}
@@ -293,7 +293,7 @@ export default function Home() {
               className="client-box w-[45%] lg:w-[30%] flex justify-center items-center hover:border-b-[2px] hover:border-themeOrange border-b-[2px] border-white transition-all cursor-pointer pb-2"
               key={`client ${index + 1}`}
             >
-              <img src={item} alt="client-logo" height={100} width={300} />
+              <Image src={item} alt="client-logo" height={100} width={300} />
             </div>
           ))}
         </div>
@@ -319,7 +319,7 @@ export default function Home() {
             >
               <div className="blog-card flex flex-col gap-y-6 w-full">
                 <div className="up">
-                  <img
+                  <Image
                     src={item.imgUrl}
                     alt="blog-image"
                     height={400}
@@ -342,9 +342,9 @@ export default function Home() {
       {/* faqs section  */}
       <div className="faqs-section px-5 lg:px-[10rem] py-10 lg:py-16">
         <div className="faqs">
-          <h1 className="text-black text-center mx-auto mt-4 capitalize text-3xl lg:text-4xl font-semibold">
+          <h2 className="text-black text-center mx-auto mt-4 capitalize text-3xl lg:text-4xl font-semibold">
             frequently asked questions
-          </h1>
+          </h2>
           <div className="lg:px-5 lg:w-[80%] mx-auto">
             <div className="mx-auto mt-8 grid gap-y-4">
               {faqs?.map((item, index) => (

@@ -55,7 +55,7 @@ function AboutUsPage() {
         </div>
 
         <div className="banner mt-6 lg:mt-14">
-          <img
+          <Image
             src={
               "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720759373/about-us/gpnvwcom6ro5gf3olibd.jpg"
             }
@@ -71,7 +71,7 @@ function AboutUsPage() {
       <div className="intro-section-about px-5 lg:px-[10rem] py-10 lg:py-16 bg-[#ececec]">
         <div className="flex flex-col lg:flex-row gap-y-6">
           <div className="left lg:w-[30%]">
-            <h1 className="capitalize text-3xl lg:text-5xl">take a dive</h1>
+            <h2 className="capitalize text-3xl lg:text-5xl">take a dive</h2>
           </div>
 
           <div className="right lg:w-[70%] flex flex-col gap-y-5">
@@ -120,7 +120,7 @@ function AboutUsPage() {
               className="w-[45%] lg:w-[30%]"
               key={`team member ${index + 1}`}
             >
-              <img
+              <Image
                 src={item}
                 alt="team-image"
                 height={300}
@@ -138,9 +138,9 @@ function AboutUsPage() {
           <h3 className="text-themeOrange text-lg lg:text-xl font-semibold">
             This characteristic sets us apart as
           </h3>
-          <h1 className="text-3xl lg:text-5xl capitalize">
+          <h2 className="text-3xl lg:text-5xl capitalize">
             an exceptional partner in driving growth.
-          </h1>
+          </h2>
         </div>
 
         <div className="dowm flex flex-wrap justify-evenly gap-y-8 lg:justify-start gap-x-4">
@@ -162,9 +162,9 @@ function AboutUsPage() {
       <div className="stats-section-about px-5 lg:px-[10rem] pb-10 lg:pb-16 bg-[#ececec]">
         <div className="flex flex-col lg:flex-row gap-y-6 gap-x-10">
           <div className="left lg:w-[35%] bg-themeOrange text-white px-8 py-10">
-            <h1 className="text-4xl font-medium capitalize leading-[3rem]">
+            <h2 className="text-4xl font-medium capitalize leading-[3rem]">
               Experience what we bring to the table
-            </h1>
+            </h2>
           </div>
 
           <div className="right lg:w-[65%] flex items-center px-2 lg:px-8">
@@ -208,9 +208,9 @@ function AboutUsPage() {
       {/* clients section  */}
       <div className="clients-section-home px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col gap-y-8 mb-4 lg:mb-0 lg:gap-y-14">
         <div className="up">
-          <h1 className="text-black capitalize text-3xl lg:text-4xl font-semibold">
+          <h2 className="text-black capitalize text-3xl lg:text-4xl font-semibold">
             Growing List Of Happy Clients
-          </h1>
+          </h2>
         </div>
 
         <div className="down flex flex-wrap justify-between gap-y-8">
@@ -219,7 +219,7 @@ function AboutUsPage() {
               className="client-box w-[45%] lg:w-[30%] flex justify-center items-center hover:border-b-[2px] hover:border-themeOrange border-b-[2px] border-white transition-all cursor-pointer pb-2"
               key={`client ${index + 1}`}
             >
-              <img src={item} alt="client-logo" height={100} width={300} />
+              <Image src={item} alt="client-logo" height={100} width={300} />
             </div>
           ))}
         </div>

@@ -61,7 +61,7 @@ function GoogleAdsPage() {
           </div>
 
           <div className="right flex justify-center items-center lg:w-[30%]">
-            <img
+            <Image
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720342813/website-development/bo57r9sa6csgaxhqvu6q.webp"
               }

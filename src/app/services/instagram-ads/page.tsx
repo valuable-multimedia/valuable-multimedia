@@ -66,7 +66,7 @@ function InstagramAdsPage() {
           </div>
 
           <div className="right flex justify-center items-center lg:w-[30%]">
-            <img
+            <Image
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720356002/website-development/v9ylxwe38rdrebz6bub6.webp"
               }

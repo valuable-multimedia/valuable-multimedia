@@ -60,7 +60,7 @@ function WebDevelopmentPage() {
           </div>
 
           <div className="right flex justify-center items-center lg:w-[30%]">
-            <img
+            <Image
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720193039/website-development/jzcu7h1njvztov1x51xm.webp"
               }

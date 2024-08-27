@@ -42,7 +42,7 @@ function BlogPageMain() {
             >
               <div className="blog-card flex flex-col gap-y-6 w-full">
                 <div className="up">
-                  <img
+                  <Image
                     src={item.imgUrl}
                     alt="blog-image"
                     height={400}

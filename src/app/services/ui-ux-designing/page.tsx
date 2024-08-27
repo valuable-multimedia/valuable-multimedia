@@ -53,7 +53,7 @@ function UIUXDesigningPage() {
           </div>
 
           <div className="right flex justify-center items-center lg:w-[30%]">
-            <img
+            <Image
               src={
                 "https://res.cloudinary.com/dyvr2mbun/image/upload/v1720333876/website-development/amnbgou5hphogatx2zlq.webp"
               }

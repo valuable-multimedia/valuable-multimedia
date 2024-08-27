@@ -190,9 +190,9 @@ function ContactUsPage() {
         {/* contact-section  */}
         <div className="contact-section-contact py-16 lg:pt-28 pb-10 flex flex-col lg:flex-row gap-y-8 justify-between">
           <div className="lg:w-[47%] bg-[#fff] text-black p-4 flex flex-col gap-y-6">
-            <h1 className="text-2xl font-medium text-themeOrange">
+            <h2 className="text-2xl font-medium text-themeOrange">
               Gujarat, India (HQ)
-            </h1>
+            </h2>
             <div className="">
               <Link
                 href={"https://maps.app.goo.gl/cf7LSsm86BxyJ3t67"}
@@ -222,9 +222,9 @@ function ContactUsPage() {
           </div>
 
           <div className="lg:w-[47%] bg-[#fff] text-black p-4 flex flex-col gap-y-6">
-            <h1 className="text-2xl font-medium text-themeOrange capitalize">
+            <h2 className="text-2xl font-medium text-themeOrange capitalize">
               connect with us
-            </h1>
+            </h2>
             <div className="flex items-center gap-x-4">
               <span className="text-xl text-themeOrange">
                 <FaInstagram />
