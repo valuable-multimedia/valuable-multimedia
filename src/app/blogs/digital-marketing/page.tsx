@@ -61,8 +61,8 @@ function BlogPage() {
           <img
             src={blogs[0].imgUrl}
             alt="blog-banner"
-            height={1000}
-            width={1000}
+            height={600}
+            width={600}
             className="rounded-xl"
           />
         </div>

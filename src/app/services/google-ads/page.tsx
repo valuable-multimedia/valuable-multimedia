@@ -114,9 +114,9 @@ function GoogleAdsPage() {
 
       {/* black banner section  */}
       <div className="black-banner-section px-5 lg:px-[10rem] py-10 lg:py-10 bg-black text-white flex flex-col lg:flex-row gap-y-6 justify-between items-center">
-        <h1 className="text-3xl lg:text-5xl font-medium">
+        <h2 className="text-3xl lg:text-5xl font-medium">
           Ready to take the first step, let&apos;s talk.
-        </h1>
+        </h2>
 
         <div className="mr-auto lg:mr-0">
           <Link href={"/contact-us"} className="lg:mr-auto">
@@ -130,9 +130,9 @@ function GoogleAdsPage() {
       {/* why section  */}
       <div className="keypoints-section bg-[#fff] px-5 lg:px-[10rem] py-10 lg:py-16">
         <div className="border-l-4 border-themeOrange border-r-4 bg-[#ececec] p-6 flex flex-col gap-y-6">
-          <h1 className="text-3xl lg:text-4xl capitalize leading-[3.3rem] font-medium">
+          <h2 className="text-3xl lg:text-4xl capitalize leading-[3.3rem] font-medium">
             why PPC ?
-          </h1>
+          </h2>
 
           <div className="flex flex-col gap-y-4">
             <p>Achieving results faster is only possible with PPC.</p>
@@ -163,9 +163,9 @@ function GoogleAdsPage() {
       {/* faqs section  */}
       <div className="faqs-section px-5 lg:px-[10rem] py-10">
         <div className="faqs">
-          <h1 className="text-black text-center mx-auto mt-4 capitalize text-3xl lg:text-4xl font-semibold">
+          <h2 className="text-black text-center mx-auto mt-4 capitalize text-3xl lg:text-4xl font-semibold">
             frequently asked questions
-          </h1>
+          </h2>
           <div className="lg:px-5 lg:w-[80%] mx-auto">
             <div className="mx-auto mt-8 grid gap-y-4">
               {faqs?.map((item, index) => (

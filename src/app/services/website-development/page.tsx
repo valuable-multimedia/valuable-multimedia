@@ -90,11 +90,11 @@ function WebDevelopmentPage() {
       {/* services section  */}
       <div className="services-section px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col gap-y-10">
         <div className="heading flex flex-col gap-y-6">
-          <h1 className="text-3xl lg:text-4xl font-medium capitalize flex flex-wrap gap-x-3">
+          <h2 className="text-3xl lg:text-4xl font-medium capitalize flex flex-wrap gap-x-3">
             <span>our</span>
             <span className="text-themeOrange">web development</span>
             <span>services</span>
-          </h1>
+          </h2>
 
           <p>
             At VALUABLE MULTIMEDIA - a reliable website development company in
@@ -119,9 +119,9 @@ function WebDevelopmentPage() {
 
       {/* black banner section  */}
       <div className="black-banner-section px-5 lg:px-[10rem] py-10 lg:py-10 bg-black text-white flex flex-col lg:flex-row gap-y-6 justify-between items-center">
-        <h1 className="text-3xl lg:text-5xl font-medium">
+        <h2 className="text-3xl lg:text-5xl font-medium">
           Ready to take the first step, let&apos;s talk.
-        </h1>
+        </h2>
 
         <div className="mr-auto lg:mr-0">
           <Link href={"/contact-us"} className="lg:mr-auto">
@@ -135,11 +135,11 @@ function WebDevelopmentPage() {
       {/* process section  */}
       <div className="process-section px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col gap-y-8 lg:gap-y-10">
         <div className="heading flex flex-col gap-y-2">
-          <h1 className="text-3xl lg:text-4xl font-medium flex flex-wrap gap-x-2">
+          <h2 className="text-3xl lg:text-4xl font-medium flex flex-wrap gap-x-2">
             <span>Delivering</span>
             <span className="text-themeOrange">Website Development</span>
-          </h1>
-          <h1 className="text-4xl font-medium flex gap-x-2">Excellence:</h1>
+          </h2>
+          <h2 className="text-4xl font-medium flex gap-x-2">Excellence:</h2>
 
           <div className="capitalize text-lg">our web development process</div>
         </div>
@@ -166,10 +166,10 @@ function WebDevelopmentPage() {
       <div className="keypoints-section bg-[#ececec] px-5 lg:px-[10rem] py-10 lg:py-16">
         <div className="flex flex-col lg:flex-row gap-y-6 justify-between">
           <div className="left lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
-            <h1 className="text-3xl lg:text-[43px] font-medium lg:leading-[3rem]">
+            <h2 className="text-3xl lg:text-[43px] font-medium lg:leading-[3rem]">
               Transform Your <br /> Website into a High-Performing Business
               Growth Engine
-            </h1>
+            </h2>
             <p className="lg:pr-12">
               Whether you are launching a new business or aiming to enhance an
               existing website, our team of developers is fully equipped to
@@ -198,9 +198,9 @@ function WebDevelopmentPage() {
       {/* faqs section  */}
       <div className="faqs-section px-5 lg:px-[10rem] py-10 lg:py-16">
         <div className="faqs">
-          <h1 className="text-black text-center mx-auto mt-4 capitalize text-3xl lg:text-4xl font-semibold">
+          <h2 className="text-black text-center mx-auto mt-4 capitalize text-3xl lg:text-4xl font-semibold">
             frequently asked questions
-          </h1>
+          </h2>
           <div className="lg:px-5 lg:w-[80%] mx-auto">
             <div className="mx-auto mt-8 grid gap-y-4">
               {faqs?.map((item, index) => (

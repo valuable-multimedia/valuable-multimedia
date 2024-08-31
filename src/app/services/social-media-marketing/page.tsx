@@ -90,9 +90,9 @@ function SocialMediaMarketingPage() {
       <div className="services-section px-5 lg:px-[10rem] mb-5 py-10 lg:py-16 flex flex-col gap-y-10">
         <div className="flex flex-col lg:flex-row gap-y-6">
           <div className="left lg:w-[60%] flex flex-col gap-y-6">
-            <h1 className="text-3xl lg:text-5xl font-medium capitalize">
+            <h2 className="text-3xl lg:text-5xl font-medium capitalize">
               paid for reach and attainment of goals
-            </h1>
+            </h2>
             <p className="lg:pr-20">
               Social media feeds are busier than ever. To stand out, paid ads
               are inevitable. There is humongous scope in the social media
@@ -122,9 +122,9 @@ function SocialMediaMarketingPage() {
 
       {/* black banner section  */}
       <div className="black-banner-section px-5 lg:px-[10rem] py-10 lg:py-10 bg-black text-white flex flex-col lg:flex-row gap-y-6 justify-between items-center">
-        <h1 className="text-3xl lg:text-5xl font-medium">
+        <h2 className="text-3xl lg:text-5xl font-medium">
           Ready to take the first step, let&apos;s talk.
-        </h1>
+        </h2>
 
         <div className="mr-auto lg:mr-0">
           <Link href={"/contact-us"} className="lg:mr-auto">
@@ -151,11 +151,11 @@ function SocialMediaMarketingPage() {
 
           <div className="right lg:w-[80%] flex flex-col gap-y-3">
             <h3 className="text-lg">Our Social Media Marketing Services</h3>
-            <h1 className="text-3xl lg:text-4xl font-medium">
+            <h2 className="text-3xl lg:text-4xl font-medium">
               <span>At Valuable Multimedia, </span>
               <span className="text-themeOrange"> social media marketing</span>
               <span> is our forte, and marketing is our passion.</span>
-            </h1>
+            </h2>
           </div>
         </div>
 
@@ -177,9 +177,9 @@ function SocialMediaMarketingPage() {
       {/* faqs section  */}
       <div className="faqs-section px-5 lg:px-[10rem] py-10 lg:py-16">
         <div className="faqs">
-          <h1 className="text-black text-center mx-auto capitalize text-3xl lg:text-4xl font-semibold">
+          <h2 className="text-black text-center mx-auto capitalize text-3xl lg:text-4xl font-semibold">
             frequently asked questions
-          </h1>
+          </h2>
           <div className="lg:px-5 lg:w-[80%] mx-auto">
             <div className="mx-auto mt-8 grid gap-y-4">
               {faqs?.map((item, index) => (

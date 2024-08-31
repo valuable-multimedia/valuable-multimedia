@@ -61,8 +61,8 @@ function BlogPage2() {
           <img
             src={blogs[1].imgUrl}
             alt="blog-banner"
-            height={1000}
-            width={1000}
+            height={600}
+            width={600}
             className="rounded-xl"
           />
         </div>

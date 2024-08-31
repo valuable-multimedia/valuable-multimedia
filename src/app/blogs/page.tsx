@@ -45,9 +45,9 @@ function BlogPageMain() {
                   <Image
                     src={item.imgUrl}
                     alt="blog-image"
-                    height={400}
+                    height={300}
                     width={400}
-                    className="rounded-t-lg max-h-[250px] overflow-hidden"
+                    className="rounded-t-lg overflow-hidden"
                   />
                 </div>
                 <div className="down flex flex-col gap-y-3 px-4 py-2">

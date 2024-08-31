@@ -24,7 +24,7 @@ function Testimonials() {
   return (
     <div className="testimonials-section-home flex bg-[#ececec] mx-5 lg:mx-10 rounded-xl px-5 lg:px-[8rem] lg:pt-16 lg:pb-12 py-8">
       <div className="left hidden lg:block w-[20%]">
-        <img
+        <Image
           src={
             "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719837575/home/uetf6qm9tnh5j3mosphg.webp"
           }
@@ -50,9 +50,9 @@ function Testimonials() {
                 </p>
 
                 <div className="mt-5 lg:mt-16 text-center capitalize">
-                  <h2 className="text-xl text-themeOrange font-medium">
+                  <h3 className="text-xl text-themeOrange font-medium">
                     {testimonial.name}
-                  </h2>
+                  </h3>
                   <div className="text-gray-400 text-xl">
                     {testimonial.client}
                   </div>
@@ -64,7 +64,7 @@ function Testimonials() {
       </div>
 
       <div className="right hidden lg:block w-[20%]">
-        <img
+        <Image
           src={
             "https://res.cloudinary.com/dyvr2mbun/image/upload/v1719837577/home/fjgc1awtgm9v4eum5txy.webp"
           }

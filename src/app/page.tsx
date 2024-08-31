@@ -57,9 +57,9 @@ export default function Home() {
           </div>
           <div className="down flex flex-col gap-y-6 lg:flex-row">
             <div className="left w-full lg:w-[80%] flex flex-col gap-y-3">
-              <h4 className="text-xl lg:text-2xl">
+              <h3 className="text-xl lg:text-2xl">
                 Why sweat online presence?
-              </h4>
+              </h3>
               <p className="">
                 over years of rigor, consistency, sincerity, and dedication.
                 With our gamut of fully integrated digital marketing services,
@@ -120,9 +120,9 @@ export default function Home() {
       {/* info section  */}
       <div className="info-section-home flex flex-col gap-y-10 lg:gap-y-16 px-5 lg:px-[10rem] py-10 lg:py-14">
         <div className="up flex flex-col gap-y-3">
-          <h3 className="text-themeOrange text-lg lg:text-xl font-semibold">
+          <h2 className="text-themeOrange text-lg lg:text-xl font-semibold">
             Tailored Solutions for our clients
-          </h3>
+          </h2>
           <h2 className="capitalize text-3xl lg:text-5xl">
             Take Your Business To Newer Heights
           </h2>
@@ -137,14 +137,14 @@ export default function Home() {
               <div className="text-4xl lg:text-6xl text-themeOrange">
                 {item.icon}
               </div>
-              <h2 className="text-2xl capitalize flex flex-row gap-x-2 lg:hidden">
+              <h3 className="text-2xl capitalize flex flex-row gap-x-2 lg:hidden">
                 <span>{item.title}</span>
                 <span>{item.title2}</span>
-              </h2>
-              <h2 className="text-3xl capitalize lg:flex flex-col hidden">
+              </h3>
+              <h3 className="text-3xl capitalize lg:flex flex-col hidden">
                 <span>{item.title}</span>
                 <span>{item.title2}</span>
-              </h2>
+              </h3>
               <p className="">{item.description}</p>
               <div className=""></div>
             </div>
@@ -322,9 +322,9 @@ export default function Home() {
                   <Image
                     src={item.imgUrl}
                     alt="blog-image"
-                    height={400}
+                    height={300}
                     width={400}
-                    className="max-h-[250px] overflow-hidden"
+                    className="rounded-t-lg overflow-hidden"
                   />
                 </div>
                 <div className="down flex flex-col gap-y-3 px-4 py-2">

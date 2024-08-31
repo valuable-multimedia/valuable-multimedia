@@ -83,11 +83,11 @@ function UIUXDesigningPage() {
       {/* services section  */}
       <div className="services-section px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col gap-y-10">
         <div className="heading flex flex-col gap-y-4 lg:gap-y-6">
-          <h1 className="text-3xl lg:text-4xl font-medium capitalize flex flex-wrap gap-x-3">
+          <h2 className="text-3xl lg:text-4xl font-medium capitalize flex flex-wrap gap-x-3">
             <span>our</span>
             <span className="text-themeOrange">UI UX Designing</span>
             <span>services</span>
-          </h1>
+          </h2>
 
           <p>
             At Valuable Multimedia Service, we take pride in designing
@@ -114,9 +114,9 @@ function UIUXDesigningPage() {
 
       {/* black banner section  */}
       <div className="black-banner-section px-5 lg:px-[10rem] py-10 lg:py-10 bg-black text-white flex flex-col lg:flex-row gap-y-6 justify-between items-center">
-        <h1 className="text-3xl lg:text-5xl font-medium">
+        <h2 className="text-3xl lg:text-5xl font-medium">
           Ready to take the first step, let&apos;s talk.
-        </h1>
+        </h2>
 
         <div className="mr-auto lg:mr-0">
           <Link href={"/contact-us"} className="lg:mr-auto">
@@ -130,11 +130,11 @@ function UIUXDesigningPage() {
       {/* process section  */}
       <div className="process-section px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col gap-y-8 lg:gap-y-10">
         <div className="heading flex flex-col gap-y-2">
-          <h1 className="text-3xl lg:text-4xl font-medium capitalize flex flex-wrap gap-x-2">
+          <h2 className="text-3xl lg:text-4xl font-medium capitalize flex flex-wrap gap-x-2">
             <span>benefits of our</span>
             <span className="text-themeOrange">UI UX design</span>
             <span>services</span>
-          </h1>
+          </h2>
         </div>
 
         <div className="down flex flex-wrap justify-center gap-x-14 gap-y-8">
@@ -158,9 +158,9 @@ function UIUXDesigningPage() {
       {/* keypoints section  */}
       <div className="keypoints-section bg-[#fff] px-5 lg:px-[10rem] py-10 lg:py-16">
         <div className="border-l-4 border-themeOrange border-r-4 bg-[#ececec] p-6 flex flex-col gap-y-6">
-          <h1 className="text-3xl lg:text-4xl capitalize lg:leading-[3.3rem] font-medium">
+          <h2 className="text-3xl lg:text-4xl capitalize lg:leading-[3.3rem] font-medium">
             why choose valuable multimedia service as your UI UX design company?
-          </h1>
+          </h2>
 
           <div className="flex flex-col gap-y-4">
             <p>
@@ -183,9 +183,9 @@ function UIUXDesigningPage() {
       {/* faqs section  */}
       <div className="faqs-section px-5 lg:px-[10rem] py-10 lg:py-14">
         <div className="faqs">
-          <h1 className="text-black text-center mx-auto capitalize text-3xl lg:text-4xl font-semibold">
+          <h2 className="text-black text-center mx-auto capitalize text-3xl lg:text-4xl font-semibold">
             frequently asked questions
-          </h1>
+          </h2>
           <div className="lg:px-5 lg:w-[80%] mx-auto">
             <div className="mx-auto mt-8 grid gap-y-4">
               {faqs?.map((item, index) => (
