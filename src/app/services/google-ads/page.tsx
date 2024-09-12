@@ -91,10 +91,10 @@ function GoogleAdsPage() {
       {/* process section  */}
       <div className="process-section  px-5 lg:px-[10rem] py-10 lg:py-20 flex flex-col gap-y-8 lg:gap-y-16">
         <div className="heading">
-          <h1 className="text-3xl lg:text-5xl font-medium">
+          <h2 className="text-3xl lg:text-5xl font-medium">
             <span>How we do </span>
             <span className="text-themeOrange"> PPC</span>?
-          </h1>
+          </h2>
         </div>
 
         <div className="down flex flex-wrap justify-center gap-x-14 gap-y-8">

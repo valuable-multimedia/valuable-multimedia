@@ -47,6 +47,11 @@ export default function RootLayout({
           content="YG3OEzLExFEl9kzEIZ_10yjgjxo83Gh4oLrsM5P8OrI"
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link
+          data-head="tezjs"
+          rel="canonical"
+          href={"https://www.valuablemultimedia.com"}
+        />
       </head>
       <body className={sora.className}>
         {/* <noscript>

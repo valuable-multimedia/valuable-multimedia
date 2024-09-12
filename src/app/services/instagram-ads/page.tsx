@@ -32,9 +32,11 @@ function InstagramAdsPage() {
         <div className="flex flex-col lg:flex-row gap-y-6">
           <div className="left lg:w-[70%] flex flex-col gap-y-8">
             <div className="flex flex-col gap-y-2">
+              {/* Pc heading  */}
               <h1 className="text-4xl lg:text-5xl capitalize lg:w-[80%] lg:leading-[3.5rem] font-medium hidden lg:block">
                 instagram ads <br /> services
               </h1>
+              {/* mobile heading  */}
               <h1 className="text-4xl lg:text-5xl capitalize lg:w-[80%] lg:leading-[3.5rem] font-medium lg:hidden block">
                 instagram ads services
               </h1>
