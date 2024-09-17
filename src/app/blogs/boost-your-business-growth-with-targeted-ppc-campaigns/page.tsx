@@ -415,7 +415,7 @@ function BlogPage2() {
           At Valuable Multimedia, we understand the intricacies of running
           successful PPC campaigns. Our team is committed to helping businesses
           grow by developing targeted and data-driven PPC strategies tailored to
-          your unique goals. Here's what sets us apart:
+          your unique goals. Here&apos;s what sets us apart:
         </p>
 
         <div className="">
