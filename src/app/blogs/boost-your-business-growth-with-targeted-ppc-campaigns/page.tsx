@@ -2,8 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { PiGreaterThan } from "react-icons/pi";
-import Image from "next/image";
-import data from "@/data/blogs_data.json";
 import { FaCircle } from "react-icons/fa";
 import { IoIosLink } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
@@ -14,7 +12,6 @@ import { FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 
 function BlogPage2() {
-  const { blogs } = data;
   const [currentUrl, setCurrentUrl] = useState("");
 
   useEffect(() => {
@@ -141,11 +138,18 @@ function BlogPage2() {
           advertisers pay a fee each time their ad is clicked. Unlike organic
           traffic, PPC allows businesses to buy visits to their website, making
           it an effective way to gain visibility quickly. PPC ads can appear on
-          search engines like Google through Google Ads services, social media
-          platforms like Facebook and Instagram, or on third-party websites
-          through display ads. By targeting the right keywords, audiences, and
-          locations, PPC ads ensure that your message reaches potential
-          customers actively searching for your products or services.
+          search engines like Google through{" "}
+          <Link
+            href={"/services/google-ads"}
+            className="text-sky-500 underline"
+          >
+            Google Ads services
+          </Link>{" "}
+          , social media platforms like Facebook and Instagram, or on
+          third-party websites through display ads. By targeting the right
+          keywords, audiences, and locations, PPC ads ensure that your message
+          reaches potential customers actively searching for your products or
+          services.
         </p>
       </div>
 
@@ -206,6 +210,275 @@ function BlogPage2() {
             who are most likely to engage with your brand.
           </p>
         </div>
+
+        <div className="flex flex-col gap-y-2">
+          <h3 className="text-2xl font-medium flex gap-x-1">
+            <span>3.</span>
+            <span>Budget Control and Flexibility</span>
+          </h3>
+          <p className="text-lg">
+            One of the standout features of PPC campaigns is the level of
+            control you have over your advertising budget. Whether you&apos;re a
+            small business with a limited marketing budget or an
+            enterprise-level company with a large ad spend, you can adjust your
+            PPC budget at any time. You only pay when someone clicks on your ad,
+            making it one of the most cost-effective advertising models
+            available.
+          </p>
+          <p className="text-lg font-bold pt-4">
+            High Search Volume Keyword: &quot;PPC advertising cost&quot;
+          </p>
+          <p className="text-lg">
+            With Valuable Multimedia, we help you manage your PPC advertising
+            cost effectively, ensuring that every dollar spent is geared towards
+            driving measurable results.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-y-2">
+          <h3 className="text-2xl font-medium flex gap-x-1">
+            <span>4.</span>
+            <span>Measurable Results and Analytics </span>
+          </h3>
+          <p className="text-lg">
+            PPC advertising offers transparent, measurable data, allowing
+            businesses to track the performance of their campaigns in real time.
+            From click-through rates (CTR) to conversion rates and return on ad
+            spend (ROAS), you have access to detailed reports that show how well
+            your campaigns are performing.
+          </p>
+          <p className="text-lg font-bold pt-4">
+            High Search Volume Keyword: &quot;PPC campaign performance
+            metrics&quot;
+          </p>
+          <p className="text-lg">
+            We provide in-depth reports on key performance metrics, so you can
+            make data-driven decisions to optimize your campaigns and improve
+            ROI.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-y-2">
+          <h3 className="text-2xl font-medium flex gap-x-1">
+            <span>5.</span>
+            <span>Increased Conversion Rates</span>
+          </h3>
+          <p className="text-lg">
+            Because PPC ads can be finely tuned to target users who are actively
+            searching for your products or services, they have a higher
+            likelihood of converting than other advertising models. For example,
+            if someone searches for &quot;best digital marketing agency near
+            me&quot; and your PPC ad appears, they&apos;re more likely to click
+            through and contact your business.
+          </p>
+          <p className="text-lg font-bold pt-4">
+            High Search Volume Keyword: &quot;increase conversion rates with
+            PPC&quot;
+          </p>
+          <p className="text-lg">
+            At Valuable Multimedia, our goal is to design PPC campaigns that not
+            only attract clicks but also drive conversions and increase your
+            bottom line.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-y-2">
+          <h3 className="text-2xl font-medium flex gap-x-1">
+            <span>6.</span>
+            <span>Remarketing Opportunities</span>
+          </h3>
+          <p className="text-lg">
+            PPC campaigns also provide excellent opportunities for remarketing.
+            Remarketing targets users who have previously interacted with your
+            website but didn&apos;t complete a desired action, such as making a
+            purchase or filling out a contact form. By showing these users
+            personalized ads as they browse the web, you can bring them back to
+            your site and encourage them to convert.
+          </p>
+          <p className="text-lg font-bold pt-4">
+            High Search Volume Keyword: &quot;PPC remarketing strategy&quot;
+          </p>
+          <p className="text-lg">
+            Our PPC remarketing strategies at Valuable Multimedia are designed
+            to re-engage potential customers and guide them through the
+            buyer&apos;s journey.
+          </p>
+        </div>
+      </div>
+
+      {/* main blog pointers 2 */}
+      <div className="title-subtitle-paragraphs px-5 lg:px-[10rem] py-5 flex flex-col gap-y-6">
+        <h2 className=" text-3xl lg:text-4xl font-semibold">
+          Key Elements of a Successful PPC Campaign
+        </h2>
+
+        <p className="text-lg">
+          While PPC offers numerous benefits, it&apos;s essential to develop a
+          comprehensive strategy to ensure success. Here are the critical
+          elements that make up a high-performing PPC campaign:
+        </p>
+
+        <div className="flex flex-col gap-y-2">
+          <h3 className="text-2xl font-medium flex gap-x-1">
+            <span>1.</span>
+            <span>Keyword Research and Selection </span>
+          </h3>
+          <p className="text-lg">
+            Keyword research is the foundation of any successful PPC campaign.
+            By identifying high-value keywords with substantial search volume
+            and intent, you can ensure your ads reach the right audience. This
+            includes both long-tail keywords, which are more specific and have
+            lower competition, and broader, high-volume terms.
+          </p>
+          <p className="text-lg font-bold pt-4">
+            High Search Volume Keyword: &apos;PPC keyword research&apos;
+          </p>
+          <p className="text-lg">
+            At Valuable Multimedia, we conduct thorough keyword research to find
+            the most profitable terms for your campaign.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-y-2">
+          <h3 className="text-2xl font-medium flex gap-x-1">
+            <span>2.</span>
+            <span>Compelling Ad Copy and Creative</span>
+          </h3>
+          <p className="text-lg">
+            Your ad copy is what ultimately convinces users to click on your ad.
+            Writing compelling, benefit-driven ad copy is crucial for increasing
+            click-through rates and conversions. Pairing this with engaging
+            visuals in display or social media ads can significantly enhance
+            your results.
+          </p>
+          <p className="text-lg font-bold pt-4">
+            High Search Volume Keyword: &quot;PPC ad copy best practices&quot;
+          </p>
+          <p className="text-lg">
+            Our team at Valuable Multimedia excels in creating ad copy that
+            resonates with your target audience and aligns with your campaign
+            objectives.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-y-2">
+          <h3 className="text-2xl font-medium flex gap-x-1">
+            <span>3.</span>
+            <span>Landing Page Optimization</span>
+          </h3>
+          <p className="text-lg">
+            The effectiveness of a PPC campaign doesn&apos;t end with a click.
+            To maximize conversions, the landing page users are directed to must
+            be optimized for user experience and aligned with the ad&apos;s
+            message. A poorly designed landing page can result in high bounce
+            rates and wasted ad spend.
+          </p>
+          <p className="text-lg font-bold pt-4">
+            High Search Volume Keyword: &quot;PPC landing page
+            optimization&quot;
+          </p>
+          <p className="text-lg">
+            At Valuable Multimedia, we ensure that your landing pages are
+            optimized for conversions, offering a seamless user experience from
+            ad click to action.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-y-2">
+          <h3 className="text-2xl font-medium flex gap-x-1">
+            <span>4.</span>
+            <span>Continuous Campaign Optimization </span>
+          </h3>
+          <p className="text-lg">
+            PPC is not a &apos;set it and forget it&quot; strategy. Continuous
+            monitoring and optimization are essential for maximizing
+            performance. This includes adjusting bids, testing ad variations,
+            refining targeting, and analyzing performance data to improve ROI.
+          </p>
+          <p className="text-lg font-bold pt-4">
+            High Search Volume Keyword: &quot;PPC campaign optimization
+            techniques&quot;
+          </p>
+          <p className="text-lg">
+            Our PPC experts at Valuable Multimedia constantly monitor and adjust
+            your campaigns to ensure the best possible results
+          </p>
+        </div>
+      </div>
+
+      <div className="title-subtitle-paragraphs px-5 lg:px-[10rem] py-5 flex flex-col gap-y-6">
+        <h2 className=" text-3xl lg:text-4xl font-semibold">
+          Why Choose Valuable Multimedia for Your PPC Campaigns?
+        </h2>
+
+        <p className="text-lg">
+          At Valuable Multimedia, we understand the intricacies of running
+          successful PPC campaigns. Our team is committed to helping businesses
+          grow by developing targeted and data-driven PPC strategies tailored to
+          your unique goals. Here's what sets us apart:
+        </p>
+
+        <div className="">
+          <ul className="flex flex-col gap-y-2">
+            <li className="flex gap-x-2">
+              <div>1.</div>
+              <div className="flex gap-x-1">
+                <span className="font-bold">Proven Track Record:</span>
+                <span>
+                  We have a history of delivering successful PPC campaigns for
+                  clients across various industries.
+                </span>
+              </div>
+            </li>
+            <li className="flex gap-x-2">
+              <div>2.</div>
+              <div className="flex gap-x-1">
+                <span className="font-bold">Customized Campaigns:</span>
+                <span>
+                  We create bespoke strategies based on your business objectives
+                  and target audience.
+                </span>
+              </div>
+            </li>
+            <li className="flex gap-x-2">
+              <div>3.</div>
+              <div className="flex gap-x-1">
+                <span className="font-bold">Data-Driven Approach:</span>
+                <span>
+                  Our decisions are backed by analytics, ensuring your campaigns
+                  are continuously optimized for success.
+                </span>
+              </div>
+            </li>
+            <li className="flex gap-x-2">
+              <div>4.</div>
+              <div className="flex gap-x-1">
+                <span className="font-bold">Expert Team:</span>
+                <span>
+                  Our PPC specialists stay up-to-date with the latest trends and
+                  best practices to keep your campaigns competitive.
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="title-subtitle-paragraphs px-5 lg:px-[10rem] py-5 flex flex-col gap-y-6">
+        <h2 className=" text-3xl lg:text-4xl font-semibold">
+          Conclusion: Ready to Boost Your Business Growth?
+        </h2>
+
+        <p className="text-lg">
+          PPC campaigns are one of the most effective ways to drive targeted
+          traffic, increase conversions, and grow your business. Whether
+          you&apos;re looking to improve brand visibility, increase sales, or
+          reach new audiences, &nbsp;
+          <Link href={"/"} className="text-sky-500 underline">
+            Valuable Multimedia
+          </Link>{" "}
+          is here to help.
+        </p>
       </div>
     </div>
   );

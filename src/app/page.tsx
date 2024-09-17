@@ -310,7 +310,35 @@ export default function Home() {
           <h2 className="capitalize text-3xl">recent blogs</h2>
         </div>
 
-        <div className="down flex flex-wrap justify-start gap-x-16 w-full">
+        <div className="down flex flex-wrap justify-between gap-x-8 w-full">
+          <Link
+            href={
+              "/blogs/boost-your-business-growth-with-targeted-ppc-campaigns"
+            }
+            className="lg:w-[30%] bg-white shadow-lg rounded-lg"
+          >
+            <div className="blog-card flex flex-col gap-y-6 w-full">
+              <div className="up">
+                <Image
+                  src={
+                    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1726108566/blogs/wvakuw6brke7rgz1lvwj.jpg"
+                  }
+                  alt="blog-image"
+                  height={300}
+                  width={400}
+                  className="rounded-t-lg overflow-hidden"
+                />
+              </div>
+              <div className="down flex flex-col gap-y-3 px-4 py-2">
+                <div className="date text-sm capitalize">
+                  12 September, 2024
+                </div>
+                <div className="text-xl font-semibold text-gray-500">
+                  Boost Your Business Growth with Targeted PPC Campaigns
+                </div>
+              </div>
+            </div>
+          </Link>
           {blogs.map((item, index) => (
             <Link
               href={item.slug}
