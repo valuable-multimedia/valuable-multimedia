@@ -23,6 +23,18 @@ function BlogPage() {
     }
   }, []);
 
+  const handleCopy = () => {
+    const currentUrl = document.URL; // Using document.URL to get the current page URL
+    navigator.clipboard
+      .writeText(currentUrl)
+      .then(() => {
+        console.log("copied");
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
+  };
+
   return (
     <div className="bg-[#fcfcfc] text-black">
       {/* direction banner  */}
@@ -82,7 +94,7 @@ function BlogPage() {
         </div>
 
         <div className="flex gap-x-2 text-2xl">
-          <IoIosLink />
+          <IoIosLink onClick={handleCopy} className="cursor-pointer" />
           <Link
             href={`https://api.whatsapp.com/send?text=Check out this page: ${currentUrl}`}
           >
