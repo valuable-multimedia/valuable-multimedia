@@ -16,6 +16,7 @@ import Link from "next/link";
 function BlogPage() {
   const { blogs } = data;
   const [currentUrl, setCurrentUrl] = useState("");
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -33,6 +34,13 @@ function BlogPage() {
       .catch((err) => {
         console.error("Failed to copy: ", err);
       });
+
+    setCopied(true);
+
+    // Hide the "Copied" message after 2 seconds
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
   };
 
   return (
@@ -94,7 +102,15 @@ function BlogPage() {
         </div>
 
         <div className="flex gap-x-2 text-2xl">
-          <IoIosLink onClick={handleCopy} className="cursor-pointer" />
+          <div className="relative">
+            <IoIosLink onClick={handleCopy} className="cursor-pointer" />
+
+            {copied && (
+              <span className="absolute top-[-20px] left-0 bg-gray-200 text-black text-sm px-2 py-1 rounded">
+                Copied!
+              </span>
+            )}
+          </div>
           <Link
             href={`https://api.whatsapp.com/send?text=Check out this page: ${currentUrl}`}
           >
