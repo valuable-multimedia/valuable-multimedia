@@ -33,7 +33,37 @@ function BlogPageMain() {
 
       {/* blogs section  */}
       <div className="blogs-section-home px-5 lg:px-[10rem] py-10 lg:py-16 flex flex-col gap-y-10">
-        <div className="down flex flex-wrap justify-center gap-x-10 w-full">
+        <div className="down flex flex-wrap gap-y-10 justify-center gap-x-10 w-full">
+          <Link
+            href={
+              "/blogs/how-to-improve-your-website-with-seo-in-the-upcoming-years"
+            }
+            className="lg:w-[30%] bg-white shadow-lg rounded-lg"
+          >
+            <div className="blog-card flex flex-col gap-y-6 w-full">
+              <div className="up">
+                <Image
+                  src={
+                    "https://res.cloudinary.com/dyvr2mbun/image/upload/v1729153152/blogs/qqy6bevzpymiot64hzxr.jpg"
+                  }
+                  alt="blog-image"
+                  height={300}
+                  width={400}
+                  className="rounded-t-lg overflow-hidden"
+                />
+              </div>
+              <div className="down flex flex-col gap-y-3 px-4 py-2">
+                <div className="date text-sm capitalize">
+                  17 October, 2024
+                </div>
+                <div className="text-xl font-semibold text-gray-500">
+                How to Improve Your Website with SEO in the Upcoming Years?
+
+                </div>
+              </div>
+            </div>
+          </Link>
+
           <Link
             href={
               "/blogs/boost-your-business-growth-with-targeted-ppc-campaigns"
@@ -62,6 +92,7 @@ function BlogPageMain() {
               </div>
             </div>
           </Link>
+
           {blogs
             .slice()
             .reverse()
