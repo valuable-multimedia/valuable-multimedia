@@ -275,7 +275,7 @@ function BlogPage2() {
 
         <p className="text-lg">
           As smart devices like Alexa and Google Home become more prevalent,
-          voice search is rapidly gaining popularity. By 2025, it's estimated
+          voice search is rapidly gaining popularity. By 2025, it&apos;s estimated
           that over 75% of households will own a smart speaker, and voice search
           queries will continue to grow. Optimizing your website for voice
           search will become increasingly important for SEO.
@@ -332,7 +332,7 @@ function BlogPage2() {
 
         <p className="text-lg">
           Artificial intelligence (AI) and machine learning are reshaping the
-          way search engines function, and SEO is no exception. Google's AI
+          way search engines function, and SEO is no exception. Google&apos;s AI
           algorithm, RankBrain, is already helping process search results by
           understanding user intent more effectively. As AI technology continues
           to develop, it will become a crucial factor in shaping SEO strategies.
