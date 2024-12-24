@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
@@ -12,11 +11,6 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 const sora = Sora({ subsets: ["latin"] });
-
-// export const metadata: Metadata = {
-//   title: "Valuable Multimedia",
-//   description: "A Digital Marketing agency in Ahmedabad, Gujarat",
-// };
 
 const routeMetadata: { [key: string]: { title: string; description: string } } =
   {
@@ -104,6 +98,20 @@ export default function RootLayout({
     }
   }, [pathname]);
 
+  useEffect(() => {
+    const baseUrl = "https://www.valuablemultimedia.com";
+    const canonicalUrl = `${baseUrl}${pathname}`;
+    let linkCanonical = document.querySelector('link[rel="canonical"]');
+
+    if (!linkCanonical) {
+      // Create the canonical link tag if it doesn't exist
+      linkCanonical = document.createElement("link");
+      linkCanonical.setAttribute("rel", "canonical");
+      document.head.appendChild(linkCanonical);
+    }
+    linkCanonical.setAttribute("href", canonicalUrl);
+  }, [pathname]);
+
   return (
     <html lang="en">
       <head>
@@ -130,11 +138,11 @@ export default function RootLayout({
           content="YG3OEzLExFEl9kzEIZ_10yjgjxo83Gh4oLrsM5P8OrI"
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link
+        {/* <link
           data-head="tezjs"
           rel="canonical"
           href={"https://www.valuablemultimedia.com"}
-        />
+        /> */}
       </head>
       <body className={sora.className}>
         {/* <noscript>
